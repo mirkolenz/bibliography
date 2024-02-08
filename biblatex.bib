@@ -958,6 +958,7 @@
   doi = {10.1007/978-3-030-30179-8_8},
   url = {http://link.springer.com/10.1007/978-3-030-30179-8_8},
   urldate = {2022-01-03},
+  abstract = {Research on argumentation in Artificial Intelligence recently investigates new methods that contribute to the vision of developing robust argumentation machines. One line of research explores ways of reasoning with natural language arguments coming from information sources on the web as a foundation for the deliberation and synthesis of arguments in specific domains. This paper builds upon arguments represented as argument graphs in the standardized Argument Interchange Format. While previous work was focused on the development of semantic similarity measures used for the case-based retrieval of argument graphs, this paper addresses the problem of clustering argument graphs to explore structures that facilitate argumentation interpretation. We propose a k-medoid and an agglomerative clustering approach based on semantic similarity measures. We compare the clustering results based on a graph-based semantic measure that takes the structure of the argument into account with a semantic word2vec measure on the pure textual argument representation. Experiments based on the Microtext corpus show that the graph-based similarity is best on internal evaluation measures, while the pure textual measure performs very well for identifying topic-specific clusters.},
   isbn = {978-3-030-30178-1 978-3-030-30179-8},
   langid = {english}
 }
@@ -1569,7 +1570,7 @@
   abstract = {Different abstract argumentation frameworks have been used for various applications within multi-agents systems. Among them, bipolar frameworks make use of both attack and support relations between arguments. However, there is no single interpretation of the support, and the handling of bipolarity cannot avoid a deeper analysis of the notion of support. In this paper we consider three recent proposals for specializing the support relation in abstract argumentation: the deductive support, the necessary support and the evidential support. These proposals have been developed independently within different frameworks. We restate these proposals in a common setting, which enables us to undertake a comparative study of the modellings obtained for the three variants of the support. We highlight relationships and differences between these variants, namely a kind of duality between the deductive and the necessary interpretations of the support.}
 }
 
-@misc{CentreforArgumentTechnology2017QuickStartGuide,
+@misc{CentreForArgumentTechnology2017QuickStartGuide,
   title = {A {{Quick Start Guide}} to {{Inference Anchoring Theory}} ({{IAT}})},
   author = {{Centre for Argument Technology}},
   date = {2017-10-01},
@@ -2210,19 +2211,6 @@
   langid = {english}
 }
 
-@inproceedings{Dumani2020QualityawareArgumentRetrieval,
-  title = {Quality-Aware {{Argument Retrieval}} with {{Topical Clustering}}},
-  booktitle = {Lernen. {{Wissen}}. {{Daten}}. {{Analysen}}. ({{LWDA}} 2020)},
-  author = {Dumani, Lorik and Kreutz, Christin and Biertz, Manuel and Witry, Alex and Schenkel, Ralf},
-  date = {2020},
-  volume = {2738},
-  pages = {23--34},
-  publisher = {{CEUR-WS.org}},
-  url = {http://ceur-ws.org/Vol-2738/LWDA2020_paper_24.pdf},
-  abstract = {A specialized approach to argument retrieval which combines both the general argumentative quality of texts, as well as the latent semantic (topic-)space of the document collection as boost factors to a general-purpose retrieval model to address the specific domain requirements of argument search. We present a specialized approach to argument retrieval which combines both the general argumentative quality of texts, as well as the latent semantic (topic-)space of the document collection as boost factors to a general-purpose retrieval model to address the specific domain requirements of argument search. This setup aims to satisfy our three hypothesized aspects of an argumentative information need: quality-aware result ranking, near-complete topical coverage, and text proximity to the query.},
-  eventtitle = {{{LWDA}}}
-}
-
 @inproceedings{Dumani2020QualityAwareRankingArguments,
   title = {Quality-{{Aware Ranking}} of {{Arguments}}},
   booktitle = {Proceedings of the 29th {{ACM International Conference}} on {{Information}} \& {{Knowledge Management}}},
@@ -2248,6 +2236,25 @@
   publisher = {{CEUR-WS.org}},
   url = {http://ceur-ws.org/Vol-2696/paper_174.pdf},
   abstract = {In this paper we describe our submissions to the CLEF lab Touché, which addresses argument retrieval from a focused debate collection. Our approach consists of a two-step retrieval. Step one finds the most similar claims to a query. Step two ranks the directly tied premises by the count of their convincingness compared to other relevant premises, for which we aggregate the sum of three main argument quality dimensions. The final ranking consists of the product of the two components which are expressed as probabilities.},
+  langid = {english}
+}
+
+@inproceedings{Dumani2020SegmentingClusteringNoisy,
+  title = {Segmenting and {{Clustering Noisy Arguments}}},
+  booktitle = {Proceedings of the {{Conference}} "{{Lernen}}, {{Wissen}}, {{Daten}}, {{Analysen}}"},
+  author = {Dumani, Lorik and Kreutz, Christin Katharina and Biertz, Manuel and Witry, Alex and Schenkel, Ralf},
+  editor = {Trabold, Daniel and Welke, Pascal and Piatkowski, Nico},
+  date = {2020-09-09},
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {2738},
+  pages = {23--34},
+  publisher = {{CEUR}},
+  location = {{Online, September}},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-2738/#paper24},
+  urldate = {2023-11-27},
+  abstract = {Automated argument retrieval for queries is desirable, e.g., as it helps in decision making or convincing others of certain actions. An argument consists of a claim supported or attacked by at least one premise. The claim describes a controversial viewpoint that should not be accepted without evidence given by premises. Premises are composed of Elementary Discourse Units (EDUs) which are their smallest contextual components. Oftentimes argument search engines find similar claims to a query first before returning their premises. Due to heterogeneous data sources, premises often appear repeatedly in different syntactic forms. From an information retrieval perspective, it is essential to rank premises relevant for a query claim highly in a duplicate-free manner. The main challenge in clustering them is to avoid redundancies as premises frequently address various aspects, i.e., consist of multiple EDUs. So, two tasks can be defined: segmentation of premises in EDUs and clustering of similar EDUs. In this paper we make two contributions: Our first contribution is the introduction of a noisy dataset with 480 premises for 30 queries crawled from debate portals which serves as a gold standard for the segmentation of premises into EDUs and the clustering of EDUs. Our second contribution consists of first baselines for the two mentioned tasks, for which we evaluated various methods. Our results show that an uncurated dataset is a major challenge and that clustering EDUs is only reasonable with premises as context information.},
+  eventtitle = {Lernen, {{Wissen}}, {{Daten}}, {{Analysen}} 2020},
   langid = {english}
 }
 
@@ -3582,6 +3589,41 @@
   urldate = {2018-09-04}
 }
 
+@article{Kreutz2022SchenQLIndepthAnalysis,
+  title = {{{SchenQL}}: In-Depth Analysis of a Query Language for Bibliographic Metadata},
+  shorttitle = {{{SchenQL}}},
+  author = {Kreutz, Christin Katharina and Wolz, Michael and Knack, Jascha and Weyers, Benjamin and Schenkel, Ralf},
+  date = {2022-06-01},
+  journaltitle = {International Journal on Digital Libraries},
+  shortjournal = {Int J Digit Libr},
+  volume = {23},
+  number = {2},
+  pages = {113--132},
+  issn = {1432-1300},
+  doi = {10.1007/s00799-021-00317-8},
+  url = {https://doi.org/10.1007/s00799-021-00317-8},
+  urldate = {2024-02-01},
+  abstract = {Information access to bibliographic metadata needs to be uncomplicated, as users may not benefit from complex and potentially richer data that may be difficult to obtain. Sophisticated research questions including complex aggregations could be answered with complex SQL queries. However, this comes with the cost of high complexity, which requires for a high level of expertise even for trained programmers. A domain-specific query language could provide a straightforward solution to this problem. Although less generic, it can support users not familiar with query construction in the formulation of complex information needs. In this paper, we present and evaluate SchenQL, a simple and applicable query language that is accompanied by a prototypical GUI. SchenQL focuses on querying bibliographic metadata using the vocabulary of domain experts. The easy-to-learn domain-specific query language is suitable for domain experts as well as casual users while still providing the possibility to answer complex information demands. Query construction and information exploration are supported by a prototypical GUI. We present an evaluation of the complete system: different variants for executing SchenQL queries are benchmarked; interviews with domain-experts and a bipartite quantitative user study demonstrate SchenQL’s suitability and high level of users’ acceptance.},
+  langid = {english}
+}
+
+@inproceedings{Kreutz2022SchenQLQueryLanguage,
+  title = {{{SchenQL}}: A Query Language for Bibliographic Data with Aggregations and Domain-Specific Functions},
+  shorttitle = {{{SchenQL}}},
+  booktitle = {Proceedings of the 22nd {{ACM}}/{{IEEE Joint Conference}} on {{Digital Libraries}}},
+  author = {Kreutz, Christin Katharina and Blum, Martin and Schenkel, Ralf},
+  date = {2022-06-20},
+  series = {{{JCDL}} '22},
+  pages = {1--5},
+  publisher = {{Association for Computing Machinery}},
+  location = {{New York, NY, USA}},
+  doi = {10.1145/3529372.3533282},
+  url = {https://dl.acm.org/doi/10.1145/3529372.3533282},
+  urldate = {2024-02-01},
+  abstract = {Current search interfaces of digital libraries are not suitable to satisfy complex or convoluted information needs directly, when it comes to cases such as "Find authors who only recently started working on a topic". They might offer possibilities to obtain this information only by requiring vast user interaction. We present SchenQL, a web interface of a domain-specific query language on bibliographic metadata, which offers information search and exploration by query formulation and navigation in the system. Our system focuses on supporting aggregation of data and providing specialised domain dependent functions while being suitable for domain experts as well as casual users of digital libraries.},
+  isbn = {978-1-4503-9345-4}
+}
+
 @article{Krippendorff2004ReliabilityContentAnalysis,
   title = {Reliability in {{Content Analysis}}: {{Some Common Misconceptions}} and {{Recommendations}}},
   shorttitle = {Reliability in {{Content Analysis}}},
@@ -3936,7 +3978,7 @@
 @inproceedings{Lenz2022WorkshopTextMining,
   title = {Workshop on {{Text Mining}} and {{Generation}} ({{TMG}}): {{Preface}}},
   booktitle = {Joint {{Proceedings}} of {{Workshops}}, {{Tutorials}} and {{Doctoral Consortium}} Co-Located with the 45rd {{German Conference}} on {{Artificial Intelligence}}},
-  author = {Lenz, Mirko and Dumani, Lorik and Sahitaj, Premtim},
+  author = {Lenz, Mirko and Dumani, Lorik and Bondarenko, Alexander and Syed, Shahbaz},
   editor = {Koert, Dorothea and Minor, Mirjam},
   date = {2022-09-19},
   series = {{{CEUR Workshop Proceedings}}},
@@ -4622,6 +4664,7 @@
   issn = {1613-0073},
   url = {https://ceur-ws.org/Vol-3438/#paper_09},
   urldate = {2023-07-31},
+  abstract = {Nowadays, information on any topic can be researched on the Internet. However, in addition to reputable news sources, there is also a great deal of fake news that is disseminated, e.g., via social media or in established newspapers. Thus, the veracity must be assessed for each piece of information. People, parties, and organizations want to push through their interests and sometimes do not hesitate to spread fake news. For some time now, one popular means has been to quote (supposed) experts in a field. For example, —due to his authority— Albert Einstein is often quoted by believers in God although he was primarily concerned with physics while his quotes on God are taken out of context. In this paper, we define a new task of expert suitability prediction and evaluate methods to assess the credibility of a person with reference to a statement and its context and compare it to state-of-the-art approaches applying transformer-based embeddings. In an R4 cycle in CBR this approach could be used for the ranking. In this pilot study, we restrict our experiments to researchers, which allows us to derive their expertise from their publications. Furthermore, we make a manually labeled dataset consisting of 1,700 (statement,expert) pairs where suitable experts were tediously searched out together with valuable context information (such as convincing text parts of the experts’ contexts towards a statement) publicly available to stimulate further research in this very important, but up to now underrepresented area of fake news detection.},
   eventtitle = {{{ICCBR}} 2023 {{Workshop Proceedings}}},
   langid = {english}
 }
@@ -4882,6 +4925,7 @@
   issn = {1613-0073},
   url = {https://ceur-ws.org/Vol-3438/#paper_10},
   urldate = {2023-07-31},
+  abstract = {Podcasts have emerged as a significant platform for the exchange of ideas, opinions, and knowledge on a variety of topics. At the same time, the extraction of arguments (called: argument mining) has received great attention. However, to the best of our knowledge, there exist no work that investigates the extraction of arguments from podcasts. One reason can be that podcasts often involve unpredictable and complex argument structures, and extracting valuable insights from them is challenging. In this work, we present the novel approach of extracting two different types of argumentative structures from podcast after transcribing them, i.e., (1) a simple but often used variant describing arguments as consisting of only a claim and a premise, where the claim describes the standpoint and the premise the reason to support or attack that claim and (2) an extended variant where an argument comprises premises, a main claim, counterarguments, and rebuttals. For this purpose, we utilize two specially designed prompts and OpenAI’s GPT-4 language model. For our test data, we chose three podcasts considering current computational constraints and the need for diversity in topics and discussion styles. Our evaluation shows the high feasibility of extracting arguments from podcasts using ChatGPT. We publish the podcasts’ transcripts as well as the extracted arguments.},
   eventtitle = {{{ICCBR}} 2023 {{Workshop Proceedings}}},
   langid = {english}
 }
@@ -6269,7 +6313,7 @@
   langid = {english}
 }
 
-@book{vanEemeren1996FundamentalsArgumentationTheory,
+@book{VanEemeren1996FundamentalsArgumentationTheory,
   title = {Fundamentals of {{Argumentation Theory}}},
   shorttitle = {Fundamentals of {{Argumentation Theory}}},
   author = {family=Eemeren, given=Frans H., prefix=van, useprefix=true and Grootendorst, Rob and Johnson, Ralph H. and Plantin, Christian and Willard, Charles A.},
@@ -6296,7 +6340,7 @@
   langid = {english}
 }
 
-@article{vanEemeren2017ArgumentationTheoryFormal,
+@article{VanEemeren2017ArgumentationTheoryFormal,
   title = {Argumentation Theory in Formal and Computational Perspective},
   author = {family=Eemeren, given=Frans H., prefix=van, useprefix=true and Verheij, Bart},
   date = {2017},
