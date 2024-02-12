@@ -291,6 +291,17 @@
   archiveprefix = {arxiv}
 }
 
+@article{AlZubaer2023PerformanceAnalysisLarge,
+  title = {Performance Analysis of Large Language Models in the Domain of Legal Argument Mining},
+  author = {Al Zubaer, Abdullah and Granitzer, Michael and Mitrovi{\'c}, Jelena},
+  year = {2023},
+  journal = {Frontiers in Artificial Intelligence},
+  volume = {6},
+  issn = {2624-8212},
+  urldate = {2024-02-10},
+  abstract = {Generative pre-trained transformers (GPT) have recently demonstrated excellent performance in various natural language tasks. The development of ChatGPT and the recently released GPT-4 model has shown competence in solving complex and higher-order reasoning tasks without further training or fine-tuning. However, the applicability and strength of these models in classifying legal texts in the context of argument mining are yet to be realized and have not been tested thoroughly. In this study, we investigate the effectiveness of GPT-like models, specifically GPT-3.5 and GPT-4, for argument mining via prompting. We closely study the model's performance considering diverse prompt formulation and example selection in the prompt via semantic search using state-of-the-art embedding models from OpenAI and sentence transformers. We primarily concentrate on the argument component classification task on the legal corpus from the European Court of Human Rights. To address these models' inherent non-deterministic nature and make our result statistically sound, we conducted 5-fold cross-validation on the test set. Our experiments demonstrate, quite surprisingly, that relatively small domain-specific models outperform GPT 3.5 and GPT-4 in the F1-score for premise and conclusion classes, with 1.9\% and 12\% improvements, respectively. We hypothesize that the performance drop indirectly reflects the complexity of the structure in the dataset, which we verify through prompt and data analysis. Nevertheless, our results demonstrate a noteworthy variation in the performance of GPT models based on prompt formulation. We observe comparable performance between the two embedding models, with a slight improvement in the local model's ability for prompt selection. This suggests that local models are as semantically rich as the embeddings from the OpenAI model. Our results indicate that the structure of prompts significantly impacts the performance of GPT models and should be considered when designing them.}
+}
+
 @article{Amgoud2006FinalReviewReport,
   title = {Final {{Review}} and {{Report}} on {{Formal Argumentation System}}},
   author = {Amgoud, Leila and Bodenstaff, L. and Caminada, M. and McBurney, P. and Parsons, Simon and Prakken, Henry and Veenen, J. and Vreeswijk, Gerard},
@@ -502,6 +513,21 @@
   publisher = {{Association for Computational Linguistics}},
   address = {{Sofia, Bulgaria}},
   urldate = {2020-10-16}
+}
+
+@inproceedings{Bao2022GenerativeModelEndtoEnd,
+  title = {A {{Generative Model}} for {{End-to-End Argument Mining}} with {{Reconstructed Positional Encoding}} and {{Constrained Pointer Mechanism}}},
+  booktitle = {Proceedings of the 2022 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
+  author = {Bao, Jianzhu and He, Yuhang and Sun, Yang and Liang, Bin and Du, Jiachen and Qin, Bing and Yang, Min and Xu, Ruifeng},
+  editor = {Goldberg, Yoav and Kozareva, Zornitsa and Zhang, Yue},
+  year = {2022},
+  month = dec,
+  pages = {10437--10449},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Abu Dhabi, United Arab Emirates}},
+  doi = {10.18653/v1/2022.emnlp-main.713},
+  urldate = {2024-02-10},
+  abstract = {Argument mining (AM) is a challenging task as it requires recognizing the complex argumentation structures involving multiple subtasks. To handle all subtasks of AM in an end-to-end fashion, previous works generally transform AM into a dependency parsing task. However, such methods largely require complex pre- and post-processing to realize the task transformation. In this paper, we investigate the end-to-end AM task from a novel perspective by proposing a generative framework, in which the expected outputs of AM are framed as a simple target sequence. Then, we employ a pre-trained sequence-to-sequence language model with a constrained pointer mechanism (CPM) to model the clues for all the subtasks of AM in the light of the target sequence. Furthermore, we devise a reconstructed positional encoding (RPE) to alleviate the order biases induced by the autoregressive generation paradigm. Experimental results show that our proposed framework achieves new state-of-the-art performance on two AM benchmarks.}
 }
 
 @misc{Bargnesi2014Jsongraphspecification,
@@ -834,8 +860,8 @@
   archiveprefix = {arxiv}
 }
 
-@inproceedings{Biertz2022QualiAssistantExtractingQualitative,
-  title = {{{QualiAssistant}}: {{Extracting Qualitative Structures}} from {{Texts}}},
+@inproceedings{Biertz2022QualiAssistantExtractingQualia,
+  title = {{{QualiAssistant}}: {{Extracting Qualia Structures}} from {{Texts}}},
   shorttitle = {{{QualiAssistant}}},
   booktitle = {Proceedings of the 9th {{Workshop}} on {{Argument Mining}}},
   author = {Biertz, Manuel and Dumani, Lorik and Nilles, Markus and Metzler, Bj{\"o}rn and Schenkel, Ralf},
@@ -1606,6 +1632,21 @@
   langid = {english}
 }
 
+@misc{Chen2023ExploringPotentialLarge,
+  title = {Exploring the {{Potential}} of {{Large Language Models}} in {{Computational Argumentation}}},
+  author = {Chen, Guizhen and Cheng, Liying and Tuan, Luu Anh and Bing, Lidong},
+  year = {2023},
+  month = nov,
+  number = {arXiv:2311.09022},
+  eprint = {2311.09022},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2311.09022},
+  urldate = {2024-02-10},
+  abstract = {Computational argumentation has become an essential tool in various fields, including artificial intelligence, law, and public policy. It is an emerging research field in natural language processing (NLP) that attracts increasing attention. Research on computational argumentation mainly involves two types of tasks: argument mining and argument generation. As large language models (LLMs) have demonstrated strong abilities in understanding context and generating natural language, it is worthwhile to evaluate the performance of LLMs on various computational argumentation tasks. This work aims to embark on an assessment of LLMs, such as ChatGPT, Flan models and LLaMA2 models, under zero-shot and few-shot settings within the realm of computational argumentation. We organize existing tasks into 6 main classes and standardise the format of 14 open-sourced datasets. In addition, we present a new benchmark dataset on counter speech generation, that aims to holistically evaluate the end-to-end performance of LLMs on argument mining and argument generation. Extensive experiments show that LLMs exhibit commendable performance across most of these datasets, demonstrating their capabilities in the field of argumentation. We also highlight the limitations in evaluating computational argumentation and provide suggestions for future research directions in this field.},
+  archiveprefix = {arxiv}
+}
+
 @inproceedings{Cheng2010PredictingPartialOrders,
   title = {Predicting {{Partial Orders}}: {{Ranking}} with {{Abstention}}},
   booktitle = {Machine {{Learning}} and {{Knowledge Discovery}} in {{Databases}}, {{European Conference}}, {{ECML PKDD}} 2010, {{Barcelona}}, {{Spain}}, {{September}} 20-24, 2010, {{Proceedings}}, {{Part I}}},
@@ -1887,6 +1928,18 @@
   isbn = {978-1-4503-1086-4}
 }
 
+@misc{Dai2017NewsArticles,
+  title = {News {{Articles}}},
+  author = {Dai, Tianru},
+  year = {2017},
+  month = mar,
+  publisher = {{Harvard Dataverse}},
+  doi = {10.7910/DVN/GMFCTR},
+  urldate = {2024-02-10},
+  abstract = {This is a reusable publicly-available dataset for ``media bias'' studies. The content of this dataset is publish date, title, subtitle and text for 3824 news articles. These articles are collected by a project within 3 months from December of 2016 to march 2017. The source of these news articles are from ABC News, CNN news, The Huffington Post, BBC News, DW News, TASS News, Al Jazeera News, China Daily and RTE News. All of them are collected by using RSS feeds of each news sites. (2017-3-31)},
+  langid = {english}
+}
+
 @article{Davis2015CommonsenseReasoningCommonsense,
   title = {Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence},
   author = {Davis, Ernest and Marcus, Gary},
@@ -2007,6 +2060,22 @@
   primaryclass = {cs},
   urldate = {2019-09-27},
   abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+  archiveprefix = {arxiv}
+}
+
+@misc{DeWynter2023WishHaveArgument,
+  title = {I {{Wish}} to {{Have}} an {{Argument}}: {{Argumentative Reasoning}} in {{Large Language Models}}},
+  shorttitle = {I {{Wish}} to {{Have}} an {{Argument}}},
+  author = {{de Wynter}, Adrian and Yuan, Tommy},
+  year = {2023},
+  month = sep,
+  number = {arXiv:2309.16938},
+  eprint = {2309.16938},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2309.16938},
+  urldate = {2024-02-10},
+  abstract = {We evaluate the ability of contemporary large language models (LLMs) to perform argumentative reasoning. We frame our experiments in terms of the argument mining (AM) and argument pair extraction (APE) tasks, and evaluate their ability to perform reasoning at increasing levels of abstraction in the input and output representations (e.g., arbitrary label sets, semantic graphs). We find that, although LLMs are able to match or surpass the state-of-the-art in AM and APE, their argumentative reasoning performance is very dependent on the input and output representation. We also find an "exemplar effect", where too many exemplars increasingly become detrimental for task performance, and about 4-5 being the optimal amount. Neither result extends to chain-of-thought (CoT) prompting: we find the exemplar effect to be nullified, and our results suggest that CoT allows for better performance under ill-conditioned problems. We hope that the work reported contributes to the improvement of argumentative reasoning in LLMs.},
   archiveprefix = {arxiv}
 }
 
@@ -2613,6 +2682,21 @@
   abstract = {Analogical reasoning is a kind of reasoning that is based on finding a common relational system between two situations, exemplars, or domains. When such a common system can be found, then what is known about one situation can be used to infer new information about the other. The basic intuition behind analogical reasoning is that when there are substantial similarities between situations, there are likely to be further similarities. This article describes the processes involved in analogical reasoning, reviews seminal research and recent developments in the field, and proposes new avenues of investigation.},
   isbn = {978-0-08-096180-4},
   langid = {english}
+}
+
+@article{Gilardi2023ChatGPTOutperformsCrowd,
+  title = {{{ChatGPT}} Outperforms Crowd Workers for Text-Annotation Tasks},
+  author = {Gilardi, Fabrizio and Alizadeh, Meysam and Kubli, Ma{\"e}l},
+  year = {2023},
+  month = jul,
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {120},
+  number = {30},
+  pages = {e2305016120},
+  publisher = {{Proceedings of the National Academy of Sciences}},
+  doi = {10.1073/pnas.2305016120},
+  urldate = {2024-02-10},
+  abstract = {Many NLP applications require manual text annotations for a variety of tasks, notably to train classifiers or evaluate the performance of unsupervised models. Depending on the size and degree of complexity, the tasks may be conducted by crowd workers on platforms such as MTurk as well as trained annotators, such as research assistants. Using four samples of tweets and news articles (n = 6,183), we show that ChatGPT outperforms crowd workers for several annotation tasks, including relevance, stance, topics, and frame detection. Across the four datasets, the zero-shot accuracy of ChatGPT exceeds that of crowd workers by about 25 percentage points on average, while ChatGPT's intercoder agreement exceeds that of both crowd workers and trained annotators for all tasks. Moreover, the per-annotation cost of ChatGPT is less than \$0.003{\textemdash}about thirty times cheaper than MTurk. These results demonstrate the potential of large language models to drastically increase the efficiency of text classification.}
 }
 
 @article{Gleize2019AreYouConvinced,
@@ -4963,6 +5047,14 @@
   archiveprefix = {OpenAI}
 }
 
+@misc{Radford2019LanguageModelsAre,
+  title = {Language {{Models}} Are {{Unsupervised Multitask Learners}}},
+  author = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+  year = {2019},
+  abstract = {Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspecific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. When conditioned on a document plus questions, the answers generated by the language model reach 55 F1 on the CoQA dataset - matching or exceeding the performance of 3 out of 4 baseline systems without using the 127,000+ training examples. The capacity of the language model is essential to the success of zero-shot task transfer and increasing it improves performance in a log-linear fashion across tasks. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.},
+  langid = {english}
+}
+
 @inproceedings{Rahimi2015IncorporatingCoherenceTopics,
   title = {Incorporating {{Coherence}} of {{Topics}} as a {{Criterion}} in {{Automatic Response-to-Text Assessment}} of the {{Organization}} of {{Writing}}},
   booktitle = {Proceedings of the {{Tenth Workshop}} on {{Innovative Use}} of {{NLP}} for {{Building Educational Applications}}},
@@ -5284,6 +5376,39 @@
   pages = {109--126}
 }
 
+@inproceedings{Rocha2023AssessingGoodBad,
+  title = {Assessing {{Good}}, {{Bad}} and {{Ugly Arguments Generated}} by {{ChatGPT}}: A {{New Dataset}}, Its {{Methodology}} and {{Associated Tasks}}},
+  shorttitle = {Assessing {{Good}}, {{Bad}} and {{Ugly Arguments Generated}} by {{ChatGPT}}},
+  booktitle = {Progress in {{Artificial Intelligence}}},
+  author = {Rocha, Victor Hugo Nascimento and Silveira, Igor Cataneo and Pirozelli, Paulo and Mau{\'a}, Denis Deratani and Cozman, Fabio Gagliardi},
+  editor = {Moniz, Nuno and Vale, Zita and Cascalho, Jos{\'e} and Silva, Catarina and Sebasti{\~a}o, Raquel},
+  year = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {428--440},
+  publisher = {{Springer Nature Switzerland}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-031-49008-8_34},
+  abstract = {The recent success of Large Language Models (LLMs) has sparked concerns about their potential to spread misinformation. As a result, there is a pressing need for tools to identify ``fake arguments'' generated by such models. To create these tools, examples of texts generated by LLMs are needed. This paper introduces a methodology to obtain good, bad and ugly arguments from argumentative essays produced by ChatGPT, OpenAI's LLM. We then describe a novel dataset containing a set of diverse arguments, ArGPT. We assess the effectiveness of our dataset and establish baselines for several argumentation-related tasks. Finally, we show that the artificially generated data relates well to human argumentation and thus is useful as a tool to train and test systems for the defined tasks.},
+  isbn = {978-3-031-49008-8},
+  langid = {english}
+}
+
+@misc{Rocha2023CrossGenreArgumentMining,
+  title = {Cross-{{Genre Argument Mining}}: {{Can Language Models Automatically Fill}} in {{Missing Discourse Markers}}?},
+  shorttitle = {Cross-{{Genre Argument Mining}}},
+  author = {Rocha, Gil and Cardoso, Henrique Lopes and Belouadi, Jonas and Eger, Steffen},
+  year = {2023},
+  month = jun,
+  number = {arXiv:2306.04314},
+  eprint = {2306.04314},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2306.04314},
+  urldate = {2024-02-10},
+  abstract = {Available corpora for Argument Mining differ along several axes, and one of the key differences is the presence (or absence) of discourse markers to signal argumentative content. Exploring effective ways to use discourse markers has received wide attention in various discourse parsing tasks, from which it is well-known that discourse markers are strong indicators of discourse relations. To improve the robustness of Argument Mining systems across different genres, we propose to automatically augment a given text with discourse markers such that all relations are explicitly signaled. Our analysis unveils that popular language models taken out-of-the-box fail on this task; however, when fine-tuned on a new heterogeneous dataset that we construct (including synthetic and real examples), they perform considerably better. We demonstrate the impact of our approach on an Argument Mining downstream task, evaluated on different corpora, showing that language models can be trained to automatically fill in discourse markers across different corpora, improving the performance of a downstream model in some, but not all, cases. Our proposed approach can further be employed as an assistive tool for better discourse understanding.},
+  archiveprefix = {arxiv}
+}
+
 @incollection{Rose2010AutomaticKeywordExtraction,
   title = {Automatic {{Keyword Extraction}} from {{Individual Documents}}},
   booktitle = {Text {{Mining}}},
@@ -5386,6 +5511,17 @@
   abstract = {The application of the latest Natural Language Processing breakthroughs in computational argumentation has shown promising results, which have raised the interest in this area of research. However, the available corpora with argumentative annotations are often limited to a very specific purpose or are not of adequate size to take advantage of state-of-the-art deep learning techniques (e.g., deep neural networks). In this paper, we present VivesDebate, a large, richly annotated and versatile professional debate corpus for computational argumentation research. The corpus has been created from 29 transcripts of a debate tournament in Catalan and has been machine-translated into Spanish and English. The annotation contains argumentative propositions, argumentative relations, debate interactions and professional evaluations of the arguments and argumentation. The presented corpus can be useful for research on a heterogeneous set of computational argumentation underlying tasks such as Argument Mining, Argument Analysis, Argument Evaluation or Argument Generation, among others. All this makes VivesDebate a valuable resource for computational argumentation research within the context of massive corpora aimed at Natural Language Processing tasks.},
   copyright = {http://creativecommons.org/licenses/by/3.0/},
   langid = {english}
+}
+
+@mastersthesis{Sahitaj2022InvestigatingExplainableArtificial,
+  title = {Investigating {{Explainable Artificial Intelligence}} and {{Interaction}} for a {{Novel Argument Graph Mining System}}},
+  author = {Sahitaj, Premtim},
+  year = {2022},
+  month = aug,
+  address = {{Trier}},
+  abstract = {Humans search for arguments to discuss ideas, influence others, or recommend adequate actions with the goal of persuasion. Current Web search engines primarily operate on the textual level and only retrieve individual facts which must be tediously assembled into a structured argument by hand. Anticipated argumentation machines (AM) execute queries on the additional structured level and retrieve argument structures assembled into graphs [8, 89]. Argument mining or the annotation of argument graph structures is a necessary preceding step towards the realization of AMs. Manual annotation is expensive, while automated annotation is error-prone. Current automated argument mining systems do not perform well [56, 103], do not allow user intervention, and lack transparency. The complexity of mining natural language arguments and the scarcity of information about the end-to-end mining process, necessitate an interactive hybrid approach that is faster than manual curation and more accurate than automated curation [122]. An interactive argument mining system requires informed user decisions which can only be based on explanations about the argument mining process and the intermediate results. With this thesis we target the conceptualization of an interactive and explainable argument mining system for the purpose of improving automated annotation results. We identify three aspects to this problem setting. First, we formulate the argument mining process tasks to integrate novel machine learning solution approaches while considering recent progress in the field of argument mining. Our learning-based approaches for the tasks of argument extraction, relation classification, and major claim detection suggest a significant improvement in the field of argument mining, which demonstrates the importance of our selected strategies. Then, we describe an interactive argument mining system that encapsulates the tasks of the argument mining process for the integration of users as a final control authority. Relevant explanation characteristics are captured and utilized in an target audience interview to elicit trends about explanations requirements from the participants. Based on these user insights we conceptualize task-specific and model-agnostic explanations which are primarily build upon the categories of explanation by visualization, local change, example, simplification, and feature relevance. Finally, the target audience feedback is collected and evaluated against our proposed explanation concept where we identify encouraging support for the majority of our ideas.},
+  langid = {english},
+  school = {Trier University}
 }
 
 @article{Salton1988TermweightingApproachesAutomatic,
@@ -6446,6 +6582,22 @@
   archiveprefix = {arxiv}
 }
 
+@misc{Wang2023ChatGPTGoodNLG,
+  title = {Is {{ChatGPT}} a {{Good NLG Evaluator}}? {{A Preliminary Study}}},
+  shorttitle = {Is {{ChatGPT}} a {{Good NLG Evaluator}}?},
+  author = {Wang, Jiaan and Liang, Yunlong and Meng, Fandong and Sun, Zengkui and Shi, Haoxiang and Li, Zhixu and Xu, Jinan and Qu, Jianfeng and Zhou, Jie},
+  year = {2023},
+  month = oct,
+  number = {arXiv:2303.04048},
+  eprint = {2303.04048},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2303.04048},
+  urldate = {2024-02-10},
+  abstract = {Recently, the emergence of ChatGPT has attracted wide attention from the computational linguistics community. Many prior studies have shown that ChatGPT achieves remarkable performance on various NLP tasks in terms of automatic evaluation metrics. However, the ability of ChatGPT to serve as an evaluation metric is still underexplored. Considering assessing the quality of natural language generation (NLG) models is an arduous task and NLG metrics notoriously show their poor correlation with human judgments, we wonder whether ChatGPT is a good NLG evaluation metric. In this report, we provide a preliminary meta-evaluation on ChatGPT to show its reliability as an NLG metric. In detail, we regard ChatGPT as a human evaluator and give task-specific (e.g., summarization) and aspect-specific (e.g., relevance) instruction to prompt ChatGPT to evaluate the generated results of NLG models. We conduct experiments on five NLG meta-evaluation datasets (including summarization, story generation and data-to-text tasks). Experimental results show that compared with previous automatic metrics, ChatGPT achieves state-of-the-art or competitive correlation with human judgments in most cases. In addition, we find that the effectiveness of the ChatGPT evaluator might be influenced by the creation method of the meta-evaluation datasets. For the meta-evaluation datasets which are created greatly depending on the reference and thus are biased, the ChatGPT evaluator might lose its effectiveness. We hope our preliminary study could prompt the emergence of a general-purposed reliable NLG metric.},
+  archiveprefix = {arxiv}
+}
+
 @inproceedings{Weber2004CBRFlowEnablingAdaptive,
   title = {{{CBRFlow}}: {{Enabling Adaptive Workflow Management Through Conversational Case-Based Reasoning}}},
   shorttitle = {{{CBRFlow}}},
@@ -6490,6 +6642,24 @@
   address = {{Nantes, France}},
   doi = {10.3115/992424.992434},
   abstract = {In this paper, the authors address the significance and complexity of tokenization, the beginning step of NLP. Notions of word and token are discussed and defined from the viewpoints of lexicography and pragmatic implementation, respectively. Automatic segmentation of Chinese words is presented as an illustration of tokenization. Practical approaches to identification of compound tokens in English, such as idioms, phrasal verbs and fixed expressions, are developed.}
+}
+
+@inproceedings{Weidmann2023CLEARNESSCoreferenceResolution,
+  title = {{{CLEARNESS}}: {{Coreference Resolution}} for {{Generating}} and {{Ranking Arguments Extracted}} from {{Debate Portals}} for {{Queries}}},
+  shorttitle = {{{CLEARNESS}}},
+  booktitle = {Lernen, {{Wissen}}, {{Daten}}, {{Analysen}} ({{LWDA}}) {{Conference Proceedings}}},
+  author = {Weidmann, Johannes and Dumani, Lorik and Schenkel, Ralf},
+  editor = {Leyer, Michael and Wichmann, Johannes},
+  year = {2023},
+  month = oct,
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {3630},
+  pages = {161--174},
+  publisher = {{CEUR}},
+  address = {{Marburg, Germany}},
+  issn = {1613-0073},
+  urldate = {2024-02-09},
+  langid = {english}
 }
 
 @inproceedings{Wells2020DatastoresArgumentationData,
@@ -6777,6 +6947,22 @@
   issn = {1558-2191},
   doi = {10.1109/TKDE.2016.2610428},
   abstract = {This paper presents a method for measuring the semantic similarity between concepts in Knowledge Graphs (KGs) such as WordNet and DBpedia. Previous work on semantic similarity methods have focused on either the structure of the semantic network between concepts (e.g., path length and depth), or only on the Information Content (IC) of concepts. We propose a semantic similarity method, namely wpath, to combine these two approaches, using IC to weight the shortest path length between concepts. Conventional corpus-based IC is computed from the distributions of concepts over textual corpus, which is required to prepare a domain corpus containing annotated concepts and has high computational cost. As instances are already extracted from textual corpus and annotated by concepts in KGs, graph-based IC is proposed to compute IC based on the distributions of concepts over instances. Through experiments performed on well known word similarity datasets, we show that the wpath semantic similarity method has produced a statistically significant improvement over other semantic similarity methods. Moreover, in a real category classification evaluation, the wpath method has shown the best performance in terms of accuracy and F score.}
+}
+
+@misc{Zhu2023CanChatGPTReproduce,
+  title = {Can {{ChatGPT Reproduce Human-Generated Labels}}? {{A Study}} of {{Social Computing Tasks}}},
+  shorttitle = {Can {{ChatGPT Reproduce Human-Generated Labels}}?},
+  author = {Zhu, Yiming and Zhang, Peixian and Haq, Ehsan-Ul and Hui, Pan and Tyson, Gareth},
+  year = {2023},
+  month = apr,
+  number = {arXiv:2304.10145},
+  eprint = {2304.10145},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2304.10145},
+  urldate = {2024-02-10},
+  abstract = {The release of ChatGPT has uncovered a range of possibilities whereby large language models (LLMs) can substitute human intelligence. In this paper, we seek to understand whether ChatGPT has the potential to reproduce human-generated label annotations in social computing tasks. Such an achievement could significantly reduce the cost and complexity of social computing research. As such, we use ChatGPT to relabel five seminal datasets covering stance detection (2x), sentiment analysis, hate speech, and bot detection. Our results highlight that ChatGPT does have the potential to handle these data annotation tasks, although a number of challenges remain. ChatGPT obtains an average accuracy 0.609. Performance is highest for the sentiment analysis dataset, with ChatGPT correctly annotating 64.9\% of tweets. Yet, we show that performance varies substantially across individual labels. We believe this work can open up new lines of analysis and act as a basis for future research into the exploitation of ChatGPT for human annotation tasks.},
+  archiveprefix = {arxiv}
 }
 
 @article{Zwick1988AnotherLookInterrater,
