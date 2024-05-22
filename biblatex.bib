@@ -222,6 +222,20 @@
   eventtitle = {{{FinNLP}} 2022}
 }
 
+@online{Allen-Zhu2024PhysicsLanguageModels,
+  title = {Physics of {{Language Models}}: {{Part}} 3.3, {{Knowledge Capacity Scaling Laws}}},
+  shorttitle = {Physics of {{Language Models}}},
+  author = {Allen-Zhu, Zeyuan and Li, Yuanzhi},
+  date = {2024-04-08},
+  eprint = {2404.05405},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2404.05405},
+  urldate = {2024-04-09},
+  abstract = {Scaling laws describe the relationship between the size of language models and their capabilities. Unlike prior studies that evaluate a model's capability via loss or benchmarks, we estimate the number of knowledge bits a model stores. We focus on factual knowledge represented as tuples, such as (USA, capital, Washington D.C.) from a Wikipedia page. Through multiple controlled datasets, we establish that language models can and only can store 2 bits of knowledge per parameter, even when quantized to int8, and such knowledge can be flexibly extracted for downstream applications. Consequently, a 7B model can store 14B bits of knowledge, surpassing the English Wikipedia and textbooks combined based on our estimation. More broadly, we present 12 results on how (1) training duration, (2) model architecture, (3) quantization, (4) sparsity constraints such as MoE, and (5) data signal-to-noise ratio affect a model's knowledge storage capacity. Notable insights include: * The GPT-2 architecture, with rotary embedding, matches or even surpasses LLaMA/Mistral architectures in knowledge storage, particularly over shorter training durations. This arises because LLaMA/Mistral uses GatedMLP, which is less stable and harder to train. * Prepending training data with domain names (e.g., wikipedia.org) significantly increases a model's knowledge capacity. Language models can autonomously identify and prioritize domains rich in knowledge, optimizing their storage capacity.},
+  pubstate = {preprint}
+}
+
 @incollection{Allen2003NaturalLanguageProcessing,
   title = {Natural Language Processing},
   booktitle = {Encyclopedia of {{Computer Science}}},
@@ -493,6 +507,21 @@
   langid = {english}
 }
 
+@online{Baek2024ResearchAgentIterativeResearch,
+  title = {{{ResearchAgent}}: {{Iterative Research Idea Generation}} over {{Scientific Literature}} with {{Large Language Models}}},
+  shorttitle = {{{ResearchAgent}}},
+  author = {Baek, Jinheon and Jauhar, Sujay Kumar and Cucerzan, Silviu and Hwang, Sung Ju},
+  date = {2024-04-11},
+  eprint = {2404.07738},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2404.07738},
+  url = {http://arxiv.org/abs/2404.07738},
+  urldate = {2024-04-16},
+  abstract = {Scientific Research, vital for improving human life, is hindered by its inherent complexity, slow pace, and the need for specialized experts. To enhance its productivity, we propose a ResearchAgent, a large language model-powered research idea writing agent, which automatically generates problems, methods, and experiment designs while iteratively refining them based on scientific literature. Specifically, starting with a core paper as the primary focus to generate ideas, our ResearchAgent is augmented not only with relevant publications through connecting information over an academic graph but also entities retrieved from an entity-centric knowledge store based on their underlying concepts, mined and shared across numerous papers. In addition, mirroring the human approach to iteratively improving ideas with peer discussions, we leverage multiple ReviewingAgents that provide reviews and feedback iteratively. Further, they are instantiated with human preference-aligned large language models whose criteria for evaluation are derived from actual human judgments. We experimentally validate our ResearchAgent on scientific publications across multiple disciplines, showcasing its effectiveness in generating novel, clear, and valid research ideas based on human and model-based evaluation results.},
+  pubstate = {preprint}
+}
+
 @article{Balakrishnan2014StemmingLemmatizationComparison,
   title = {Stemming and {{Lemmatization}}: {{A Comparison}} of {{Retrieval Performances}}},
   shorttitle = {Stemming and {{Lemmatization}}},
@@ -694,8 +723,8 @@
 @book{Bergmann2002ExperienceManagement,
   title = {Experience {{Management}}},
   editor = {Bergmann, Ralph},
-  editorb = {Goos, Gerhard and Hartmanis, Juris and Van Leeuwen, Jan and Carbonell, Jaime G. and Siekmann, Jörg},
-  editorbtype = {redactor},
+  editora = {Goos, Gerhard and Hartmanis, Juris and Van Leeuwen, Jan and Carbonell, Jaime G. and Siekmann, Jörg},
+  editoratype = {redactor},
   date = {2002},
   series = {Lecture {{Notes}} in {{Computer Science}}},
   volume = {2432},
@@ -2049,6 +2078,20 @@
   langid = {english}
 }
 
+@online{Darcet2024VisionTransformersNeed,
+  title = {Vision {{Transformers Need Registers}}},
+  author = {Darcet, Timothée and Oquab, Maxime and Mairal, Julien and Bojanowski, Piotr},
+  date = {2024-04-12},
+  eprint = {2309.16588},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2309.16588},
+  url = {http://arxiv.org/abs/2309.16588},
+  urldate = {2024-05-12},
+  abstract = {Transformers have recently emerged as a powerful tool for learning visual representations. In this paper, we identify and characterize artifacts in feature maps of both supervised and self-supervised ViT networks. The artifacts correspond to high-norm tokens appearing during inference primarily in low-informative background areas of images, that are repurposed for internal computations. We propose a simple yet effective solution based on providing additional tokens to the input sequence of the Vision Transformer to fill that role. We show that this solution fixes that problem entirely for both supervised and self-supervised models, sets a new state of the art for self-supervised visual models on dense visual prediction tasks, enables object discovery methods with larger models, and most importantly leads to smoother feature maps and attention maps for downstream visual processing.},
+  pubstate = {preprint}
+}
+
 @article{Davis2015CommonsenseReasoningCommonsense,
   title = {Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence},
   author = {Davis, Ernest and Marcus, Gary},
@@ -2506,6 +2549,23 @@
   eventtitle = {{{EMNLP}}}
 }
 
+@inproceedings{Eden2023WelcomeRealWorld,
+  title = {Welcome to the {{Real World}}: {{Efficient}}, {{Incremental}} and {{Scalable Key Point Analysis}}},
+  shorttitle = {Welcome to the {{Real World}}},
+  booktitle = {Proceedings of the 2023 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}: {{Industry Track}}},
+  author = {Eden, Lilach and Kantor, Yoav and Orbach, Matan and Katz, Yoav and Slonim, Noam and Bar-Haim, Roy},
+  editor = {Wang, Mingxuan and Zitouni, Imed},
+  date = {2023-12},
+  pages = {483--491},
+  publisher = {Association for Computational Linguistics},
+  location = {Singapore},
+  doi = {10.18653/v1/2023.emnlp-industry.46},
+  url = {https://aclanthology.org/2023.emnlp-industry.46},
+  urldate = {2024-04-09},
+  abstract = {Key Point Analysis (KPA) is an emerging summarization framework, which extracts the main points from a collection of opinions, and quantifies their prevalence. It has been successfully applied to diverse types of data, including arguments, user reviews and survey responses. Despite the growing academic interest in KPA, little attention has been given to the practical challenges of implementing a KPA system in production. This work presents a deployed KPA system, which regularly serves multiple teams in our organization. We discuss the main challenges we faced while building a real-world KPA system, as well as the architecture and algorithmic improvements we developed to address these challenges. Specifically, we focus on efficient matching of sentences to key points, incremental processing, scalability and resiliency. The value of our contributions is demonstrated in an extensive set of experiments, over five existing and novel datasets. Finally, we describe several use cases of the deployed system, which illustrate its practical value.},
+  eventtitle = {{{EMNLP}} 2023}
+}
+
 @inproceedings{Eger2018CrosslingualArgumentationMining,
   title = {Cross-Lingual {{Argumentation Mining}}: {{Machine Translation}} (and a Bit of {{Projection}}) Is {{All You Need}}!},
   shorttitle = {Cross-Lingual {{Argumentation Mining}}},
@@ -2765,6 +2825,21 @@
   isbn = {978-1-4503-6934-3}
 }
 
+@online{Fu2023DecoderOnlyEncoderDecoderInterpreting,
+  title = {Decoder-{{Only}} or {{Encoder-Decoder}}? {{Interpreting Language Model}} as a {{Regularized Encoder-Decoder}}},
+  shorttitle = {Decoder-{{Only}} or {{Encoder-Decoder}}?},
+  author = {Fu, Zihao and Lam, Wai and Yu, Qian and So, Anthony Man-Cho and Hu, Shengding and Liu, Zhiyuan and Collier, Nigel},
+  date = {2023-04-08},
+  eprint = {2304.04052},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2304.04052},
+  url = {http://arxiv.org/abs/2304.04052},
+  urldate = {2024-04-29},
+  abstract = {The sequence-to-sequence (seq2seq) task aims at generating the target sequence based on the given input source sequence. Traditionally, most of the seq2seq task is resolved by the Encoder-Decoder framework which requires an encoder to encode the source sequence and a decoder to generate the target text. Recently, a bunch of new approaches have emerged that apply decoder-only language models directly to the seq2seq task. Despite the significant advancements in applying language models to the seq2seq task, there is still a lack of thorough analysis on the effectiveness of the decoder-only language model architecture. This paper aims to address this gap by conducting a detailed comparison between the encoder-decoder architecture and the decoder-only language model framework through the analysis of a regularized encoder-decoder structure. This structure is designed to replicate all behaviors in the classical decoder-only language model but has an encoder and a decoder making it easier to be compared with the classical encoder-decoder structure. Based on the analysis, we unveil the attention degeneration problem in the language model, namely, as the generation step number grows, less and less attention is focused on the source sequence. To give a quantitative understanding of this problem, we conduct a theoretical sensitivity analysis of the attention output with respect to the source input. Grounded on our analysis, we propose a novel partial attention language model to solve the attention degeneration problem. Experimental results on machine translation, summarization, and data-to-text generation tasks support our analysis and demonstrate the effectiveness of our proposed model.},
+  pubstate = {preprint}
+}
+
 @online{Fu2024FeatUpModelAgnosticFramework,
   title = {{{FeatUp}}: {{A Model-Agnostic Framework}} for {{Features}} at {{Any Resolution}}},
   shorttitle = {{{FeatUp}}},
@@ -2981,8 +3056,8 @@
 @book{Guarino2009HandbookOntologies,
   title = {Handbook on {{Ontologies}}},
   author = {Guarino, Nicola and Oberle, Daniel and Staab, Steffen},
-  editorb = {Staab, Steffen and Studer, Rudi},
-  editorbtype = {redactor},
+  editor = {Staab, Steffen and Studer, Rudi},
+  editortype = {redactor},
   date = {2009-01-01},
   series = {What {{Is}} an {{Ontology}}},
   publisher = {Springer Berlin Heidelberg},
@@ -3163,7 +3238,7 @@
   doi = {10.48550/arXiv.2403.04642},
   url = {http://arxiv.org/abs/2403.04642},
   urldate = {2024-03-28},
-  abstract = {Reinforcement Learning from Human Feedback (\textbackslash textbf\{RLHF\}) has emerged as a dominant approach for aligning LLM outputs with human preferences. Inspired by the success of RLHF, we study the performance of multiple algorithms that learn from feedback (Expert Iteration, Proximal Policy Optimization (\textbackslash textbf\{PPO\}), Return-Conditioned RL) on improving LLM reasoning capabilities. We investigate both sparse and dense rewards provided to the LLM both heuristically and via a learned reward model. We additionally start from multiple model sizes and initializations both with and without supervised fine-tuning (\textbackslash textbf\{SFT\}) data. Overall, we find all algorithms perform comparably, with Expert Iteration performing best in most cases. Surprisingly, we find the sample complexity of Expert Iteration is similar to that of PPO, requiring at most on the order of \$10\^{}6\$ samples to converge from a pretrained checkpoint. We investigate why this is the case, concluding that during RL training models fail to explore significantly beyond solutions already produced by SFT models. Additionally, we discuss a trade off between maj@1 and pass@96 metric performance during SFT training and how conversely RL training improves both simultaneously. We then conclude by discussing the implications of our findings for RLHF and the future role of RL in LLM fine-tuning.},
+  abstract = {Reinforcement Learning from Human Feedback (\textbackslash textbf\{RLHF\}) has emerged as a dominant approach for aligning LLM outputs with human preferences. Inspired by the success of RLHF, we study the performance of multiple algorithms that learn from feedback (Expert Iteration, Proximal Policy Optimization (\textbackslash textbf\{PPO\}), Return-Conditioned RL) on improving LLM reasoning capabilities. We investigate both sparse and dense rewards provided to the LLM both heuristically and via a learned reward model. We additionally start from multiple model sizes and initializations both with and without supervised fine-tuning (\textbackslash textbf\{SFT\}) data. Overall, we find all algorithms perform comparably, with Expert Iteration performing best in most cases. Surprisingly, we find the sample complexity of Expert Iteration is similar to that of PPO, requiring at most on the order of \$10\textasciicircum 6\$ samples to converge from a pretrained checkpoint. We investigate why this is the case, concluding that during RL training models fail to explore significantly beyond solutions already produced by SFT models. Additionally, we discuss a trade off between maj@1 and pass@96 metric performance during SFT training and how conversely RL training improves both simultaneously. We then conclude by discussing the implications of our findings for RLHF and the future role of RL in LLM fine-tuning.},
   pubstate = {preprint}
 }
 
@@ -3179,6 +3254,23 @@
   abstract = {Causal knowledge is seen as one of the key ingredients to advance artificial intelligence. Yet, few knowledge bases comprise causal knowledge to date, possibly due to significant efforts required for validation. Notwithstanding this challenge, we compile CauseNet, 1 a large-scale knowledge base of claimed causal relations between causal concepts. By extraction from different semi- and unstructured web sources, we collect more than 11 million causal relations with an estimated extraction precision of 83\% and construct the first large-scale and open-domain causality graph. We analyze the graph to gain insights about causal beliefs expressed on the web and we demonstrate its benefits in basic causal question answering. Future work may use the graph for causal reasoning, computational argumentation, multi-hop question answering, and more.},
   isbn = {978-1-4503-6859-9},
   langid = {english}
+}
+
+@inproceedings{Heinisch2023ArchitecturalSweetSpots,
+  title = {Architectural {{Sweet Spots}} for {{Modeling Human Label Variation}} by the {{Example}} of {{Argument Quality}}: {{It}}'s {{Best}} to {{Relate Perspectives}}!},
+  shorttitle = {Architectural {{Sweet Spots}} for {{Modeling Human Label Variation}} by the {{Example}} of {{Argument Quality}}},
+  booktitle = {Proceedings of the 2023 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
+  author = {Heinisch, Philipp and Orlikowski, Matthias and Romberg, Julia and Cimiano, Philipp},
+  editor = {Bouamor, Houda and Pino, Juan and Bali, Kalika},
+  date = {2023-12},
+  pages = {11138--11154},
+  publisher = {Association for Computational Linguistics},
+  location = {Singapore},
+  doi = {10.18653/v1/2023.emnlp-main.687},
+  url = {https://aclanthology.org/2023.emnlp-main.687},
+  urldate = {2024-04-09},
+  abstract = {Many annotation tasks in natural language processing are highly subjective in that there can be different valid and justified perspectives on what is a proper label for a given example. This also applies to the judgment of argument quality, where the assignment of a single ground truth is often questionable. At the same time, there are generally accepted concepts behind argumentation that form a common ground. To best represent the interplay of individual and shared perspectives, we consider a continuum of approaches ranging from models that fully aggregate perspectives into a majority label to “share nothing”-architectures in which each annotator is considered in isolation from all other annotators. In between these extremes, inspired by models used in the field of recommender systems, we investigate the extent to which architectures that predict labels for single annotators but include layers that model the relations between different annotators are beneficial. By means of two tasks of argument quality classification (argument concreteness and validity/novelty of conclusions), we show that recommender architectures increase the averaged annotator-individual F1-scores up to 43\% over a majority-label model. Our findings indicate that approaches to subjectivity can benefit from relating individual perspectives.},
+  eventtitle = {{{EMNLP}} 2023}
 }
 
 @article{Hesse1959DefiningAnalogy,
@@ -3650,6 +3742,20 @@
   abstract = {A tool for interacting with argument corpora is proposed that will help users to explore and understand the reasoning structure of large-scale arguments, to more rapidly comprehend complex new problem domains. Arguments are structures of premises and conclusions that underpin rational reasoning processes. Within complex knowledge domains, especially if they are contentious, argument structures can become large and complex. Visualization tools have been developed that support argument analysts and help them to work with arguments. Until recently, arguments were manually analyzed from natural language text, or constructed from scratch, but new communication modes mean that increasing amounts of debate and the arguments therein can be captured digitally. Furthermore, new tools and techniques for argument mining are beginning to automate the process of extracting argument structure from natural language; leading to much larger argument datasets that present problems for the current generation of argument visualization tools. Additionally, individual argument analysts have different foci which can lead to increased complexity within datasets, and additional facets that argument visualizations should account for but do not. We propose a tool for interacting with argument corpora that enable users to explore and understand the reasoning structure of large-scale arguments. The tool will support a range of interactivity techniques and will help users to explore and analyse large-scale arguments, to more rapidly comprehend complex new problem domains.}
 }
 
+@online{Khosravi2024RelationalGraphConvolutional,
+  title = {Relational {{Graph Convolutional Networks}} for {{Sentiment Analysis}}},
+  author = {Khosravi, Asal and Rahmati, Zahed and Vefghi, Ali},
+  date = {2024-04-16},
+  eprint = {2404.13079},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2404.13079},
+  url = {http://arxiv.org/abs/2404.13079},
+  urldate = {2024-04-28},
+  abstract = {With the growth of textual data across online platforms, sentiment analysis has become crucial for extracting insights from user-generated content. While traditional approaches and deep learning models have shown promise, they cannot often capture complex relationships between entities. In this paper, we propose leveraging Relational Graph Convolutional Networks (RGCNs) for sentiment analysis, which offer interpretability and flexibility by capturing dependencies between data points represented as nodes in a graph. We demonstrate the effectiveness of our approach by using pre-trained language models such as BERT and RoBERTa with RGCN architecture on product reviews from Amazon and Digikala datasets and evaluating the results. Our experiments highlight the effectiveness of RGCNs in capturing relational information for sentiment analysis tasks.},
+  pubstate = {preprint}
+}
+
 @unpublished{Kim2015CharacterAwareNeuralLanguage,
   title = {Character-{{Aware Neural Language Models}}},
   author = {Kim, Yoon and Jernite, Yacine and Sontag, David and Rush, Alexander M.},
@@ -4040,7 +4146,7 @@
   doi = {10.48550/arXiv.2402.14083},
   url = {http://arxiv.org/abs/2402.14083},
   urldate = {2024-02-24},
-  abstract = {While Transformers have enabled tremendous progress in various application settings, such architectures still lag behind traditional symbolic planners for solving complex decision making tasks. In this work, we demonstrate how to train Transformers to solve complex planning tasks and present Searchformer, a Transformer model that optimally solves previously unseen Sokoban puzzles 93.7\% of the time, while using up to 26.8\% fewer search steps than standard \$A\^{}*\$ search. Searchformer is an encoder-decoder Transformer model trained to predict the search dynamics of \$A\^{}*\$. This model is then fine-tuned via expert iterations to perform fewer search steps than \$A\^{}*\$ search while still generating an optimal plan. In our training method, \$A\^{}*\$'s search dynamics are expressed as a token sequence outlining when task states are added and removed into the search tree during symbolic planning. In our ablation studies on maze navigation, we find that Searchformer significantly outperforms baselines that predict the optimal plan directly with a 5-10\$\textbackslash times\$ smaller model size and a 10\$\textbackslash times\$ smaller training dataset. We also demonstrate how Searchformer scales to larger and more complex decision making tasks like Sokoban with improved percentage of solved tasks and shortened search dynamics.},
+  abstract = {While Transformers have enabled tremendous progress in various application settings, such architectures still lag behind traditional symbolic planners for solving complex decision making tasks. In this work, we demonstrate how to train Transformers to solve complex planning tasks and present Searchformer, a Transformer model that optimally solves previously unseen Sokoban puzzles 93.7\% of the time, while using up to 26.8\% fewer search steps than standard \$A\textasciicircum *\$ search. Searchformer is an encoder-decoder Transformer model trained to predict the search dynamics of \$A\textasciicircum *\$. This model is then fine-tuned via expert iterations to perform fewer search steps than \$A\textasciicircum *\$ search while still generating an optimal plan. In our training method, \$A\textasciicircum *\$'s search dynamics are expressed as a token sequence outlining when task states are added and removed into the search tree during symbolic planning. In our ablation studies on maze navigation, we find that Searchformer significantly outperforms baselines that predict the optimal plan directly with a 5-10\$\textbackslash times\$ smaller model size and a 10\$\textbackslash times\$ smaller training dataset. We also demonstrate how Searchformer scales to larger and more complex decision making tasks like Sokoban with improved percentage of solved tasks and shortened search dynamics.},
   pubstate = {preprint}
 }
 
@@ -4319,7 +4425,7 @@
   pages = {129--137},
   issn = {1557-9654},
   doi = {10.1109/TIT.1982.1056489},
-  abstract = {It has long been realized that in pulse-code modulation (PCM), with a given ensemble of signals to handle, the quantum values should be spaced more closely in the voltage regions where the signal amplitude is more likely to fall. It has been shown by Panter and Dite that, in the limit as the number of quanta becomes infinite, the asymptotic fractional density of quanta per unit voltage should vary as the one-third power of the probability density per unit voltage of signal amplitudes. In this paper the corresponding result for any finite number of quanta is derived; that is, necessary conditions are found that the quanta and associated quantization intervals of an optimum finite quantization scheme must satisfy. The optimization criterion used is that the average quantization noise power be a minimum. It is shown that the result obtained here goes over into the Panter and Dite result as the number of quanta become large. The optimum quautization schemes for2\^{}bquanta,b=1,2, \textbackslash cdots, 7, are given numerically for Gaussian and for Laplacian distribution of signal amplitudes.},
+  abstract = {It has long been realized that in pulse-code modulation (PCM), with a given ensemble of signals to handle, the quantum values should be spaced more closely in the voltage regions where the signal amplitude is more likely to fall. It has been shown by Panter and Dite that, in the limit as the number of quanta becomes infinite, the asymptotic fractional density of quanta per unit voltage should vary as the one-third power of the probability density per unit voltage of signal amplitudes. In this paper the corresponding result for any finite number of quanta is derived; that is, necessary conditions are found that the quanta and associated quantization intervals of an optimum finite quantization scheme must satisfy. The optimization criterion used is that the average quantization noise power be a minimum. It is shown that the result obtained here goes over into the Panter and Dite result as the number of quanta become large. The optimum quautization schemes for2\textasciicircum bquanta,b=1,2, \textbackslash cdots, 7, are given numerically for Gaussian and for Laplacian distribution of signal amplitudes.},
   eventtitle = {{{IEEE Transactions}} on {{Information Theory}}}
 }
 
@@ -4332,7 +4438,7 @@
   eprintclass = {cs},
   url = {http://arxiv.org/abs/1207.1114},
   urldate = {2019-01-07},
-  abstract = {We propose a fast approximate algorithm for large graph matching. A new projected fixed-point method is defined and a new doubly stochastic projection is adopted to derive the algorithm. Previous graph matching algorithms suffer from high computational complexity and therefore do not have good scalability with respect to graph size. For matching two weighted graphs of \$n\$ nodes, our algorithm has time complexity only \$O(n\^{}3)\$ per iteration and space complexity \$O(n\^{}2)\$. In addition to its scalability, our algorithm is easy to implement, robust, and able to match undirected weighted attributed graphs of different sizes. While the convergence rate of previous iterative graph matching algorithms is unknown, our algorithm is theoretically guaranteed to converge at a linear rate. Extensive experiments on large synthetic and real graphs (more than 1,000 nodes) were conducted to evaluate the performance of various algorithms. Results show that in most cases our proposed algorithm achieves better performance than previous state-of-the-art algorithms in terms of both speed and accuracy in large graph matching. In particular, with high accuracy, our algorithm takes only a few seconds (in a PC) to match two graphs of 1,000 nodes.}
+  abstract = {We propose a fast approximate algorithm for large graph matching. A new projected fixed-point method is defined and a new doubly stochastic projection is adopted to derive the algorithm. Previous graph matching algorithms suffer from high computational complexity and therefore do not have good scalability with respect to graph size. For matching two weighted graphs of \$n\$ nodes, our algorithm has time complexity only \$O(n\textasciicircum 3)\$ per iteration and space complexity \$O(n\textasciicircum 2)\$. In addition to its scalability, our algorithm is easy to implement, robust, and able to match undirected weighted attributed graphs of different sizes. While the convergence rate of previous iterative graph matching algorithms is unknown, our algorithm is theoretically guaranteed to converge at a linear rate. Extensive experiments on large synthetic and real graphs (more than 1,000 nodes) were conducted to evaluate the performance of various algorithms. Results show that in most cases our proposed algorithm achieves better performance than previous state-of-the-art algorithms in terms of both speed and accuracy in large graph matching. In particular, with high accuracy, our algorithm takes only a few seconds (in a PC) to match two graphs of 1,000 nodes.}
 }
 
 @book{Lukaszewicz1990NonmonotonicReasoningFormalization,
@@ -4560,6 +4666,23 @@
   doi = {10.21105/joss.00205},
   url = {http://joss.theoj.org/papers/10.21105/joss.00205},
   urldate = {2022-08-02}
+}
+
+@article{McNemar1947NoteSamplingError,
+  title = {Note on the Sampling Error of the Difference between Correlated Proportions or Percentages},
+  author = {McNemar, Quinn},
+  date = {1947-06-01},
+  journaltitle = {Psychometrika},
+  shortjournal = {Psychometrika},
+  volume = {12},
+  number = {2},
+  pages = {153--157},
+  issn = {1860-0980},
+  doi = {10.1007/BF02295996},
+  url = {https://doi.org/10.1007/BF02295996},
+  urldate = {2024-04-05},
+  abstract = {Two formulas are presented for judging the significance of the difference between correlated proportions. The chi square equivalent of one of the developed formulas is pointed out.},
+  langid = {english}
 }
 
 @inproceedings{Meilicke2015NewParadigmAlignment,
@@ -5510,8 +5633,8 @@
 @book{Reed2004ArgumentationMachines,
   title = {Argumentation {{Machines}}},
   editor = {Reed, Chris and Norman, Timothy J.},
-  editorb = {family=Eemeren, given=Frans H., prefix=van, useprefix=true and Jacobs, Scott and Krabbe, Erik C. W. and Woods, John},
-  editorbtype = {redactor},
+  editora = {family=Eemeren, given=Frans H., prefix=van, useprefix=true and Jacobs, Scott and Krabbe, Erik C. W. and Woods, John},
+  editoratype = {redactor},
   date = {2004},
   series = {Argumentation {{Library}}},
   volume = {9},
@@ -5787,6 +5910,22 @@
   urldate = {2024-02-10},
   abstract = {Available corpora for Argument Mining differ along several axes, and one of the key differences is the presence (or absence) of discourse markers to signal argumentative content. Exploring effective ways to use discourse markers has received wide attention in various discourse parsing tasks, from which it is well-known that discourse markers are strong indicators of discourse relations. To improve the robustness of Argument Mining systems across different genres, we propose to automatically augment a given text with discourse markers such that all relations are explicitly signaled. Our analysis unveils that popular language models taken out-of-the-box fail on this task; however, when fine-tuned on a new heterogeneous dataset that we construct (including synthetic and real examples), they perform considerably better. We demonstrate the impact of our approach on an Argument Mining downstream task, evaluated on different corpora, showing that language models can be trained to automatically fill in discourse markers across different corpora, improving the performance of a downstream model in some, but not all, cases. Our proposed approach can further be employed as an assistive tool for better discourse understanding.},
   pubstate = {preprint}
+}
+
+@inproceedings{Romberg2022YourPerspectiveAlso,
+  title = {Is {{Your Perspective Also My Perspective}}? {{Enriching Prediction}} with {{Subjectivity}}},
+  shorttitle = {Is {{Your Perspective Also My Perspective}}?},
+  booktitle = {Proceedings of the 9th {{Workshop}} on {{Argument Mining}}},
+  author = {Romberg, Julia},
+  editor = {Lapesa, Gabriella and Schneider, Jodi and Jo, Yohan and Saha, Sougata},
+  date = {2022-10},
+  pages = {115--125},
+  publisher = {International Conference on Computational Linguistics},
+  location = {Online and in Gyeongju, Republic of Korea},
+  url = {https://aclanthology.org/2022.argmining-1.11},
+  urldate = {2024-04-09},
+  abstract = {Although argumentation can be highly subjective, the common practice with supervised machine learning is to construct and learn from an aggregated ground truth formed from individual judgments by majority voting, averaging, or adjudication. This approach leads to a neglect of individual, but potentially important perspectives and in many cases cannot do justice to the subjective character of the tasks. One solution to this shortcoming are multi-perspective approaches, which have received very little attention in the field of argument mining so far. In this work we present PerspectifyMe, a method to incorporate perspectivism by enriching a task with subjectivity information from the data annotation process. We exemplify our approach with the use case of classifying argument concreteness, and provide first promising results for the recently published CIMT PartEval Argument Concreteness Corpus.},
+  eventtitle = {{{ArgMining}} 2022}
 }
 
 @incollection{Rose2010AutomaticKeywordExtraction,
@@ -6652,6 +6791,21 @@
   abstract = {Because of their superior ability to preserve sequence information over time, Long Short-Term Memory (LSTM) networks, a type of recurrent neural network with a more complex computational unit, have obtained strong results on a variety of sequence modeling tasks. The only underlying LSTM structure that has been explored so far is a linear chain. However, natural language exhibits syntactic properties that would naturally combine words to phrases. We introduce the Tree-LSTM, a generalization of LSTMs to tree-structured network topologies. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences (SemEval 2014, Task 1) and sentiment classification (Stanford Sentiment Treebank).}
 }
 
+@online{Tay2022ScalingLawsVs,
+  title = {Scaling {{Laws}} vs {{Model Architectures}}: {{How}} Does {{Inductive Bias Influence Scaling}}?},
+  shorttitle = {Scaling {{Laws}} vs {{Model Architectures}}},
+  author = {Tay, Yi and Dehghani, Mostafa and Abnar, Samira and Chung, Hyung Won and Fedus, William and Rao, Jinfeng and Narang, Sharan and Tran, Vinh Q. and Yogatama, Dani and Metzler, Donald},
+  date = {2022-07-21},
+  eprint = {2207.10551},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2207.10551},
+  url = {http://arxiv.org/abs/2207.10551},
+  urldate = {2024-04-25},
+  abstract = {There have been a lot of interest in the scaling properties of Transformer models. However, not much has been done on the front of investigating the effect of scaling properties of different inductive biases and model architectures. Do model architectures scale differently? If so, how does inductive bias affect scaling behaviour? How does this influence upstream (pretraining) and downstream (transfer)? This paper conducts a systematic study of scaling behaviour of ten diverse model architectures such as Transformers, Switch Transformers, Universal Transformers, Dynamic convolutions, Performers, and recently proposed MLP-Mixers. Via extensive experiments, we show that (1) architecture is an indeed an important consideration when performing scaling and (2) the best performing model can fluctuate at different scales. We believe that the findings outlined in this work has significant implications to how model architectures are currently evaluated in the community.},
+  pubstate = {preprint}
+}
+
 @inproceedings{Thorburn2022OptimizingLanguageModels,
   title = {Optimizing {{Language Models}} for {{Argumentative Reasoning}}},
   author = {Thorburn, Luke and Kruger, Ariel},
@@ -6849,16 +7003,31 @@
   abstract = {Complex reasoning and argumentation are central to legal practice. Software-supported argument mapping may be able to help lawyers reason and argue more effectively. This article describes Rationale™, a generic argument mapping software package, and reviews some evidence that using it can help improve reasoning, i.e. make people smarter. It then explores three different explanations for this potential benefit: usability, complementation and semi-formality. First, argument mapping software can be more usable for reasoning activities than traditional methods because it can inherit the wisdom gained through decades of research and experience into usability, can exploit a wider range of representational resources, and is designed specifically to support reasoning activities. Second, such software works by complementing the strengths and weaknesses of our natural or inbuilt cognitive capacities. Third, it helps shift reasoning and argumentation into a semi-formal mode, a kind of ‘sweet spot’ between the laxness of everyday reasoning and the straightjacket of formal logic.}
 }
 
-@unpublished{Vaswani2017AttentionAllYou,
-  title = {Attention {{Is All You Need}}},
-  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
-  date = {2017-12-05},
-  eprint = {1706.03762},
+@inproceedings{Vaswani2017AttentionAllYou,
+  title = {Attention Is {{All}} You {{Need}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and family=Kaiser, given=Ł, prefix=ukasz, useprefix=false and Polosukhin, Illia},
+  date = {2017},
+  volume = {30},
+  publisher = {Curran Associates, Inc.},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+  urldate = {2024-04-25},
+  abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+}
+
+@online{Verga2024ReplacingJudgesJuries,
+  title = {Replacing {{Judges}} with {{Juries}}: {{Evaluating LLM Generations}} with a {{Panel}} of {{Diverse Models}}},
+  shorttitle = {Replacing {{Judges}} with {{Juries}}},
+  author = {Verga, Pat and Hofstatter, Sebastian and Althammer, Sophia and Su, Yixuan and Piktus, Aleksandra and Arkhangorodsky, Arkady and Xu, Minjie and White, Naomi and Lewis, Patrick},
+  date = {2024-04-29},
+  eprint = {2404.18796},
   eprinttype = {arxiv},
   eprintclass = {cs},
-  url = {http://arxiv.org/abs/1706.03762},
-  urldate = {2021-03-11},
-  abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.}
+  doi = {10.48550/arXiv.2404.18796},
+  url = {http://arxiv.org/abs/2404.18796},
+  urldate = {2024-05-01},
+  abstract = {As Large Language Models (LLMs) have become more advanced, they have outpaced our abilities to accurately evaluate their quality. Not only is finding data to adequately probe particular model properties difficult, but evaluating the correctness of a model's freeform generation alone is a challenge. To address this, many evaluations now rely on using LLMs themselves as judges to score the quality of outputs from other LLMs. Evaluations most commonly use a single large model like GPT4. While this method has grown in popularity, it is costly, has been shown to introduce intramodel bias, and in this work, we find that very large models are often unnecessary. We propose instead to evaluate models using a Panel of LLm evaluators (PoLL). Across three distinct judge settings and spanning six different datasets, we find that using a PoLL composed of a larger number of smaller models outperforms a single large judge, exhibits less intra-model bias due to its composition of disjoint model families, and does so while being over seven times less expensive.},
+  pubstate = {preprint}
 }
 
 @unpublished{Vilnis2014WordRepresentationsGaussian,
@@ -7010,6 +7179,20 @@
   eventtitle = {{{COLING}} 2018}
 }
 
+@online{Wallace2024InstructionHierarchyTraining,
+  title = {The {{Instruction Hierarchy}}: {{Training LLMs}} to {{Prioritize Privileged Instructions}}},
+  shorttitle = {The {{Instruction Hierarchy}}},
+  author = {Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng, Lilian and Heidecke, Johannes and Beutel, Alex},
+  date = {2024-04-19},
+  eprint = {2404.13208},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2404.13208},
+  urldate = {2024-04-25},
+  abstract = {Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts. In this work, we argue that one of the primary vulnerabilities underlying these attacks is that LLMs often consider system prompts (e.g., text from an application developer) to be the same priority as text from untrusted users and third parties. To address this, we propose an instruction hierarchy that explicitly defines how models should behave when instructions of different priorities conflict. We then propose a data generation method to demonstrate this hierarchical instruction following behavior, which teaches LLMs to selectively ignore lower-privileged instructions. We apply this method to GPT-3.5, showing that it drastically increases robustness -- even for attack types not seen during training -- while imposing minimal degradations on standard capabilities.},
+  pubstate = {preprint}
+}
+
 @book{Walton2008ArgumentationSchemes,
   title = {Argumentation {{Schemes}}},
   author = {Walton, Douglas and Reed, Christopher and Macagno, Fabrizio},
@@ -7135,6 +7318,20 @@
   url = {http://arxiv.org/abs/2402.10200},
   urldate = {2024-02-19},
   abstract = {In enhancing the reasoning capabilities of large language models (LLMs), prior research primarily focuses on specific prompting techniques such as few-shot or zero-shot chain-of-thought (CoT) prompting. These methods, while effective, often involve manually intensive prompt engineering. Our study takes a novel approach by asking: Can LLMs reason effectively without prompting? Our findings reveal that, intriguingly, CoT reasoning paths can be elicited from pre-trained LLMs by simply altering the \textbackslash textit\{decoding\} process. Rather than conventional greedy decoding, we investigate the top-\$k\$ alternative tokens, uncovering that CoT paths are frequently inherent in these sequences. This approach not only bypasses the confounders of prompting but also allows us to assess the LLMs' \textbackslash textit\{intrinsic\} reasoning abilities. Moreover, we observe that the presence of a CoT in the decoding path correlates with a higher confidence in the model's decoded answer. This confidence metric effectively differentiates between CoT and non-CoT paths. Extensive empirical studies on various reasoning benchmarks show that the proposed CoT-decoding substantially outperforms the standard greedy decoding.},
+  pubstate = {preprint}
+}
+
+@online{Watson2023CaseBasedPersistentMemory,
+  title = {A {{Case-Based Persistent Memory}} for a {{Large Language Model}}},
+  author = {Watson, Ian},
+  date = {2023-10-12},
+  eprint = {2310.08842},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2310.08842},
+  url = {http://arxiv.org/abs/2310.08842},
+  urldate = {2024-04-11},
+  abstract = {Case-based reasoning (CBR) as a methodology for problem-solving can use any appropriate computational technique. This position paper argues that CBR researchers have somewhat overlooked recent developments in deep learning and large language models (LLMs). The underlying technical developments that have enabled the recent breakthroughs in AI have strong synergies with CBR and could be used to provide a persistent memory for LLMs to make progress towards Artificial General Intelligence.},
   pubstate = {preprint}
 }
 
