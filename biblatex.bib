@@ -95,6 +95,22 @@
   abstract = {Online forums that allow for participatory engagement between users have been transformative for the public discussion of many important issues. However, such conversations can sometimes escalate into full-blown exchanges of hate and misinformation. Existing approaches in natural language processing (NLP), such as deep learning models for classification tasks, use as inputs only a single comment or a pair of comments depending upon whether the task concerns the inference of properties of the individual comments or the replies between pairs of comments, respectively. However, in online conversations, comments and replies may be based on external context beyond the immediately relevant information that is input to the model. Therefore, being aware of the conversations’ surrounding contexts should improve the model’s performance for the inference task at hand. We propose GraphNLI,1 a novel graph-based deep learning architecture that uses graph walks to incorporate the wider context of a conversation in a principled manner. Specifically, a graph walk starts from a given comment and samples “nearby” comments in the same or parallel conversation threads, which results in additional embeddings that are aggregated together with the initial comment’s embedding. We then use these enriched embeddings for downstream NLP prediction tasks that are important for online conversations. We evaluate GraphNLI on two such tasks - polarity prediction and misogynistic hate speech detection - and find that our model consistently outperforms all relevant baselines for both tasks. Specifically, GraphNLI with a biased root-seeking random walk performs with a macro-F1 score of 3 and 6 percentage points better than the best-performing BERT-based baselines for the polarity prediction and hate speech detection tasks, respectively. We also perform extensive ablative experiments and hyperparameter searches to understand the efficacy of GraphNLI. This demonstrates the potential of context-aware models to capture the global context along with the local context of online conversations for these two tasks.}
 }
 
+@inproceedings{Agater2025SLANGOInitialBlueprint,
+  title = {{{SLANGO}} - {{The Initial Blueprint}} of~{{Privacy-Oriented Legal Query Assistance}}: {{Exploring}} the~{{Potential}} of~{{Retrieval-Augmented Generation}} for~{{German Law Using SPR}}},
+  shorttitle = {{{SLANGO}} - {{The Initial Blueprint}} of~{{Privacy-Oriented Legal Query Assistance}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Agater, Jérôme and Memari, Ammar},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {208--221},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77918-3_15},
+  abstract = {This paper introduces an application of Large Language Models (LLMs) in the context of Retrieval-Augmented Generation (RAG) to the problem of privacy-preserving question answering in a legal setting. As Germany’s voluminous legal documents, including laws and court decisions, are not stored accurately in the inherent knowledge of LLMs, LLMs are prone to producing unreliable or non-existent references. By augmenting the inherent knowledge with ground truth facts retrieved from a Neo4J database, the answer-generating system can cite the facts directly. By using a locally run LLM, we mitigate the need for cloud-based data processing, preventing privacy-relevant data from leaving the system. Our preliminary results with selected legal questions show the system’s ability to provide plausible legal answers. This research lays the foundation for further studies, opening the possibility for integrating more sophisticated RAG techniques and building a user interface with deterministic quoting for precise citation and ease of use. Our study presents a step towards deploying AI in sensitive legal settings, promising a future where legal questions can be answered correctly by LLMs without sacrificing data privacy.},
+  isbn = {978-3-031-77918-3},
+  langid = {english}
+}
+
 @inproceedings{Aicher2024BEABuildingEngaging,
   title = {{{BEA}}: {{Building Engaging Argumentation}}},
   shorttitle = {{{BEA}}},
@@ -213,7 +229,7 @@
   journaltitle = {Artificial Intelligence},
   shortjournal = {Artificial Intelligence},
   volume = {150},
-  number = {1-2},
+  number = {1--2},
   pages = {183--237},
   issn = {00043702},
   doi = {10.1016/S0004-3702(03)00105-X},
@@ -498,6 +514,21 @@
   venue = {Nagoya, Japan}
 }
 
+@inproceedings{Asowo2025EnsembleModellingFeature,
+  title = {An {{Ensemble Modelling}} of~{{Feature Engineering}} and~{{Predictions}} for~{{Enhanced Fake News Detection}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Asowo, Patricia and Lal, Sangeeta and Ani, Uchenna Daniel},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {225--231},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77918-3_16},
+  abstract = {The threat of fake news jeopardizing the credibility of online news platforms, particularly on social media, underscores the need for innovative solutions. This paper proposes a creative engine for detecting fake news, leveraging advanced machine learning techniques, specifically Bidirectional En-coder Representations by Transformers (BERT). Our approach involves feature selection from news content and social contexts, combining predictions from multiple models, including Random Forest, BERT, GRU, LSTM, and a voting ensemble model. Through extensive evaluation of the WELFake dataset, our method highlights an impressive accuracy of 99\%, surpassing baselines and existing systems. Our study highlights the crucial role of hyperparameter tuning, improving the performance of the BERT model to 100\%.},
+  isbn = {978-3-031-77918-3},
+  langid = {english}
+}
+
 @online{AssociationForComputationalLinguistics2019POSTaggingState,
   title = {{{POS Tagging}} ({{State}} of the Art)},
   author = {{Association for Computational Linguistics}},
@@ -523,6 +554,21 @@
   langid = {english}
 }
 
+@online{Ayoobi2024ProtoArgNetInterpretableImage,
+  title = {{{ProtoArgNet}}: {{Interpretable Image Classification}} with {{Super-Prototypes}} and {{Argumentation}} [{{Technical Report}}]},
+  shorttitle = {{{ProtoArgNet}}},
+  author = {Ayoobi, Hamed and Potyka, Nico and Toni, Francesca},
+  date = {2024-08-21},
+  eprint = {2311.15438},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2311.15438},
+  url = {http://arxiv.org/abs/2311.15438},
+  urldate = {2024-12-19},
+  abstract = {We propose ProtoArgNet, a novel interpretable deep neural architecture for image classification in the spirit of prototypical-part-learning as found, e.g., in ProtoPNet. While earlier approaches associate every class with multiple prototypical-parts, ProtoArgNet uses super-prototypes that combine prototypical-parts into a unified class representation. This is done by combining local activations of prototypes in an MLP-like manner, enabling the localization of prototypes and learning (non-linear) spatial relationships among them. By leveraging a form of argumentation, ProtoArgNet is capable of providing both supporting (i.e. `this looks like that') and attacking (i.e. `this differs from that') explanations. We demonstrate on several datasets that ProtoArgNet outperforms state-of-the-art prototypical-part-learning approaches. Moreover, the argumentation component in ProtoArgNet is customisable to the user's cognitive requirements by a process of sparsification, which leads to more compact explanations compared to state-of-the-art approaches.},
+  pubstate = {prepublished}
+}
+
 @online{Baek2024ResearchAgentIterativeResearch,
   title = {{{ResearchAgent}}: {{Iterative Research Idea Generation}} over {{Scientific Literature}} with {{Large Language Models}}},
   shorttitle = {{{ResearchAgent}}},
@@ -535,6 +581,21 @@
   url = {http://arxiv.org/abs/2404.07738},
   urldate = {2024-04-16},
   abstract = {Scientific Research, vital for improving human life, is hindered by its inherent complexity, slow pace, and the need for specialized experts. To enhance its productivity, we propose a ResearchAgent, a large language model-powered research idea writing agent, which automatically generates problems, methods, and experiment designs while iteratively refining them based on scientific literature. Specifically, starting with a core paper as the primary focus to generate ideas, our ResearchAgent is augmented not only with relevant publications through connecting information over an academic graph but also entities retrieved from an entity-centric knowledge store based on their underlying concepts, mined and shared across numerous papers. In addition, mirroring the human approach to iteratively improving ideas with peer discussions, we leverage multiple ReviewingAgents that provide reviews and feedback iteratively. Further, they are instantiated with human preference-aligned large language models whose criteria for evaluation are derived from actual human judgments. We experimentally validate our ResearchAgent on scientific publications across multiple disciplines, showcasing its effectiveness in generating novel, clear, and valid research ideas based on human and model-based evaluation results.},
+  pubstate = {prepublished}
+}
+
+@online{Balaguer2024RAGVsFinetuning,
+  title = {{{RAG}} vs {{Fine-tuning}}: {{Pipelines}}, {{Tradeoffs}}, and a {{Case Study}} on {{Agriculture}}},
+  shorttitle = {{{RAG}} vs {{Fine-tuning}}},
+  author = {Balaguer, Angels and Benara, Vinamra and Cunha, Renato Luiz de Freitas and Filho, Roberto de M. Estevão and Hendry, Todd and Holstein, Daniel and Marsman, Jennifer and Mecklenburg, Nick and Malvar, Sara and Nunes, Leonardo O. and Padilha, Rafael and Sharp, Morris and Silva, Bruno and Sharma, Swati and Aski, Vijay and Chandra, Ranveer},
+  date = {2024-01-30},
+  eprint = {2401.08406},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2401.08406},
+  url = {http://arxiv.org/abs/2401.08406},
+  urldate = {2024-09-03},
+  abstract = {There are two common ways in which developers are incorporating proprietary and domain-specific data when building applications of Large Language Models (LLMs): Retrieval-Augmented Generation (RAG) and Fine-Tuning. RAG augments the prompt with the external data, while fine-Tuning incorporates the additional knowledge into the model itself. However, the pros and cons of both approaches are not well understood. In this paper, we propose a pipeline for fine-tuning and RAG, and present the tradeoffs of both for multiple popular LLMs, including Llama2-13B, GPT-3.5, and GPT-4. Our pipeline consists of multiple stages, including extracting information from PDFs, generating questions and answers, using them for fine-tuning, and leveraging GPT-4 for evaluating the results. We propose metrics to assess the performance of different stages of the RAG and fine-Tuning pipeline. We conduct an in-depth study on an agricultural dataset. Agriculture as an industry has not seen much penetration of AI, and we study a potentially disruptive application - what if we could provide location-specific insights to a farmer? Our results show the effectiveness of our dataset generation pipeline in capturing geographic-specific knowledge, and the quantitative and qualitative benefits of RAG and fine-tuning. We see an accuracy increase of over 6 p.p. when fine-tuning the model and this is cumulative with RAG, which increases accuracy by 5 p.p. further. In one particular experiment, we also demonstrate that the fine-tuned model leverages information from across geographies to answer specific questions, increasing answer similarity from 47\% to 72\%. Overall, the results point to how systems built using LLMs can be adapted to respond and incorporate knowledge across a dimension that is critical for a specific industry, paving the way for further applications of LLMs in other industrial domains.},
   pubstate = {prepublished}
 }
 
@@ -730,7 +791,7 @@
   date = {2020-01-01},
   journaltitle = {Argument \& Computation},
   volume = {11},
-  number = {1-2},
+  number = {1--2},
   pages = {221--238},
   publisher = {IOS Press},
   issn = {1946-2166},
@@ -804,12 +865,20 @@
 
 @inproceedings{Bergmann2018ReCAPInformationRetrieval,
   title = {{{ReCAP}} - {{Information Retrieval}} and {{Case-Based Reasoning}} for {{Robust Deliberation}} and {{Synthesis}} of {{Arguments}} in the {{Political Discourse}}},
-  booktitle = {Lernen. {{Wissen}}. {{Daten}}. {{Analysen}}. ({{LWDA}} 2018)},
+  booktitle = {Proceedings of the {{Conference}} "{{Lernen}}, {{Wissen}}, {{Daten}}, {{Analysen}}"},
   author = {Bergmann, Ralph and Schenkel, Ralf and Dumani, Lorik and Ollinger, Stefan},
-  date = {2018},
+  editor = {Gemulla, Rainer and Ponzetto, Simone Paolo and Bizer, Christian and Keuper, Margret and Stuckenschmidt, Heiner},
+  date = {2018-08-22},
   series = {{{CEUR Workshop Proceedings}}},
-  url = {http://ceur-ws.org/Vol-2191/paper6.pdf},
-  abstract = {The ReCAP project is a recently started project within the DFG priority programm robust argumentation machines (RATIO). It follows the vision of future argumentation machines that support researchers, journalistic writers, as well as human decision makers to obtain a comprehensive overview of current arguments and opinions related to a certain topic, as well as to develop personal, well-founded opinions justified by convincing arguments. Unlike existing search engines, which primarily operate on the textual level, such argumentation machines will reason on the knowledge level formed by arguments and argumentation structures. The focus of ReCAP is on novel contributions to and confluence of methods from information retrieval and knowledge representation and reasoning, in particular case-based reasoning. The aim is to develop methods that are able to capture arguments in a robust and scalable manner, in particular representing, contextualizing, and aggregating arguments and making them available to a user. Together with experts from the political domain real-world scenarios and use cases are worked out. A corpus of semantically annotated argumentations is being created from relevant text sources and will be made available to the argumentation research community.}
+  volume = {2191},
+  pages = {49--60},
+  publisher = {CEUR},
+  location = {Mannheim, Germany},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-2191/#paper6},
+  urldate = {2024-12-11},
+  eventtitle = {Lernen, {{Wissen}}, {{Daten}}, {{Analysen}} 2018},
+  langid = {english}
 }
 
 @incollection{Bergmann2018SimilarityBasedRetrievalAutomatic,
@@ -1025,6 +1094,22 @@
   urldate = {2019-08-20},
   abstract = {Computational Argumentation has two main goals - the detection and analysis of arguments on the one hand, and the synthesis of arguments on the other. Much attention has been given to the former, but considerably less to the latter.},
   eventtitle = {Proceedings of the 54th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 2: {{Short Papers}})},
+  langid = {english}
+}
+
+@inproceedings{BinShiha2025UniversityNewsNew,
+  title = {University {{News}}: {{A New Data Source}} for {{NLP Bias Research}}},
+  shorttitle = {University {{News}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Bin Shiha, Rawan and Atwell, Eric and Abbas, Noorhan},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {307--312},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77915-2_22},
+  abstract = {This research explores the use of university news articles for Natural Language Processing (NLP) and gender bias detection. It emphasises the importance of ethical considerations in NLP, advocating for transparency and diversity in dataset selection to ensure fairness. Using techniques such as Sentiment Analysis (SA) and gender-specific language classification, the study reveals a bias towards male possessive terms, indicating gender imbalance in the content. While the Facebook BART-Large-Mnli model demonstrated strong accuracy, it struggled with neutral sentiment, suggesting areas for improvement. The study highlights university news as a valuable dataset for promoting equity and inclusivity in NLP tools, laying the foundation for fairer methodologies.},
+  isbn = {978-3-031-77915-2},
   langid = {english}
 }
 
@@ -1331,6 +1416,57 @@
   eventtitle = {{{EMNLP}} 2015}
 }
 
+@inproceedings{Boylan2024KGValidatorFrameworkAutomatic,
+  title = {{{KGValidator}}: {{A Framework}} for {{Automatic Validation}} of {{Knowledge Graph Construction}}},
+  shorttitle = {{{KGValidator}}},
+  booktitle = {Joint Proceedings of the 3rd {{International}} Workshop One Knowledge Graph Generation from Text ({{TEXT2KG}}) and {{Data Quality}} Meets {{Machine Learning}} and {{Knowledge Graphs}} ({{DQMLKG}})},
+  author = {Boylan, Jack and Gholipour-Ghalandari, Demian and Hokamp, Chris and Thorn, Dominic and Ghaffari, Parsa and Mangla, Shashank},
+  editor = {Tiwari, Sanju and Mihindukulasooriya, Nandana and Osborne, Francesco and Kontokostas, Dimitris and D’Souza, Jennifer and Kejriwal, Mayank and Pellegrino, Maria Angela and Rula, Anisa and Gayo, Jose Emilio Labra and Cochez, Michael and Alam, Mehwish},
+  date = {2024-05-26},
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {3747},
+  pages = {23},
+  publisher = {CEUR},
+  location = {Hersonissos, Greece},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-3747/#paper12},
+  urldate = {2024-10-31},
+  eventtitle = {3rd {{International}} Workshop One Knowledge Graph Generation from Text. {{Data Quality}} Meets {{Machine Learning}} and {{Knowledge Graphs}} 2024},
+  langid = {english}
+}
+
+@book{Bramer2025ArtificialIntelligenceXLI,
+  title = {Artificial {{Intelligence XLI}}: 44th {{SGAI International Conference}} on {{Artificial Intelligence}}, {{AI}} 2024, {{Cambridge}}, {{UK}}, {{December}} 17–19, 2024, {{Proceedings}}, {{Part I}}},
+  shorttitle = {Artificial {{Intelligence XLI}}},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15446},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77915-2},
+  url = {https://link.springer.com/10.1007/978-3-031-77915-2},
+  urldate = {2024-12-03},
+  isbn = {978-3-031-77914-5 978-3-031-77915-2},
+  langid = {english}
+}
+
+@book{Bramer2025ArtificialIntelligenceXLIa,
+  title = {Artificial {{Intelligence XLI}}: 44th {{SGAI International Conference}} on {{Artificial Intelligence}}, {{AI}} 2024, {{Cambridge}}, {{UK}}, {{December}} 17–19, 2024, {{Proceedings}}, {{Part II}}},
+  shorttitle = {Artificial {{Intelligence XLI}}},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15447},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77918-3},
+  url = {https://link.springer.com/10.1007/978-3-031-77918-3},
+  urldate = {2024-12-18},
+  isbn = {978-3-031-77917-6 978-3-031-77918-3},
+  langid = {english}
+}
+
 @thesis{Brand2024ModelingAcquiringKnowledge,
   type = {mathesis},
   title = {Modeling and {{Acquiring Knowledge}} with {{Large Language Models}}: {{A Study}} in the {{Cyber-Physical Domain}}},
@@ -1351,7 +1487,7 @@
   journaltitle = {Artificial Intelligence},
   shortjournal = {Artificial Intelligence},
   volume = {150},
-  number = {1-2},
+  number = {1--2},
   pages = {59--95},
   issn = {00043702},
   doi = {10.1016/S0004-3702(03)00102-4},
@@ -1403,7 +1539,7 @@
   url = {https://dl.acm.org/doi/10.1145/3583780.3614733},
   urldate = {2023-11-24},
   abstract = {In computational argumentation, so-called quality dimensions such as coherence or rhetoric are often used for ranking arguments. However, the literature often only predicts which argument is more persuasive, but not why this is the case. In this paper, we introduce AQUAPLANE, a transparent and easy-to-extend application that not only decides for a pair of arguments which one is more convincing with respect to a statement, but also provides an explanation.},
-  isbn = {9798400701245}
+  isbn = {979-8-4007-0124-5}
 }
 
 @inproceedings{Brown2020LanguageModelsAre,
@@ -1798,6 +1934,22 @@
   urldate = {2018-09-01}
 }
 
+@misc{CentreForArgumentTechnology2022IATAnnotationGuidelines,
+  title = {{{IAT}} Annotation Guidelines for {{QT30}}},
+  author = {{Centre for Argument Technology}},
+  date = {2022-05-02},
+  url = {https://www.arg.tech/f/IATannotationguidelines-2022-05.pdf},
+  urldate = {2024-09-16}
+}
+
+@misc{CentreForArgumentTechnology2023QuickStartGuide,
+  title = {A {{Quick Start Guide}} to {{Inference Anchoring Theory}} ({{IAT}})},
+  author = {{Centre for Argument Technology}},
+  date = {2023-09-25},
+  url = {https://www.arg.tech/f/IAT_guidelines_and_tutorials-2023-10.pdf},
+  urldate = {2024-09-16}
+}
+
 @article{Cer2017SemEval2017TaskSemantic,
   title = {{{SemEval-2017 Task}} 1 - {{Semantic Textual Similarity}} - {{Multilingual}} and {{Cross-lingual Focused Evaluation}}.},
   author = {Cer, Daniel M and Diab, Mona T and Agirre, Eneko and Lopez-Gazpio, Iñigo and Specia, Lucia},
@@ -2134,6 +2286,21 @@
   langid = {english}
 }
 
+@inproceedings{Croitoru2025ChildRobotInteractionExperiment,
+  title = {A {{Child-Robot Interaction Experiment}} to~{{Analyze Gender Stereotypes}} in~the~{{Perception}} of~{{Mathematical Abilities}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Croitoru, Madalina and Laviron, Pablo and Bando, Sio and Gilles, Eric and Miled, Amine and Anders, Royce and Blanc, Nathalie and Ganesh, Gowrishankar and Brigaud, Emmanuelle},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {232--237},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77918-3_17},
+  abstract = {This study examines the use of social robotics in education, focusing on reducing the gender biases child students may have in the perception of their mathematical ability and potential. Our initial pilot with twenty 7-year-olds provides insights into the potential of combining AI with educational strategies. We discuss our findings, and experimental setup involving ChatGPT4, and future research directions.},
+  isbn = {978-3-031-77918-3},
+  langid = {english}
+}
+
 @article{Cui2019Integrative3CEvaluation,
   title = {An {{Integrative 3C}} Evaluation Framework for {{Explainable Artificial Intelligence}}},
   author = {Cui, Xiaocong and Lee, Jung Min and Hsieh, J. Po-An},
@@ -2253,6 +2420,21 @@
   langid = {english}
 }
 
+@online{DeepSeek-AI2025DeepSeekR1IncentivizingReasoning,
+  title = {{{DeepSeek-R1}}: {{Incentivizing Reasoning Capability}} in {{LLMs}} via {{Reinforcement Learning}}},
+  shorttitle = {{{DeepSeek-R1}}},
+  author = {DeepSeek-AI and Guo, Daya and Yang, Dejian and Zhang, Haowei and Song, Junxiao and Zhang, Ruoyu and Xu, Runxin and Zhu, Qihao and Ma, Shirong and Wang, Peiyi and Bi, Xiao and Zhang, Xiaokang and Yu, Xingkai and Wu, Yu and Wu, Z. F. and Gou, Zhibin and Shao, Zhihong and Li, Zhuoshu and Gao, Ziyi and Liu, Aixin and Xue, Bing and Wang, Bingxuan and Wu, Bochao and Feng, Bei and Lu, Chengda and Zhao, Chenggang and Deng, Chengqi and Zhang, Chenyu and Ruan, Chong and Dai, Damai and Chen, Deli and Ji, Dongjie and Li, Erhang and Lin, Fangyun and Dai, Fucong and Luo, Fuli and Hao, Guangbo and Chen, Guanting and Li, Guowei and Zhang, H. and Bao, Han and Xu, Hanwei and Wang, Haocheng and Ding, Honghui and Xin, Huajian and Gao, Huazuo and Qu, Hui and Li, Hui and Guo, Jianzhong and Li, Jiashi and Wang, Jiawei and Chen, Jingchang and Yuan, Jingyang and Qiu, Junjie and Li, Junlong and Cai, J. L. and Ni, Jiaqi and Liang, Jian and Chen, Jin and Dong, Kai and Hu, Kai and Gao, Kaige and Guan, Kang and Huang, Kexin and Yu, Kuai and Wang, Lean and Zhang, Lecong and Zhao, Liang and Wang, Litong and Zhang, Liyue and Xu, Lei and Xia, Leyi and Zhang, Mingchuan and Zhang, Minghua and Tang, Minghui and Li, Meng and Wang, Miaojun and Li, Mingming and Tian, Ning and Huang, Panpan and Zhang, Peng and Wang, Qiancheng and Chen, Qinyu and Du, Qiushi and Ge, Ruiqi and Zhang, Ruisong and Pan, Ruizhe and Wang, Runji and Chen, R. J. and Jin, R. L. and Chen, Ruyi and Lu, Shanghao and Zhou, Shangyan and Chen, Shanhuang and Ye, Shengfeng and Wang, Shiyu and Yu, Shuiping and Zhou, Shunfeng and Pan, Shuting and Li, S. S. and Zhou, Shuang and Wu, Shaoqing and Ye, Shengfeng and Yun, Tao and Pei, Tian and Sun, Tianyu and Wang, T. and Zeng, Wangding and Zhao, Wanjia and Liu, Wen and Liang, Wenfeng and Gao, Wenjun and Yu, Wenqin and Zhang, Wentao and Xiao, W. L. and An, Wei and Liu, Xiaodong and Wang, Xiaohan and Chen, Xiaokang and Nie, Xiaotao and Cheng, Xin and Liu, Xin and Xie, Xin and Liu, Xingchao and Yang, Xinyu and Li, Xinyuan and Su, Xuecheng and Lin, Xuheng and Li, X. Q. and Jin, Xiangyue and Shen, Xiaojin and Chen, Xiaosha and Sun, Xiaowen and Wang, Xiaoxiang and Song, Xinnan and Zhou, Xinyi and Wang, Xianzu and Shan, Xinxia and Li, Y. K. and Wang, Y. Q. and Wei, Y. X. and Zhang, Yang and Xu, Yanhong and Li, Yao and Zhao, Yao and Sun, Yaofeng and Wang, Yaohui and Yu, Yi and Zhang, Yichao and Shi, Yifan and Xiong, Yiliang and He, Ying and Piao, Yishi and Wang, Yisong and Tan, Yixuan and Ma, Yiyang and Liu, Yiyuan and Guo, Yongqiang and Ou, Yuan and Wang, Yuduan and Gong, Yue and Zou, Yuheng and He, Yujia and Xiong, Yunfan and Luo, Yuxiang and You, Yuxiang and Liu, Yuxuan and Zhou, Yuyang and Zhu, Y. X. and Xu, Yanhong and Huang, Yanping and Li, Yaohui and Zheng, Yi and Zhu, Yuchen and Ma, Yunxian and Tang, Ying and Zha, Yukun and Yan, Yuting and Ren, Z. Z. and Ren, Zehui and Sha, Zhangli and Fu, Zhe and Xu, Zhean and Xie, Zhenda and Zhang, Zhengyan and Hao, Zhewen and Ma, Zhicheng and Yan, Zhigang and Wu, Zhiyu and Gu, Zihui and Zhu, Zijia and Liu, Zijun and Li, Zilin and Xie, Ziwei and Song, Ziyang and Pan, Zizheng and Huang, Zhen and Xu, Zhipeng and Zhang, Zhongyu and Zhang, Zhen},
+  date = {2025-01-22},
+  eprint = {2501.12948},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2501.12948},
+  url = {http://arxiv.org/abs/2501.12948},
+  urldate = {2025-01-26},
+  abstract = {We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrates remarkable reasoning capabilities. Through RL, DeepSeek-R1-Zero naturally emerges with numerous powerful and intriguing reasoning behaviors. However, it encounters challenges such as poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates multi-stage training and cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1-1217 on reasoning tasks. To support the research community, we open-source DeepSeek-R1-Zero, DeepSeek-R1, and six dense models (1.5B, 7B, 8B, 14B, 32B, 70B) distilled from DeepSeek-R1 based on Qwen and Llama.},
+  pubstate = {prepublished}
+}
+
 @inproceedings{Defourneaux1997AnalogyAbductionAutomated,
   title = {Analogy and {{Abduction}} in {{Automated Deduction}}},
   booktitle = {Proc. {{IJCAI-97}}},
@@ -2294,6 +2476,17 @@
   urldate = {2023-09-21},
   abstract = {Argument mapping technologies have been historically proposed in Computer Supported Cooperative Work (CSCW) and Computer Supported Argument Visualisation (CSAV) research to improve online deliberation practices, but they have hardly overcome issues of non–expert users’ uptake. This paper presents LiteMap a novel online collaborative argument mapping tool which combines web annotation with light-weight argument mapping features to enable visual summarisation and sensemaking of public online debates. Lessons learned from a user study indicate that LiteMap can be effectively used by untrained users to collectively summarize online discussion forum conversations. LiteMap is reported to improve self-reflection on both, group performance and assessment of the quality of an online conversation. The use of the argument mapping tool has also enhanced the mappers’ understanding of the nature of the debated issues. Nonetheless, map creators have reported the need for parallel negotiation channels to disambiguate meaning and manage disagreement while co-creating an argument map.},
   isbn = {978-1-4503-9056-9}
+}
+
+@thesis{Dellaiera2024ReproducibilitySoftwareEngineering,
+  title = {Reproducibility in {{Software Engineering}}},
+  author = {Dellaiera, Pol},
+  date = {2024-08-05},
+  doi = {10.5281/zenodo.13208605},
+  url = {https://zenodo.org/records/13208605},
+  urldate = {2024-08-28},
+  abstract = {The concept of reproducibility has long been a cornerstone in scientific research, ensuring that results are robust, repeatable, and can be independently verified. This concept has been extended to computer science, focusing on the ability to recreate identical software artefacts. However, the importance of reproducibility in software engineering is often overlooked, leading to challenges in the validation, security, and reliability of software products. This master's thesis aims to investigate the current state of reproducibility in software engineering, exploring both the barriers and potential solutions to making software more reproducible and raising awareness. It identifies key factors that impede reproducibility such as inconsistent environments, lack of standardisation, and incomplete documentation. To tackle these issues, I propose an empirical comparison of tools facilitating software reproducibility. To provide a comprehensive assessment of reproducibility in software engineering, this study adopts a methodology that involves a hands-on evaluation of four different methods and tools. Through a systematic evaluation of these tools, this research seeks to determine their effectiveness in establishing and maintaining identical software environments and builds. This study contributes to academic knowledge and offers practical insights that could influence future software development protocols and standards.},
+  langid = {english}
 }
 
 @inproceedings{Deng2023ResolutionAnalogiesStrings,
@@ -2398,22 +2591,6 @@
   langid = {english}
 }
 
-@inproceedings{Diebold2024OlaaafGeneralAdaptationa,
-  title = {Olaaaf: {{A General Adaptation Prototype}}},
-  shorttitle = {Olaaaf},
-  booktitle = {Case-{{Based Reasoning Research}} and {{Development}}},
-  author = {Diebold, Erwan and Kabrit, Yan and Kril, Axel and Lieber, Jean and Malvaud, Paul and Nauer, Emmanuel and Sipp, Jules},
-  editor = {Recio-Garcia, Juan A. and Orozco-del-Castillo, Mauricio G. and Bridge, Derek},
-  date = {2024},
-  pages = {223--239},
-  publisher = {Springer Nature Switzerland},
-  location = {Cham},
-  doi = {10.1007/978-3-031-63646-2_15},
-  abstract = {Adaptation is often considered a complex issue during the design of a case-based reasoning system. Various approaches can be found in the literature, but their scopes are often limited to a relatively narrow range of applications.However, a general approach to adaptation based on belief revision has been developed over the years and applied in several formalisms, these formalisms being chosen for particular needs. This article presents the first version of \$\$\textbackslash text \{Olaaaf\}\$\$Olaaaf, a general adaptation prototype based on belief revision whose long-term objective is to cover a wide range of adaptation processes. It is based on a formalism that covers both attribute-value pairs (often used for representing cases) and taxonomies (often used for representing domain knowledge). It is shown through an example how this system works, and it is discussed how it can be used for other complex adaptations.},
-  isbn = {978-3-031-63646-2},
-  langid = {english}
-}
-
 @inproceedings{Dijkman2009GraphMatchingAlgorithms,
   title = {Graph {{Matching Algorithms}} for {{Business Process Model Similarity Search}}},
   booktitle = {Business {{Process Management}}},
@@ -2458,6 +2635,54 @@
   pagetotal = {281}
 }
 
+@inproceedings{Dolstra2008NixOSPurelyFunctional,
+  title = {{{NixOS}}: {{A}} Purely Functional {{Linux}} Distribution},
+  shorttitle = {{{NixOS}}},
+  booktitle = {Proceedings of the 13th {{ACM SIGPLAN}} International Conference on {{Functional}} Programming},
+  author = {Dolstra, Eelco and Löh, Andres},
+  date = {2008-09-20},
+  series = {{{ICFP}} '08},
+  pages = {367--378},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/1411204.1411255},
+  url = {https://doi.org/10.1145/1411204.1411255},
+  urldate = {2024-07-19},
+  abstract = {Existing package and system configuration management tools suffer from an imperative model, where system administration actions such as upgrading packages or changes to system configuration files are stateful: they destructively update the state of the system. This leads to many problems, such as the inability to roll back changes easily, to run multiple versions of a package side-by-side, to reproduce a configuration deterministically on another machine, or to reliably upgrade a system. In this paper we show that we can overcome these problems by moving to a purely functional system configuration model. This means that all static parts of a system (such as software packages, configuration files and system startup scripts) are built by pure functions and are immutable, stored in a way analogously to a heap in a purely function language. We have implemented this model in NixOS, a non-trivial Linux distribution that uses the Nix package manager to build the entire system configuration from a purely functional specification.},
+  isbn = {978-1-59593-919-7}
+}
+
+@article{Dolstra2010NixOSPurelyFunctional,
+  title = {{{NixOS}}: {{A}} Purely Functional {{Linux}} Distribution},
+  shorttitle = {{{NixOS}}},
+  author = {Dolstra, Eelco and Löh, Andres and Pierron, Nicolas},
+  date = {2010-11},
+  journaltitle = {Journal of Functional Programming},
+  volume = {20},
+  number = {5--6},
+  pages = {577--615},
+  issn = {1469-7653, 0956-7968},
+  doi = {10.1017/S0956796810000195},
+  url = {https://www.cambridge.org/core/journals/journal-of-functional-programming/article/nixos-a-purely-functional-linux-distribution/C1ACBA2A51D2E5466820F5B5086EA2CE},
+  urldate = {2024-07-19},
+  abstract = {Existing package and system configuration management tools suffer from an imperative model, where system administration actions such as package upgrades or changes to system configuration files are stateful: they destructively update the state of the system. This leads to many problems, such as the inability to roll back changes easily, to deploy multiple versions of a package side-by-side, to reproduce a configuration deterministically on another machine, or to reliably upgrade a system. In this paper we show that we can overcome these problems by moving to a purely functional system configuration model. This means that all static parts of a system (such as software packages, configuration files and system startup scripts) are built by pure functions and are immutable, stored in a way analogous to a heap in a purely functional language. We have implemented this model in NixOS, a non-trivial Linux distribution that uses the Nix package manager to build the entire system configuration from a modular, purely functional specification.},
+  langid = {english}
+}
+
+@online{Dong2024CanLLMBe,
+  title = {Can {{LLM}} Be a {{Personalized Judge}}?},
+  author = {Dong, Yijiang River and Hu, Tiancheng and Collier, Nigel},
+  date = {2024-06-17},
+  eprint = {2406.11657},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2406.11657},
+  url = {http://arxiv.org/abs/2406.11657},
+  urldate = {2024-09-23},
+  abstract = {Ensuring that large language models (LLMs) reflect diverse user values and preferences is crucial as their user bases expand globally. It is therefore encouraging to see the growing interest in LLM personalization within the research community. However, current works often rely on the LLM-as-a-Judge approach for evaluation without thoroughly examining its validity. In this paper, we investigate the reliability of LLM-as-a-Personalized-Judge, asking LLMs to judge user preferences based on personas. Our findings suggest that directly applying LLM-as-a-Personalized-Judge is less reliable than previously assumed, showing low and inconsistent agreement with human ground truth. The personas typically used are often overly simplistic, resulting in low predictive power. To address these issues, we introduce verbal uncertainty estimation into the LLM-as-a-Personalized-Judge pipeline, allowing the model to express low confidence on uncertain judgments. This adjustment leads to much higher agreement (above 80\%) on high-certainty samples for binary tasks. Through human evaluation, we find that the LLM-as-a-Personalized-Judge achieves comparable performance to third-party humans evaluation and even surpasses human performance on high-certainty samples. Our work indicates that certainty-enhanced LLM-as-a-Personalized-Judge offers a promising direction for developing more reliable and scalable methods for evaluating LLM personalization.},
+  pubstate = {prepublished}
+}
+
 @inproceedings{DosSantos2018ImpactsCodingPractices,
   title = {Impacts of Coding Practices on Readability},
   booktitle = {Proceedings of the 26th {{Conference}} on {{Program Comprehension}}},
@@ -2480,6 +2705,19 @@
   author = {Douglas, John and Wells, Simon},
   date = {2017},
   abstract = {A new, free, open-source, web-based argument analysis tool called Monkeypuzzle is introduced, designed to provide both a foundation for creating and visualising reproducible argument analyses as well as a flexible framework for investigating new and extending existing argument analysis techniques. We introduce a new, free, open-source, web-based argument analysis tool called Monkeypuzzle. This is designed to provide both a foundation for creating and visualising reproducible argument analyses as well as a flexible framework for investigating new and extending existing argument analysis techniques.}
+}
+
+@inproceedings{Du2019ValidationGrowingKnowledge,
+  title = {Validation of {{Growing Knowledge Graphs}} by {{Abductive Text Evidences}}},
+  booktitle = {Proceedings of the {{AAAI Conference}} on {{Artificial Intelligence}}},
+  author = {Du, Jianfeng and Pan, Jeff Z. and Wang, Sylvia and Qi, Kunxun and Shen, Yuming and Deng, Yu},
+  date = {2019-07-17},
+  volume = {33},
+  pages = {2784--2791},
+  doi = {10.1609/aaai.v33i01.33012784},
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/4130},
+  urldate = {2024-10-31},
+  abstract = {This paper proposes a validation mechanism for newly added triples in a growing knowledge graph. Given a logical theory, a knowledge graph, a text corpus, and a new triple to be validated, this mechanism computes a sorted list of explanations for the new triple to facilitate the validation of it, where an explanation, called an abductive text evidence, is a set of pairs of the form (triple, window) where appending the set of triples on the left to the knowledge graph enforces entailment of the new triple under the logical theory, while every sentence window on the right which is contained in the text corpus explains to some degree why the triple on the left is true. From the angle of practice, a special class of abductive text evidences called TEP-based abductive text evidence is proposed, which is constructed from explanation patterns seen before in the knowledge graph. Accordingly, a method for computing the complete set of TEP-based abductive text evidences is proposed. Moreover, a method for sorting abductive text evidences based on distantly supervised learning is proposed. To evaluate the proposed validation mechanism, four knowledge graphs with logical theories are constructed from the four great classical masterpieces of Chinese literature. Experimental results on these datasets demonstrate the efficiency and effectiveness of the proposed mechanism.}
 }
 
 @article{Dudley2018ReviewUserInterface,
@@ -2525,11 +2763,20 @@
 
 @inproceedings{Dumani2019GoodPremisesRetrieval,
   title = {Good {{Premises Retrieval}} via a {{Two-Stage Argument Retrieval Model}}},
-  booktitle = {Grundlagen von {{Datenbanken}}},
+  booktitle = {Proceedings of the 31st {{GI-Workshop Grundlagen}} von {{Datenbanken}}},
   author = {Dumani, Lorik},
-  date = {2019},
-  url = {http://ceur-ws.org/Vol-2367/paper_13.pdf},
-  abstract = {This paper presents a research plan for an implementation of a two-stage argument retrieval model that first finds similar claims for a given query claim and then in the next step retrieves clusters of similar premises in a ranked order. Computational argumentation is an emerging research area. An argument consists of a claim that is supported or attacked by at least one premise. Its intention is the persuasion of others to a certain standpoint. An important problem in this field is the retrieval of good premises for a given claim from a corpus of arguments. Given a claim, a first step of existing approaches is often to find other claims that are textually similar. Then, the similar claim’s premises can be retrieved. This paper presents a research plan for an implementation of a two-stage argument retrieval model that first finds similar claims for a given query claim and then in the next step retrieves clusters of similar premises in a ranked order.}
+  editor = {Schenkel, Ralf},
+  date = {2019-06-11},
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {2367},
+  pages = {3--8},
+  publisher = {CEUR},
+  location = {Saarburg, Germany},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-2367/#paper_13},
+  urldate = {2024-12-11},
+  eventtitle = {Grundlagen von {{Datenbanken}}},
+  langid = {english}
 }
 
 @inproceedings{Dumani2019SystematicComparisonMethods,
@@ -2582,13 +2829,18 @@
 
 @inproceedings{Dumani2020RankingArgumentsCombining,
   title = {Ranking {{Arguments}} by {{Combining Claim Similarity}} and {{Argument Quality Dimensions}}},
-  booktitle = {{{CLEF}}},
+  booktitle = {Working {{Notes}} of {{CLEF}} 2020 - {{Conference}} and {{Labs}} of the {{Evaluation Forum}}},
   author = {Dumani, Lorik and Schenkel, Ralf},
-  date = {2020},
+  editor = {Cappellato, Linda and Eickhoff, Carsten and Ferro, Nicola and Névéol, Aurélie},
+  date = {2020-09-22},
+  series = {{{CEUR Workshop Proceedings}}},
   volume = {2696},
-  publisher = {CEUR-WS.org},
-  url = {http://ceur-ws.org/Vol-2696/paper_174.pdf},
-  abstract = {In this paper we describe our submissions to the CLEF lab Touché, which addresses argument retrieval from a focused debate collection. Our approach consists of a two-step retrieval. Step one finds the most similar claims to a query. Step two ranks the directly tied premises by the count of their convincingness compared to other relevant premises, for which we aggregate the sum of three main argument quality dimensions. The final ranking consists of the product of the two components which are expressed as probabilities.},
+  publisher = {CEUR},
+  location = {Thessaloniki, Greece},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-2696/#paper_174},
+  urldate = {2024-12-11},
+  eventtitle = {{{CLEF}} 2020 {{Working Notes}}},
   langid = {english}
 }
 
@@ -2850,6 +3102,21 @@
   langid = {english}
 }
 
+@inproceedings{Feely2025UsingPseudoCases,
+  title = {Using {{Pseudo Cases}} and~{{Stratified Case-Based Reasoning}} to~{{Generate}} and~{{Evaluate Training Adjustments}} for~{{Marathon Runners}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Feely, Ciara and Caulfield, Brian and Lawlor, Aonghus and Smyth, Barry},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {88--101},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77918-3_7},
+  abstract = {Recommender systems have become a regular feature in our daily lives. They influence the books we read, the movies we watch and the content we consume on social media. There is opportunity to apply recommender systems to more complex domains, such as exercise, and in this paper we consider how such systems can play a role in supporting runners as they train for a marathon. However, making recommendations for more complex domains introduces additional challenges such as how to provide varied recommendations and how to evaluate these suggestions. In this work we address both of these issues using a stratified case-based recommendation approach and the use of so-called pseudo-cases for evaluation. The stratified approach allows for different recommendations to be generated for each runner based on whether they would like to continue along their current training trajectory, or target a more ambitious or a more conservative goal. We further describe how to evaluate these recommendations in terms of their feasibility, plausibility, effectiveness and safety using a large-scale, real-world dataset of more than 130,000 runners and their marathon training experiences.},
+  isbn = {978-3-031-77918-3},
+  langid = {english}
+}
+
 @inproceedings{Feger2020StructureContentAssessing,
   title = {Structure or {{Content}}? {{Towards Assessing Argument Relevance}}},
   booktitle = {Proceedings of the 8th {{International Conference}} on {{Computational Models}} of {{Argument}}},
@@ -2996,7 +3263,7 @@
   date = {1989-09},
   journaltitle = {SIGIR Forum},
   volume = {24},
-  number = {1-2},
+  number = {1--2},
   pages = {19--21},
   issn = {0163-5840},
   doi = {10.1145/378881.378888},
@@ -3108,6 +3375,21 @@
   doi = {10.48550/arXiv.2312.10997},
   url = {http://arxiv.org/abs/2312.10997},
   urldate = {2024-04-01},
+  abstract = {Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.},
+  pubstate = {prepublished}
+}
+
+@online{Gao2024RetrievalAugmentedGenerationLargea,
+  title = {Retrieval-{{Augmented Generation}} for {{Large Language Models}}: {{A Survey}}},
+  shorttitle = {Retrieval-{{Augmented Generation}} for {{Large Language Models}}},
+  author = {Gao, Yunfan and Xiong, Yun and Gao, Xinyu and Jia, Kangxiang and Pan, Jinliu and Bi, Yuxi and Dai, Yi and Sun, Jiawei and Wang, Meng and Wang, Haofen},
+  date = {2024-03-27},
+  eprint = {2312.10997},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2312.10997},
+  url = {http://arxiv.org/abs/2312.10997},
+  urldate = {2024-09-30},
   abstract = {Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.},
   pubstate = {prepublished}
 }
@@ -3356,6 +3638,31 @@
   eventtitle = {{{NAACL-HLT}} 2009}
 }
 
+@online{Guo2022GradientDescentBasedKNNAlgorithm,
+  title = {A {{Gradient-Descent-Based}} k-{{NN Algorithm}}},
+  author = {Guo, Wenqi},
+  date = {2022-04-24},
+  doi = {10.31219/osf.io/kqdxu},
+  abstract = {In this paper, we reviewed a few works that solved the speed issue of the k-NN classification algorithm. This makes it possible to solve real problems using the classificational k-NN algorithm. We then use gradient descent to achieve the equivalent goal of feature scaling, increasing the accuracy of the k-NN classification algorithm, including on nominal data. I was just a part-time college student when I wrote this paper, things might be wrong. Don't assume its credibility is high.},
+  pubstate = {prepublished}
+}
+
+@inproceedings{Guo2024DSAgentAutomatedData,
+  title = {{{DS-Agent}}: {{Automated Data Science}} by {{Empowering Large Language Models}} with {{Case-Based Reasoning}}},
+  shorttitle = {{{DS-Agent}}},
+  booktitle = {Proceedings of the 41st {{International Conference}} on {{Machine Learning}}},
+  author = {Guo, Siyuan and Deng, Cheng and Wen, Ying and Chen, Hechang and Chang, Yi and Wang, Jun},
+  date = {2024-07-08},
+  pages = {16813--16848},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  url = {https://proceedings.mlr.press/v235/guo24b.html},
+  urldate = {2024-09-14},
+  abstract = {In this work, we investigate the potential of large language models (LLMs) based agents to automate data science tasks, with the goal of comprehending task requirements, then building and training the best-fit machine learning models. Despite their widespread success, existing LLM agents are hindered by generating unreasonable experiment plans within this scenario. To this end, we present DS-Agent, a novel automatic framework that harnesses LLM agent and case-based reasoning (CBR). In the development stage, DS-Agent follows the CBR framework to structure an automatic iteration pipeline, which can flexibly capitalize on the expert knowledge from Kaggle, and facilitate consistent performance improvement through the feedback mechanism. Moreover, DS-Agent implements a low-resource deployment stage with a simplified CBR paradigm to adapt past successful solutions from the development stage for direct code generation, significantly reducing the demand on foundational capabilities of LLMs. Empirically, DS-Agent with GPT-4 achieves 100\% success rate in the development stage, while attaining 36\% improvement on average one pass rate across alternative LLMs in the deployment stage. In both stages, DS-Agent achieves the best rank in performance, costing \$1.60 and \$0.13 per run with GPT-4, respectively. Our data and code are open-sourced at https://github.com/guosyjlu/DS-Agent.},
+  eventtitle = {International {{Conference}} on {{Machine Learning}}},
+  langid = {english}
+}
+
 @article{Gurevych2017ArgumentationSocialMedia,
   title = {Argumentation in {{Social Media}}},
   author = {Gurevych, Iryna and Lippi, Marco and Torroni, Paolo},
@@ -3559,6 +3866,34 @@
   eventtitle = {{{EMNLP}} 2023}
 }
 
+@inproceedings{Heinisch2024TellMeWho,
+  title = {Tell Me Who You Are and {{I}} Tell You How You Argue: {{Predicting Stances}} and {{Arguments}} for {{Stakeholder Groups}}},
+  shorttitle = {Tell Me Who You Are and {{I}} Tell You How You Argue},
+  booktitle = {Findings of the {{Association}} for {{Computational Linguistics}}: {{NAACL}} 2024},
+  author = {Heinisch, Philipp and Dumani, Lorik and Cimiano, Philipp and Schenkel, Ralf},
+  editor = {Duh, Kevin and Gomez, Helena and Bethard, Steven},
+  date = {2024-06},
+  pages = {1968--1982},
+  publisher = {Association for Computational Linguistics},
+  location = {Mexico City, Mexico},
+  doi = {10.18653/v1/2024.findings-naacl.128},
+  url = {https://aclanthology.org/2024.findings-naacl.128},
+  urldate = {2024-12-11},
+  abstract = {Argument mining has focused so far mainly on the identification, extraction, and formalization of arguments. An important yet unaddressedtask consists in the prediction of the argumentative behavior of stakeholders in a debate. Predicting the argumentative behavior in advance can support foreseeing issues in public policy making or help recognize potential disagreements early on and help to resolve them. In this paper, we consider the novel task of predicting the argumentative behavior of individual stakeholders. We present ARGENST, a framework that relies on a recommender-based architecture to predict the stance and the argumentative main point on a specific controversial topic for a given stakeholder, which is described in terms of a profile including properties related to demographic attributes, religious and political orientation, socio-economic background, etc. We evaluate our approach on the well-known debate.org dataset in terms of accuracy for predicting stance as well as in terms of similarity of the generated arguments to the ground truth arguments using BERTScore. As part of a case study, we show how juries of members representing different stakeholder groups and perspectives can be assembled to simulate the public opinion on a given topic.},
+  eventtitle = {Findings 2024}
+}
+
+@thesis{Hemel2006NixOSNixBased,
+  title = {{{NixOS}}: The {{Nix}} Based Operating System},
+  shorttitle = {{{NixOS}}},
+  author = {Hemel, Armijn},
+  date = {2006-08-24},
+  doi = {10.5281/zenodo.12906987},
+  url = {https://zenodo.org/records/12906987},
+  urldate = {2024-07-28},
+  abstract = {The subject of this thesis is how the Nix package management system can be applied to manage a whole Linux distribution. Many conventional packagemanagement systems have drawbacks that Nix fixes. But, Nix has never been used to deploy and manage a whole system. In this thesis a proof of concept Linux distribution called NixOS is described. NixOS uses the Nix package management system to manage all software that is installed on the system, including the Linux kernel, all software and system services. Using Nix to manage all software on a system, as is done on NixOS, has several advantages. Developers don’t need to be worried that unwanted dependencies are picked up during the build of a software package, since these are completely eliminated. System administrators get the possibility to deploy services using Nix and how they can immediately use all benefits from Nix, including atomic upgrades and rollbacks, without going through a painful cycle of rolling back a service, with all its, possibly also updated, dependencies. This thesis describes the implementation NixOS, including pitfalls that were encountered and choices that were made. Also shown are some concrete results of running NixOS and how NixOS can be bettered.}
+}
+
 @article{Hesse1959DefiningAnalogy,
   title = {On {{Deﬁning Analogy}}},
   author = {Hesse, M},
@@ -3666,6 +4001,17 @@
   langid = {english}
 }
 
+@thesis{Hoelzmann2024UntersuchungKoreferenzaufloesungArgumentgraphen,
+  type = {bathesis},
+  title = {Untersuchung der Koreferenzauflösung in Argumentgraphen mittels Prompting},
+  author = {Hölzmann, Lukas},
+  date = {2024-12-18},
+  institution = {Trier University},
+  location = {Trier, Germany},
+  langid = {ngerman},
+  pagetotal = {54}
+}
+
 @inproceedings{Hoffmann2020UsingSiameseGraph,
   title = {Using {{Siamese Graph Neural Networks}} for {{Similarity-Based Retrieval}} in {{Process-Oriented Case-Based Reasoning}}},
   booktitle = {Case-{{Based Reasoning Research}} and {{Development}}},
@@ -3679,6 +4025,21 @@
   doi = {10.1007/978-3-030-58342-2_15},
   abstract = {Similarity-based retrieval of semantic graphs is widely used in real-world scenarios, e. g., in the domain of business workflows. To tackle the problem of complex and time-consuming graph similarity computations during retrieval, the MAC/FAC approach is used in Process-Oriented Case-Based Reasoning (POCBR), where similar graphs are extracted from a preselected set of candidate graphs. These graphs result from a similarity computation with a computationally inexpensive similarity measure. The contribution of this paper is a novel similarity measure where vector space embeddings generated by two siamese Graph Neural Networks (GNNs) are used to approximate the similarities of a precise but therefore computationally complex graph similarity measure. Our approach includes a specific encoding scheme for semantic graphs that enables their usage in neural networks. The evaluation examines the quality and performance of these models in preselecting retrieval candidates and in approximating the ground-truth similarities of the graph similarity measure for two workflow domains. The results show great potential of the approach for being used in a MAC/FAC scenario, either as a preselection model or as an approximation of the graph similarity measure.},
   isbn = {978-3-030-58342-2},
+  langid = {english}
+}
+
+@inproceedings{Hoffmann2022GPUBasedGraphMatching,
+  title = {{{GPU-Based Graph Matching}} for~{{Accelerating Similarity Assessment}} in~{{Process-Oriented Case-Based Reasoning}}},
+  booktitle = {Case-{{Based Reasoning Research}} and {{Development}}},
+  author = {Hoffmann, Maximilian and Malburg, Lukas and Bach, Nico and Bergmann, Ralph},
+  editor = {Keane, Mark T. and Wiratunga, Nirmalie},
+  date = {2022},
+  pages = {240--255},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-031-14923-8_16},
+  abstract = {In Process-Oriented Case-Based Reasoning (POCBR), determining the similarity between cases represented as semantic graphs often requires some kind of inexact graph matching, which generally is an NP-hard problem. Heuristic search algorithms such as A* search have been successfully applied for this task, but the computational performance is still a limiting factor for large case bases. As related work shows a great potential for accelerating A* search by using GPUs, we propose a novel approach called AMonG for efficiently computing graph similarities with an A* graph matching process involving GPU computing. The three-phased matching process distributes the search process over multiple search instances running in parallel on the GPU. We develop and examine different strategies within these phases that allow to customize the matching process adjusted to the problem situation to be solved. The experimental evaluation compares the proposed GPU-based approach with a pure CPU-based one. The results clearly demonstrate that the GPU-based approach significantly outperforms the CPU-based approach in a retrieval scenario, leading to an average speedup factor of 16.},
+  isbn = {978-3-031-14923-8},
   langid = {english}
 }
 
@@ -3746,6 +4107,56 @@
   abstract = {Clustering is a useful technique that organizes a large quantity of unordered text documents into a small number of meaningful and coherent clusters, thereby providing a basis for intuitive and informative navigation and browsing mechanisms. Partitional clustering algorithms have been recognized to be more suitable as opposed to the hierarchical clustering schemes for processing large datasets. A wide variety of distance functions and similarity measures have been used for clustering, such as squared Euclidean distance, cosine similarity, and relative entropy. In this paper, we compare and analyze the effectiveness of these measures in partitional clustering for text document datasets. Our experiments utilize the standard Kmeans algorithm and we report results on seven text document datasets and five distance/similarity measures that have been most commonly used in text clustering.}
 }
 
+@inproceedings{Huang2021DocumentlevelEntitybasedExtraction,
+  title = {Document-Level {{Entity-based Extraction}} as {{Template Generation}}},
+  booktitle = {Proceedings of the 2021 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
+  author = {Huang, Kung-Hsiang and Tang, Sam and Peng, Nanyun},
+  editor = {Moens, Marie-Francine and Huang, Xuanjing and Specia, Lucia and Yih, Scott Wen-tau},
+  date = {2021-11},
+  pages = {5257--5269},
+  publisher = {Association for Computational Linguistics},
+  location = {Online and Punta Cana, Dominican Republic},
+  doi = {10.18653/v1/2021.emnlp-main.426},
+  url = {https://aclanthology.org/2021.emnlp-main.426},
+  urldate = {2024-08-15},
+  abstract = {Document-level entity-based extraction (EE), aiming at extracting entity-centric information such as entity roles and entity relations, is key to automatic knowledge acquisition from text corpora for various domains. Most document-level EE systems build extractive models, which struggle to model long-term dependencies among entities at the document level. To address this issue, we propose a generative framework for two document-level EE tasks: role-filler entity extraction (REE) and relation extraction (RE). We first formulate them as a template generation problem, allowing models to efficiently capture cross-entity dependencies, exploit label semantics, and avoid the exponential computation complexity of identifying N-ary relations. A novel cross-attention guided copy mechanism, TopK Copy, is incorporated into a pre-trained sequence-to-sequence model to enhance the capabilities of identifying key information in the input document. Experiments done on the MUC-4 and SciREX dataset show new state-of-the-art results on REE (+3.26\%), binary RE (+4.8\%), and 4-ary RE (+2.7\%) in F1 score.},
+  eventtitle = {{{EMNLP}} 2021}
+}
+
+@inproceedings{Huang2023ReasoningLargeLanguage,
+  title = {Towards {{Reasoning}} in {{Large Language Models}}: {{A Survey}}},
+  shorttitle = {Towards {{Reasoning}} in {{Large Language Models}}},
+  booktitle = {Findings of the {{Association}} for {{Computational Linguistics}}: {{ACL}} 2023},
+  author = {Huang, Jie and Chang, Kevin Chen-Chuan},
+  editor = {Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki},
+  date = {2023-07},
+  pages = {1049--1065},
+  publisher = {Association for Computational Linguistics},
+  location = {Toronto, Canada},
+  doi = {10.18653/v1/2023.findings-acl.67},
+  url = {https://aclanthology.org/2023.findings-acl.67},
+  urldate = {2024-09-16},
+  abstract = {Reasoning is a fundamental aspect of human intelligence that plays a crucial role in activities such as problem solving, decision making, and critical thinking. In recent years, large language models (LLMs) have made significant progress in natural language processing, and there is observation that these models may exhibit reasoning abilities when they are sufficiently large. However, it is not yet clear to what extent LLMs are capable of reasoning. This paper provides a comprehensive overview of the current state of knowledge on reasoning in LLMs, including techniques for improving and eliciting reasoning in these models, methods and benchmarks for evaluating reasoning abilities, findings and implications of previous research in this field, and suggestions on future directions. Our aim is to provide a detailed and up-to-date review of this topic and stimulate meaningful discussion and future work.},
+  eventtitle = {Findings 2023}
+}
+
+@inproceedings{Huang2024LargeLanguageModels,
+  title = {Large {{Language Models}} for {{Graphs}}: {{Progresses}} and {{Directions}}},
+  shorttitle = {Large {{Language Models}} for {{Graphs}}},
+  booktitle = {Companion {{Proceedings}} of the {{ACM Web Conference}} 2024},
+  author = {Huang, Chao and Ren, Xubin and Tang, Jiabin and Yin, Dawei and Chawla, Nitesh},
+  date = {2024-05-13},
+  series = {{{WWW}} '24},
+  pages = {1284--1287},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/3589335.3641251},
+  url = {https://dl.acm.org/doi/10.1145/3589335.3641251},
+  urldate = {2024-09-16},
+  abstract = {Graph neural networks (GNNs) have emerged as fundamental methods for handling structured graph data in various domains, including citation networks, molecule prediction, and recommender systems. They enable the learning of informative node or graph representations, which are crucial for tasks such as link prediction and node classification in the context of graphs. To achieve high-quality graph representation learning, certain essential factors come into play: clean labels, accurate graph structures, and sufficient initial node features. However, real-world graph data often suffer from noise and sparse labels, while different datasets have unique feature constructions. These factors significantly impact the generalization capabilities of graph neural networks, particularly when faced with unseen tasks. Recently, due to the efficent text processing and task generalization capability of large language models (LLMs), there has been a promising approach to address the challenges mentioned above by combining large language models with graph data.  This tutorial offers an overview of incorporating large language models into the graph domain, accompanied by practical examples. The methods are categorized into three dimensions: utilizing LLMs as augmenters, predictors, and agents for graph learning tasks. We will delve into the current progress and future directions within this field. By introducing this emerging topic, our aim is to enhance the audience's understanding of LLM-based graph learning techniques, foster idea exchange, and encourage discussions that drive continuous advancements in this domain.},
+  isbn = {979-8-4007-0172-6}
+}
+
 @inproceedings{Hulpus2019ExplainingNaturalLanguage,
   title = {Towards {{Explaining Natural Language Arguments}} with {{Background Knowledge}}},
   booktitle = {Workshop on {{Semantic Explainability}} ({{SemEx}} 2019) in the 18th {{Intl}}. {{Semantic Web Conf}}. ({{ISWC}} 2019)},
@@ -3772,6 +4183,22 @@
   url = {https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-8137.1912.tb05611.x},
   urldate = {2021-03-11},
   langid = {english}
+}
+
+@article{Jaiswal2024FaNREMsFairNormalized,
+  title = {{{FaN-REMs}}: {{Fair}} and {{Normalized Retrieval Evaluation Metrics}} for {{Learning Retrieval Systems}}},
+  shorttitle = {{{FaN-REMs}}},
+  author = {Jaiswal, Amar and Kumar, Mohit and Pathak, Ajeet Ram and Yigzaw, Kassaye Yitbarek},
+  date = {2024},
+  journaltitle = {IEEE Access},
+  volume = {12},
+  pages = {195370--195395},
+  issn = {2169-3536},
+  doi = {10.1109/ACCESS.2024.3514916},
+  url = {https://ieeexplore.ieee.org/document/10794782},
+  urldate = {2025-01-10},
+  abstract = {Retrieval evaluation metrics are vital for resilient artificial intelligence (AI) retrieval systems and its subfields, such as case-based reasoning (CBR). Despite extensive research in CBR over the decades, the field still lacks a specialized retrieval evaluation metric (REM). This study aims to critically investigate and devise retrieval evaluation metrics that are generic, fair, normalized, and non-deceptive, which make it suitable for domains including learning retrieval systems such as CBR. It focuses on enhancing CBR retrievals by addressing key flaws in widely used metrics, including the normalized discounted cumulative gain at k ( nDCG\textbackslash text@k ) metric in IR. The proposed method entails devising a fair and normalized (FaN) relevancy metric for a case retrieved against a test query, blending system-generated and oracle-assessed relevancies. This underpins three rank-based metrics: relevancy at k ( R\textbackslash text@k ), average relevancy at k ( AR\textbackslash text@k ), and mean average relevancy at k ( MAR\textbackslash text@k ). These metrics are designed for both single and multiple query evaluations and offer a comprehensive retrieval analysis. Despite inherent challenges in evaluating evaluation metrics, FaN-REMs demonstrated robust performance across plausible domain values for the FaN relevancy function. These metrics effectively assess retrievals across different implementations, similarity measures, and applications, with inherent normalization allowing for comparisons across heterogeneous systems. These metrics were instrumental in developing a CBR-based clinical decision support system (CDSS) for the SupportPrim study in Norway, demonstrating the practical application and relevance of this research in real-world AI systems. FaN-REMs show promise as benchmark metrics to compare various retrieval and CBR systems. Suitable for set-based and rank-based evaluations, rank-based FaN-REMs demonstrate superior discriminatory capability. The experimental results affirm the viability of FaN-REMs in real-world CBR system development and maintenance.},
+  eventtitle = {{{IEEE Access}}}
 }
 
 @article{Jamshidi2018MicroservicesJourneyFar,
@@ -3804,6 +4231,21 @@
   publisher = {IOS Press},
   doi = {10.3233/978-1-61499-436-7-463},
   abstract = {This paper introduces OVA+, an on-line interface for the analysis of arguments. It is the result of an attempt to provide a tool relying on the Argument Interchange Format theory and Inference Anchoring Theory schemes.}
+}
+
+@inproceedings{Jarmulak2000GeneticAlgorithmsOptimise,
+  title = {Genetic {{Algorithms}} to {{Optimise CBR Retrieval}}},
+  booktitle = {Advances in {{Case-Based Reasoning}}},
+  author = {Jarmulak, Jacek and Craw, Susan and Rowe, Ray},
+  editor = {Blanzieri, Enrico and Portinale, Luigi},
+  date = {2000},
+  pages = {136--147},
+  publisher = {Springer},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/3-540-44527-7_13},
+  abstract = {Knowledge in a case-based reasoning (CBR) system is often more extensive than simply the cases, therefore knowledge engineering may still be very demanding. This paper offers a first step towards an automated knowledge acquisition and refinement tool for non-case CBR knowledge. A data-driven approach is presented where a Genetic Algorithm learns effective feature selection for inducing case-base index, and feature weights for similarity measure for case retrieval. The optimisation can be viewed as knowledge acquisition or maintenance depending on whether knowledge is being created or refined. Optimising CBRretrieval is achieved using cases from the case-base and only minimal expert input, and so can be easily applied to an evolving case-base or a changing environment. Experiments with a real tablet formulation problem show the gains of simultaneously optimising the index and similarity measure. Provided that the available data represents the problem domain well, the optimisation has good generalisation properties and the domain knowledge extracted is comparable to expert knowledge.},
+  isbn = {978-3-540-44527-2},
+  langid = {english}
 }
 
 @article{Jarvelin2002CumulatedGainbasedEvaluation,
@@ -3883,6 +4325,21 @@
   langid = {english}
 }
 
+@online{Jin2024LargeLanguageModels,
+  title = {Large {{Language Models}} on {{Graphs}}: {{A Comprehensive Survey}}},
+  shorttitle = {Large {{Language Models}} on {{Graphs}}},
+  author = {Jin, Bowen and Liu, Gang and Han, Chi and Jiang, Meng and Ji, Heng and Han, Jiawei},
+  date = {2024-02-01},
+  eprint = {2312.02783},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2312.02783},
+  url = {http://arxiv.org/abs/2312.02783},
+  urldate = {2024-09-16},
+  abstract = {Large language models (LLMs), such as GPT4 and LLaMA, are creating significant advancements in natural language processing, due to their strong text encoding/decoding ability and newly found emergent capability (e.g., reasoning). While LLMs are mainly designed to process pure texts, there are many real-world scenarios where text data is associated with rich structure information in the form of graphs (e.g., academic networks, and e-commerce networks) or scenarios where graph data is paired with rich textual information (e.g., molecules with descriptions). Besides, although LLMs have shown their pure text-based reasoning ability, it is underexplored whether such ability can be generalized to graphs (i.e., graph-based reasoning). In this paper, we provide a systematic review of scenarios and techniques related to large language models on graphs. We first summarize potential scenarios of adopting LLMs on graphs into three categories, namely pure graphs, text-attributed graphs, and text-paired graphs. We then discuss detailed techniques for utilizing LLMs on graphs, including LLM as Predictor, LLM as Encoder, and LLM as Aligner, and compare the advantages and disadvantages of different schools of models. Furthermore, we discuss the real-world applications of such methods and summarize open-source codes and benchmark datasets. Finally, we conclude with potential future research directions in this fast-growing field. The related source can be found at https://github.com/PeterGriffinJin/Awesome-Language-Model-on-Graphs.},
+  pubstate = {prepublished}
+}
+
 @article{Jivani2011ComparativeStudyStemming,
   title = {A Comparative Study of Stemming Algorithms},
   author = {Jivani, Anjali Ganesh},
@@ -3928,6 +4385,21 @@
   date = {2009},
   volume = {551},
   pages = {61--72}
+}
+
+@inproceedings{Jouili2009AttributedGraphMatching,
+  title = {Attributed {{Graph Matching Using Local Descriptions}}},
+  booktitle = {Advanced {{Concepts}} for {{Intelligent Vision Systems}}},
+  author = {Jouili, Salim and Mili, Ines and Tabbone, Salvatore},
+  editor = {Blanc-Talon, Jacques and Philips, Wilfried and Popescu, Dan and Scheunders, Paul},
+  date = {2009},
+  pages = {89--99},
+  publisher = {Springer},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/978-3-642-04697-1_9},
+  abstract = {In the pattern recognition context, objects can be represented as graphs with attributed nodes and edges involving their relations. Consequently, matching attributed graphs plays an important role in objects recognition. In this paper, a node signatures extraction is combined with an optimal assignment method for matching attributed graphs. In particular, we show how local descriptions are used to define a node-to-node cost in an assignment problem using the Hungarian method. Moreover, we propose a distance formula to compute the distance between attributed graphs. The experiments demonstrate that the newly presented algorithm is well-suited to pattern recognition applications. Compared with well-known methods, our algorithm gives good results for retrieving images.},
+  isbn = {978-3-642-04697-1},
+  langid = {english}
 }
 
 @article{Jursic2010LemmaGenMultilingualLemmatisation,
@@ -4036,7 +4508,7 @@
   url = {https://doi.org/10.1561/1500000012},
   urldate = {2020-08-18},
   abstract = {This paper provides overview and instruction regarding the evaluation of interactive information retrieval systems with users. The primary goal of this article is to catalog and compile material related to this topic into a single source. This article (1) provides historical background on the development of user-centered approaches to the evaluation of interactive information retrieval systems; (2) describes the major components of interactive information retrieval system evaluation; (3) describes different experimental designs and sampling strategies; (4) presents core instruments and data collection techniques and measures; (5) explains basic data analysis techniques; and (4) reviews and discusses previous studies. This article also discusses validity and reliability issues with respect to both measures and methods, presents background information on research ethics and discusses some ethical issues which are specific to studies of interactive information retrieval (IIR). Finally, this article concludes with a discussion of outstanding challenges and future research directions.},
-  issue = {1—2}
+  issue = {1---2}
 }
 
 @article{Kent1955MachineLiteratureSearching,
@@ -4075,6 +4547,20 @@
   date = {2016},
   doi = {10.2312/eurp.20161143},
   abstract = {A tool for interacting with argument corpora is proposed that will help users to explore and understand the reasoning structure of large-scale arguments, to more rapidly comprehend complex new problem domains. Arguments are structures of premises and conclusions that underpin rational reasoning processes. Within complex knowledge domains, especially if they are contentious, argument structures can become large and complex. Visualization tools have been developed that support argument analysts and help them to work with arguments. Until recently, arguments were manually analyzed from natural language text, or constructed from scratch, but new communication modes mean that increasing amounts of debate and the arguments therein can be captured digitally. Furthermore, new tools and techniques for argument mining are beginning to automate the process of extracting argument structure from natural language; leading to much larger argument datasets that present problems for the current generation of argument visualization tools. Additionally, individual argument analysts have different foci which can lead to increased complexity within datasets, and additional facets that argument visualizations should account for but do not. We propose a tool for interacting with argument corpora that enable users to explore and understand the reasoning structure of large-scale arguments. The tool will support a range of interactivity techniques and will help users to explore and analyse large-scale arguments, to more rapidly comprehend complex new problem domains.}
+}
+
+@online{Khattab2020ColBERTEfficientEffective,
+  title = {{{ColBERT}}: {{Efficient}} and {{Effective Passage Search}} via {{Contextualized Late Interaction}} over {{BERT}}},
+  shorttitle = {{{ColBERT}}},
+  author = {Khattab, Omar and Zaharia, Matei},
+  date = {2020-06-04},
+  eprint = {2004.12832},
+  eprinttype = {arXiv},
+  doi = {10.48550/arXiv.2004.12832},
+  url = {http://arxiv.org/abs/2004.12832},
+  urldate = {2024-10-23},
+  abstract = {Recent progress in Natural Language Understanding (NLU) is driving fast-paced advances in Information Retrieval (IR), largely owed to fine-tuning deep language models (LMs) for document ranking. While remarkably effective, the ranking models based on these LMs increase computational cost by orders of magnitude over prior approaches, particularly as they must feed each query-document pair through a massive neural network to compute a single relevance score. To tackle this, we present ColBERT, a novel ranking model that adapts deep LMs (in particular, BERT) for efficient retrieval. ColBERT introduces a late interaction architecture that independently encodes the query and the document using BERT and then employs a cheap yet powerful interaction step that models their fine-grained similarity. By delaying and yet retaining this fine-granular interaction, ColBERT can leverage the expressiveness of deep LMs while simultaneously gaining the ability to pre-compute document representations offline, considerably speeding up query processing. Beyond reducing the cost of re-ranking the documents retrieved by a traditional model, ColBERT's pruning-friendly interaction mechanism enables leveraging vector-similarity indexes for end-to-end retrieval directly from a large document collection. We extensively evaluate ColBERT using two recent passage search datasets. Results show that ColBERT's effectiveness is competitive with existing BERT-based models (and outperforms every non-BERT baseline), while executing two orders-of-magnitude faster and requiring four orders-of-magnitude fewer FLOPs per query.},
+  pubstate = {prepublished}
 }
 
 @online{Khosravi2024RelationalGraphConvolutional,
@@ -4253,6 +4739,21 @@
   langid = {english}
 }
 
+@inproceedings{Kourani2024ProcessModelingLarge,
+  title = {Process {{Modeling}} with~{{Large Language Models}}},
+  booktitle = {Enterprise, {{Business-Process}} and {{Information Systems Modeling}}},
+  author = {Kourani, Humam and Berti, Alessandro and Schuster, Daniel and family=Aalst, given=Wil M. P., prefix=van der, useprefix=true},
+  editor = {family=Aa, given=Han, prefix=van der, useprefix=true and Bork, Dominik and Schmidt, Rainer and Sturm, Arnon},
+  date = {2024},
+  pages = {229--244},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-61007-3_18},
+  abstract = {In the realm of Business Process Management (BPM), process modeling plays a crucial role in translating complex process dynamics into comprehensible visual representations, facilitating the understanding, analysis, improvement, and automation of organizational processes. Traditional process modeling methods often require extensive expertise and can be time-consuming. This paper explores the integration of Large Language Models (LLMs) into process modeling to enhance the accessibility of process modeling, offering a more intuitive entry point for non-experts while augmenting the efficiency of experts. We propose a framework that leverages LLMs for the automated generation and iterative refinement of process models starting from textual descriptions. Our framework involves innovative prompting strategies for effective LLM utilization, along with a secure model generation protocol and an error-handling mechanism. Moreover, we instantiate a concrete system extending our framework. This system provides robust quality guarantees on the models generated and supports exporting them in standard modeling notations, such as the Business Process Modeling Notation (BPMN) and Petri nets. Preliminary results demonstrate the framework’s ability to streamline process modeling tasks, underscoring the transformative potential of generative AI in the BPM field.},
+  isbn = {978-3-031-61007-3},
+  langid = {english}
+}
+
 @inproceedings{Koutra2011AlgorithmsGraphSimilarity,
   title = {Algorithms for Graph Similarity and Subgraph Matching},
   booktitle = {Proc. {{Ecol}}. {{Inference Conf}}.},
@@ -4260,6 +4761,22 @@
   date = {2011},
   url = {https://people.eecs.berkeley.edu/~aramdas/reports/DBreport.pdf},
   urldate = {2018-09-04}
+}
+
+@article{Kpodjedo2014UsingLocalSimilarity,
+  title = {Using Local Similarity Measures to Efficiently Address Approximate Graph Matching},
+  author = {Kpodjedo, Segla and Galinier, Philippe and Antoniol, Giulio},
+  date = {2014-02-19},
+  journaltitle = {Discrete Applied Mathematics},
+  shortjournal = {Discrete Applied Mathematics},
+  series = {Combinatorial {{Optimization}}},
+  volume = {164},
+  pages = {161--177},
+  issn = {0166-218X},
+  doi = {10.1016/j.dam.2012.01.019},
+  url = {https://www.sciencedirect.com/science/article/pii/S0166218X12000273},
+  urldate = {2024-11-11},
+  abstract = {In this paper, we investigate heuristics for Approximate Graph Matching (AGM), in particular when it can be formulated as a Maximum Common Edge Subgraph (MCES) problem. First, we observe empirically that initializing a local search with a tiny subset of a known optimal solution always results in much better solutions than starting with an empty solution. The main challenge could then be to retrieve such small subsets for any problem instance. For this purpose, we propose several local similarity measures and evaluate their ability to predict node matches which could be used to start a local search. The resulting algorithm (SIM-T) is a classic tabu algorithm that is initialized by a greedy procedure relying mainly, in its earliest steps, on similarity measures. We conducted experiments on a large collection of random graphs of various orders (from 50 to 3000 nodes) and densities. Results obtained are mostly excellent, especially on similar pairs of labeled graphs. Comparisons made with two recent state-of-the-art algorithms–“BP” and “PATH”–indicate a superiority of our approach, in terms of both scores and computation times.}
 }
 
 @article{Kreutz2022SchenQLIndepthAnalysis,
@@ -4469,6 +4986,21 @@
   abstract = {Understanding the inferential principles underpinning an argument is essential to the proper interpretation and evaluation of persuasive discourse. Argument schemes capture the conventional patterns of reasoning appealed to in persuasion. The empirical study of these patterns relies on the availability of data about the actual use of argumentation in communicative practice. Annotated corpora of argument schemes, however, are scarce, small, and unrepresentative. Aiming to address this issue, we present one step in the development of improved datasets by integrating the Argument Scheme Key – a novel annotation method based on one of the most popular typologies of argument schemes – into the widely used OVA software for argument analysis.}
 }
 
+@online{LCMTeam2024LargeConceptModels,
+  title = {Large {{Concept Models}}: {{Language Modeling}} in a {{Sentence Representation Space}}},
+  shorttitle = {Large {{Concept Models}}},
+  author = {{LCM Team} and Barrault, Loïc and Duquenne, Paul-Ambroise and Elbayad, Maha and Kozhevnikov, Artyom and Alastruey, Belen and Andrews, Pierre and Coria, Mariano and Couairon, Guillaume and Costa-jussà, Marta R. and Dale, David and Elsahar, Hady and Heffernan, Kevin and Janeiro, João Maria and Tran, Tuan and Ropers, Christophe and Sánchez, Eduardo and Roman, Robin San and Mourachko, Alexandre and Saleem, Safiyyah and Schwenk, Holger},
+  date = {2024-12-15},
+  eprint = {2412.08821},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2412.08821},
+  url = {http://arxiv.org/abs/2412.08821},
+  urldate = {2025-01-02},
+  abstract = {LLMs have revolutionized the field of artificial intelligence and have emerged as the de-facto tool for many tasks. The current established technology of LLMs is to process input and generate output at the token level. This is in sharp contrast to humans who operate at multiple levels of abstraction, well beyond single words, to analyze information and to generate creative content. In this paper, we present an attempt at an architecture which operates on an explicit higher-level semantic representation, which we name a concept. Concepts are language- and modality-agnostic and represent a higher level idea or action in a flow. Hence, we build a "Large Concept Model". In this study, as proof of feasibility, we assume that a concept corresponds to a sentence, and use an existing sentence embedding space, SONAR, which supports up to 200 languages in both text and speech modalities. The Large Concept Model is trained to perform autoregressive sentence prediction in an embedding space. We explore multiple approaches, namely MSE regression, variants of diffusion-based generation, and models operating in a quantized SONAR space. These explorations are performed using 1.6B parameter models and training data in the order of 1.3T tokens. We then scale one architecture to a model size of 7B parameters and training data of about 2.7T tokens. We perform an experimental evaluation on several generative tasks, namely summarization and a new task of summary expansion. Finally, we show that our model exhibits impressive zero-shot generalization performance to many languages, outperforming existing LLMs of the same size. The training code of our models is freely available.},
+  pubstate = {prepublished}
+}
+
 @inproceedings{Leake2011HowManyCases,
   title = {How {{Many Cases Do You Need}}? {{Assessing}} and {{Predicting Case-Base Coverage}}},
   shorttitle = {How {{Many Cases Do You Need}}?},
@@ -4575,7 +5107,7 @@
   title = {Retrieval of {{Argumentation Graphs}} Using {{Concatenated Word Embeddings}} and {{Argumentation Schemes}}},
   author = {Lenz, Mirko},
   date = {2018-07-09},
-  institution = {University of Trier},
+  institution = {Trier University},
   location = {Trier},
   abstract = {This thesis will outline an approach to retrieve arguments from a set of stored ones using both structural and semantic similarity computations. The novelty of the approach is the use of multiple, concatenated word embeddings and aggregation functions to increase the amount of contextual information. In existing works, this method has only been used for classification tasks. This thesis shows that the concatenation combines the benefits of multiple embeddings while not having the same weaknesses. Furthermore, argumentation schemes will be used to enhance the structural retrieval even further. These schemes provide a detailed description of the relation between two arguments. The use of them also aims at incorporating more information into the retrieval process. This thesis shows that the use of argumentation schemes provides further benefits to the retrieval process. The retrieval is performed on German texts and it will be shown that the publicly available embeddings for this language are not as detailed as their English counterparts.},
   langid = {english},
@@ -4623,7 +5155,7 @@
   title = {Generalization of {{Argument Graphs}} Based on {{User Queries}}},
   author = {Lenz, Mirko},
   date = {2021-03-22},
-  institution = {University of Trier},
+  institution = {Trier University},
   location = {Trier},
   abstract = {Argumentation is central to many aspects of human interaction. Finding the best arguments is possible with established web search engines, even though they are only able to process them in their textual form. Argumentation machines on the other hand are able to consider structural elements as well—for instance, when representing relations between arguments as graphs. Operating directly on graphs eliminates the user’s task of manually structuring the collected information. However, the found argument may not properly fulfill the information need expressed via the query. It may happen that the topic of the found argument deals with a special case of the query—for instance, asking for arguments about “animals”, but being presented with the special case “dogs”. To tackle this task, this thesis investigates the generalization of argument graphs using a text-based approach. By identifying words that could benefit from being generalized, I propose two methods of determining appropriate replacements. Both techniques make extensive use of background knowledge in the form of commonsense knowledge (e.g., dog is an animal). A current limitation is that the user has to provide a “starting point” for this generalization, making the process not fully-automatic. The proposed approach is complemented by a fully featured implementation, a corpus containing generalizations crafted by experts, and a detailed evaluation of the techniques. I come to the conclusion that the generalization of argument graphs is a difficult task to solve, mainly caused by the high amount of subjectivity involved in the whole process. While trying to approximate the assessments of the experts does not seem to be a feasible strategy, I was able to achieve better results by allowing the system more freedom during the generalization process.},
   langid = {english},
@@ -4758,6 +5290,25 @@
   abstract = {The increasing usage of social networks has led to a growing number of discussions on the Internet that are a valuable source of argumentation that occurs in real time. Such conversations are often made up of a large number of participants and are characterized by a fast pace. Platforms like X/Twitter and Hacker News (HN) allow users to respond to other users’ posts, leading to a tree-like structure. Previous work focused on training supervised models on datasets obtained from debate portals like Kialo where authors provide polarity labels (i.e., support/attack) together with their posts. Such classifiers may yield suboptimal predictions for the noisier posts from X or HN, so we propose unsupervised prompting strategies for large language models instead. Our experimental evaluation found this approach to be more effective for X conversations than a model fine-tuned on Kialo debates, but less effective for HN posts (which are more technical and less argumentative). Finally, we provide an open-source application for converting discussions on these platforms into argument graphs.},
   eventtitle = {{{RATIO}} 2024},
   isbn = {978-3-031-63536-6},
+  langid = {english}
+}
+
+@inproceedings{Lenz2025ArgueMapperAssistantInteractive,
+  title = {{{ArgueMapper Assistant}}: {{Interactive Argument Mining Using Generative Language Models}}},
+  shorttitle = {{{ArgueMapper Assistant}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Lenz, Mirko and Bergmann, Ralph},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15446},
+  pages = {189--203},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77915-2_14},
+  abstract = {Structured arguments are a valuable resource for analyzing and understanding complex topics. However, manual annotation is time-consuming and often not feasible for large datasets, and automated approaches are less accurate. To address this issue, we propose an interactive argument mining system that takes advantage of generative language models to support humans in the creation of argument graphs. We present the open source ArgueMapper Assistant featuring two prompting strategies and evaluate it on a real-world news dataset. The resulting corpus containing 88 argument graphs is publicly available as well. With generative models, the annotation time is reduced by about 20\% while the number of errors is slightly increased (mostly due to missing argumentative units and wrong relation types). A survey provides insights into the usefulness and reliability of the assistant features and shows that participants prefer to use the assistant in the future.},
+  eventtitle = {{{SGAI}} 2024},
+  isbn = {978-3-031-77915-2},
   langid = {english}
 }
 
@@ -5087,6 +5638,23 @@
   url = {https://doi.org/10.1162/COLI_a_00227},
   urldate = {2023-07-26},
   abstract = {Agreement measures have been widely used in computational linguistics for more than 15 years to check the reliability of annotation processes. Although considerable effort has been made concerning categorization, fewer studies address unitizing, and when both paradigms are combined even fewer methods are available and discussed. The aim of this article is threefold. First, we advocate that to deal with unitizing, alignment and agreement measures should be considered as a unified process, because a relevant measure should rely on an alignment of the units from different annotators, and this alignment should be computed according to the principles of the measure. Second, we propose the new versatile measure γ, which fulfills this requirement and copes with both paradigms, and we introduce its implementation. Third, we show that this new method performs as well as, or even better than, other more specialized methods devoted to categorization or segmentation, while combining the two paradigms at the same time.}
+}
+
+@inproceedings{Maxwell2017StudySnippetLength,
+  title = {A {{Study}} of {{Snippet Length}} and {{Informativeness}}: {{Behaviour}}, {{Performance}} and {{User Experience}}},
+  shorttitle = {A {{Study}} of {{Snippet Length}} and {{Informativeness}}},
+  booktitle = {Proceedings of the 40th {{International ACM SIGIR Conference}} on {{Research}} and {{Development}} in {{Information Retrieval}}},
+  author = {Maxwell, David and Azzopardi, Leif and Moshfeghi, Yashar},
+  date = {2017-08-07},
+  series = {{{SIGIR}} '17},
+  pages = {135--144},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/3077136.3080824},
+  url = {https://dl.acm.org/doi/10.1145/3077136.3080824},
+  urldate = {2025-01-13},
+  abstract = {The design and presentation of a Search Engine Results Page (SERP) has been subject to much research. With many contemporary aspects of the SERP now under scrutiny, work still remains in investigating more traditional SERP components, such as the result summary. Prior studies have examined a variety of different aspects of result summaries, but in this paper we investigate the influence of result summary length on search behaviour, performance and user experience. To this end, we designed and conducted a within-subjects experiment using the TREC AQUAINT news collection with 53 participants. Using Kullback-Leibler distance as a measure of information gain, we examined result summaries of different lengths and selected four conditions where the change in information gain was the greatest: (i) title only; (ii) title plus one snippet; (iii) title plus two snippets; and (iv) title plus four snippets. Findings show that participants broadly preferred longer result summaries, as they were perceived to be more informative. However, their performance in terms of correctly identifying relevant documents was similar across all four conditions. Furthermore, while the participants felt that longer summaries were more informative, empirical observations suggest otherwise; while participants were more likely to click on relevant items given longer summaries, they also were more likely to click on non-relevant items. This shows that longer is not necessarily better, though participants perceived that to be the case - and second, they reveal a positive relationship between the length and informativeness of summaries and their attractiveness (i.e. clickthrough rates). These findings show that there are tensions between perception and performance when designing result summaries that need to be taken into account.},
+  isbn = {978-1-4503-5022-8}
 }
 
 @inproceedings{Mayer2020TransformerBasedArgumentMining,
@@ -5689,10 +6257,41 @@
   title = {The {{PageRank Citation Ranking}}: {{Bringing Order}} to the {{Web}}.},
   author = {Page, Lawrence and Brin, Sergey and Motwani, Rajeev and Winograd, Terry},
   date = {1999-11},
-  number = {1999-66},
+  number = {1999--66},
   institution = {Stanford InfoLab / Stanford InfoLab},
   url = {http://ilpubs.stanford.edu:8090/422/},
   abstract = {The importance of a Web page is an inherently subjective matter, which depends on the readers interests, knowledge and attitudes. But there is still much that can be said objectively about the relative importance of Web pages. This paper describes PageRank, a mathod for rating Web pages objectively and mechanically, effectively measuring the human interest and attention devoted to them. We compare PageRank to an idealized random Web surfer. We show how to efficiently compute PageRank for large numbers of pages. And, we show how to apply PageRank to search and to user navigation.}
+}
+
+@article{Pan2024UnifyingLargeLanguage,
+  title = {Unifying {{Large Language Models}} and {{Knowledge Graphs}}: {{A Roadmap}}},
+  shorttitle = {Unifying {{Large Language Models}} and {{Knowledge Graphs}}},
+  author = {Pan, Shirui and Luo, Linhao and Wang, Yufei and Chen, Chen and Wang, Jiapu and Wu, Xindong},
+  date = {2024-07},
+  journaltitle = {IEEE Transactions on Knowledge and Data Engineering},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  volume = {36},
+  number = {7},
+  pages = {3580--3599},
+  issn = {1041-4347, 1558-2191, 2326-3865},
+  doi = {10.1109/TKDE.2024.3352100},
+  url = {https://ieeexplore.ieee.org/document/10387715/},
+  urldate = {2024-09-16}
+}
+
+@inproceedings{Parsodkar2025NavigatingLandscapeCase,
+  title = {Navigating the~{{Landscape}} of~{{Case Fidelity}} and~{{Competence}} in~{{Case-Based Reasoning}}},
+  booktitle = {Artificial {{Intelligence XLI}}},
+  author = {Parsodkar, Adwait P. and P., Deepak and Chakraborti, Sutanu},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  pages = {235--249},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77915-2_17},
+  abstract = {In this paper, we survey measures aimed at quantifying the intrinsic quality of cases’ contents, which we collectively refer to as case fidelity, and measures that capture their competence within the Case-Based Reasoning literature. We discuss how insights from the Truth Discovery and Item Response Theory literature can respectively inform advancements in estimating case fidelity and competence. Additionally, we highlight novel research directions that emerge from a deeper examination of case fidelity and competence.},
+  isbn = {978-3-031-77915-2},
+  langid = {english}
 }
 
 @inproceedings{Passonneau2006MeasuringAgreementSetvalued,
@@ -5998,6 +6597,21 @@
   langid = {english}
 }
 
+@article{Pradeep2024PracticalExplorationConvergence,
+  title = {A Practical Exploration of the Convergence of {{Case-Based Reasoning}} and {{Explainable Artificial Intelligence}}},
+  author = {Pradeep, Preeja and Caro-Martínez, Marta and Wijekoon, Anjana},
+  date = {2024-12-01},
+  journaltitle = {Expert Systems with Applications},
+  shortjournal = {Expert Systems with Applications},
+  volume = {255},
+  pages = {124733},
+  issn = {0957-4174},
+  doi = {10.1016/j.eswa.2024.124733},
+  url = {https://www.sciencedirect.com/science/article/pii/S0957417424016002},
+  urldate = {2024-09-16},
+  abstract = {As Artificial Intelligence (AI) systems become increasingly complex, ensuring their decisions are transparent and understandable to users has become paramount. This paper explores the integration of Case-Based Reasoning (CBR) with Explainable Artificial Intelligence (XAI) through a real-world example, which presents an innovative CBR-driven XAI platform. This study investigates how CBR, a method that solves new problems based on the solutions of similar past problems, can be harnessed to enhance the explainability of AI systems. Though the literature has few works on the synergy between CBR and XAI, exploring the principles for developing a CBR-driven XAI platform is necessary. This exploration outlines the key features and functionalities, examines the alignment of CBR principles with XAI goals to make AI reasoning more transparent to users, and discusses methodological strategies for integrating CBR into XAI frameworks. Through a case study of our CBR-driven XAI platform, iSee: Intelligent Sharing of Explanation Experience, we demonstrate the practical application of these principles, highlighting the enhancement of system transparency and user trust. The platform elucidates the decision-making processes of AI models and adapts to provide explanations tailored to diverse user needs. Our findings emphasize the importance of interdisciplinary approaches in AI research and the significant role CBR can play in advancing the goals of XAI.}
+}
+
 @article{Prakken2010AbstractFrameworkArgumentation,
   title = {An Abstract Framework for Argumentation with Structured Arguments},
   author = {Prakken, Henry},
@@ -6066,6 +6680,23 @@
   organization = {WordNet Documentation}
 }
 
+@inproceedings{Qiao2023ReasoningLanguageModel,
+  title = {Reasoning with {{Language Model Prompting}}: {{A Survey}}},
+  shorttitle = {Reasoning with {{Language Model Prompting}}},
+  booktitle = {Proceedings of the 61st {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
+  author = {Qiao, Shuofei and Ou, Yixin and Zhang, Ningyu and Chen, Xiang and Yao, Yunzhi and Deng, Shumin and Tan, Chuanqi and Huang, Fei and Chen, Huajun},
+  editor = {Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki},
+  date = {2023-07},
+  pages = {5368--5393},
+  publisher = {Association for Computational Linguistics},
+  location = {Toronto, Canada},
+  doi = {10.18653/v1/2023.acl-long.294},
+  url = {https://aclanthology.org/2023.acl-long.294},
+  urldate = {2024-09-16},
+  abstract = {Reasoning, as an essential ability for complex problem-solving, can provide back-end support for various real-world applications, such as medical diagnosis, negotiation, etc. This paper provides a comprehensive survey of cutting-edge research on reasoning with language model prompting. We introduce research works with comparisons and summaries and provide systematic resources to help beginners. We also discuss the potential reasons for emerging such reasoning abilities and highlight future research directions. Resources are available at https://github.com/zjunlp/Prompt4ReasoningPapers (updated periodically).},
+  eventtitle = {{{ACL}} 2023}
+}
+
 @inproceedings{R2021TextDocumentSummarization,
   title = {Text {{Document Summarization Using POS}} Tagging for {{Kannada Text Documents}}},
   booktitle = {2021 11th {{International Conference}} on {{Cloud Computing}}, {{Data Science}} \& {{Engineering}} ({{Confluence}})},
@@ -6077,6 +6708,20 @@
   urldate = {2023-10-26},
   abstract = {Humongous amount of data available on the world wide web has been a constant issue pertaining to better Information Retrieval (IR) techniques. Text document summarization is there around for the past several decades, but providing a succinct summary has been challenging as ever. This work focuses on extractive summarization techniques using POS tagging, where the goal is to tag individual words with its parts of speech in a document and do the extractive summarization with more grammatical meaning. The Hidden Markov Model (HMM) is used for tagging the dataset. The idea is to use sentence ranking to produce the summary of a given document. This method of summarization uses the key phrase extraction, where the goal is to select individual words or sentences to tag a document to create text document summary.},
   eventtitle = {2021 11th {{International Conference}} on {{Cloud Computing}}, {{Data Science}} \& {{Engineering}} ({{Confluence}})}
+}
+
+@online{Radensky2024ScideatorHumanLLMScientific,
+  title = {Scideator: {{Human-LLM Scientific Idea Generation Grounded}} in {{Research-Paper Facet Recombination}}},
+  shorttitle = {Scideator},
+  author = {Radensky, Marissa and Shahid, Simra and Fok, Raymond and Siangliulue, Pao and Hope, Tom and Weld, Daniel S.},
+  date = {2024-09-23},
+  eprint = {2409.14634},
+  eprinttype = {arXiv},
+  doi = {10.48550/arXiv.2409.14634},
+  url = {http://arxiv.org/abs/2409.14634},
+  urldate = {2024-10-19},
+  abstract = {The scientific ideation process often involves blending salient aspects of existing papers to create new ideas. To see if large language models (LLMs) can assist this process, we contribute Scideator, a novel mixed-initiative tool for scientific ideation. Starting from a user-provided set of papers, Scideator extracts key facets (purposes, mechanisms, and evaluations) from these and relevant papers, allowing users to explore the idea space by interactively recombining facets to synthesize inventive ideas. Scideator also helps users to gauge idea novelty by searching the literature for potential overlaps and showing automated novelty assessments and explanations. To support these tasks, Scideator introduces four LLM-powered retrieval-augmented generation (RAG) modules: Analogous Paper Facet Finder, Faceted Idea Generator, Idea Novelty Checker, and Idea Novelty Iterator. In a within-subjects user study, 19 computer-science researchers identified significantly more interesting ideas using Scideator compared to a strong baseline combining a scientific search engine with LLM interaction.},
+  pubstate = {prepublished}
 }
 
 @online{Radford2018ImprovingLanguageUnderstanding,
@@ -6119,7 +6764,7 @@
   journaltitle = {Artificial Intelligence},
   shortjournal = {Artificial Intelligence},
   volume = {171},
-  number = {10-15},
+  number = {10--15},
   pages = {897--921},
   doi = {10.1016/j.artint.2007.04.015},
   url = {http://linkinghub.elsevier.com/retrieve/pii/S0004370207000768},
@@ -6308,6 +6953,15 @@
   langid = {english}
 }
 
+@misc{Reed2016IATAnnotationGuidelines,
+  title = {{{IAT}} Annotation Guidelines for {{US2016}}},
+  author = {Reed, Chris and Budzynska, Katarzyna and Visser, Jacky},
+  date = {2016-09},
+  url = {IAT annotation guidelines for US2016},
+  urldate = {2024-09-16},
+  langid = {english}
+}
+
 @article{Reed2017ArgumentWebOnline,
   title = {The {{Argument Web}}: An {{Online Ecosystem}} of {{Tools}}, {{Systems}} and {{Services}} for {{Argumentation}}},
   author = {Reed, Chris and Budzynska, Katarzyna and Duthie, Rory and Janier, Mathilde and Konat, Barbara and Lawrence, John and Pease, Alison and Snaith, Mark},
@@ -6366,6 +7020,22 @@
   abstract = {We present an easy and efficient method to extend existing sentence embedding models to new languages. This allows to create multilingual versions from previously monolingual models. The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence. We use the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model. Compared to other methods for training multilingual sentence embeddings, this approach has several advantages: It is easy to extend existing models with relatively few samples to new languages, it is easier to ensure desired properties for the vector space, and the hardware requirements for training is lower. We demonstrate the effectiveness of our approach for 10 languages from various language families. Code to extend sentence embeddings models to more than 400 languages is publicly available.}
 }
 
+@inproceedings{Ren2024SurveyLargeLanguage,
+  title = {A {{Survey}} of {{Large Language Models}} for {{Graphs}}},
+  booktitle = {Proceedings of the 30th {{ACM SIGKDD Conference}} on {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Ren, Xubin and Tang, Jiabin and Yin, Dawei and Chawla, Nitesh and Huang, Chao},
+  date = {2024-08-24},
+  series = {{{KDD}} '24},
+  pages = {6616--6626},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/3637528.3671460},
+  url = {https://dl.acm.org/doi/10.1145/3637528.3671460},
+  urldate = {2024-09-16},
+  abstract = {Graphs are an essential data structure utilized to represent relationships in real-world scenarios. Prior research has established that Graph Neural Networks (GNNs) deliver impressive outcomes in graph-centric tasks, such as link prediction and node classification. Despite these advancements, challenges like data sparsity and limited generalization capabilities continue to persist. Recently, Large Language Models (LLMs) have gained attention in natural language processing. They excel in language comprehension and summarization. Integrating LLMs with graph learning techniques has attracted interest as a way to enhance performance in graph learning tasks. In this survey, we conduct an in-depth review of the latest state-of-the-art LLMs applied in graph learning and introduce a novel taxonomy to categorize existing methods based on their framework design. We detail four unique designs: i) GNNs as Prefix, ii) LLMs as Prefix, iii) LLMs-Graphs Integration, and iv) LLMs-Only, highlighting key methodologies within each category. We explore the strengths and limitations of each framework, and emphasize potential avenues for future research, including overcoming current integration challenges between LLMs and graph learning techniques, and venturing into new application areas. This survey aims to serve as a valuable resource for researchers and practitioners eager to leverage large language models in graph learning, and to inspire continued progress in this dynamic field. We consistently maintain the related open-source materials at https://github.com/HKUDS/Awesome-LLM4Graph-Papers.},
+  isbn = {979-8-4007-0490-1}
+}
+
 @online{Rescala2024CanLanguageModels,
   title = {Can {{Language Models Recognize Convincing Arguments}}?},
   author = {Rescala, Paula and Ribeiro, Manoel Horta and Hu, Tiancheng and West, Robert},
@@ -6375,6 +7045,20 @@
   eprintclass = {cs},
   url = {http://arxiv.org/abs/2404.00750},
   urldate = {2024-04-02},
+  abstract = {The remarkable and ever-increasing capabilities of Large Language Models (LLMs) have raised concerns about their potential misuse for creating personalized, convincing misinformation and propaganda. To gain insights into LLMs' persuasive capabilities without directly engaging in experimentation with humans, we propose studying their performance on the related task of detecting convincing arguments. We extend a dataset by Durmus \& Cardie (2018) with debates, votes, and user traits and propose tasks measuring LLMs' ability to (1) distinguish between strong and weak arguments, (2) predict stances based on beliefs and demographic characteristics, and (3) determine the appeal of an argument to an individual based on their traits. We show that LLMs perform on par with humans in these tasks and that combining predictions from different LLMs yields significant performance gains, even surpassing human performance. The data and code released with this paper contribute to the crucial ongoing effort of continuously evaluating and monitoring the rapidly evolving capabilities and potential impact of LLMs.},
+  pubstate = {prepublished}
+}
+
+@online{Rescala2024CanLanguageModelsa,
+  title = {Can {{Language Models Recognize Convincing Arguments}}?},
+  author = {Rescala, Paula and Ribeiro, Manoel Horta and Hu, Tiancheng and West, Robert},
+  date = {2024-03-31},
+  eprint = {2404.00750},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2404.00750},
+  url = {http://arxiv.org/abs/2404.00750},
+  urldate = {2024-09-23},
   abstract = {The remarkable and ever-increasing capabilities of Large Language Models (LLMs) have raised concerns about their potential misuse for creating personalized, convincing misinformation and propaganda. To gain insights into LLMs' persuasive capabilities without directly engaging in experimentation with humans, we propose studying their performance on the related task of detecting convincing arguments. We extend a dataset by Durmus \& Cardie (2018) with debates, votes, and user traits and propose tasks measuring LLMs' ability to (1) distinguish between strong and weak arguments, (2) predict stances based on beliefs and demographic characteristics, and (3) determine the appeal of an argument to an individual based on their traits. We show that LLMs perform on par with humans in these tasks and that combining predictions from different LLMs yields significant performance gains, even surpassing human performance. The data and code released with this paper contribute to the crucial ongoing effort of continuously evaluating and monitoring the rapidly evolving capabilities and potential impact of LLMs.},
   pubstate = {prepublished}
 }
@@ -6398,6 +7082,23 @@
   url = {http://arxiv.org/abs/2007.08426},
   urldate = {2020-10-16},
   abstract = {Graph-to-text generation, a subtask of data-to-text generation, aims to generate fluent texts from graph-based data. Many graph-to-text models have shown strong performance in this task employing specialized graph encoders. However, recent approaches employ large pretrained language models (PLMs) achieving state-of-the-art results in data-to-text generation. In this paper, we aim to investigate the impact of large PLMs in graph-to-text generation. We present a study across three graph domains: meaning representations, Wikipedia knowledge graphs (KGs) and scientific KGs. Our analysis shows that PLMs such as BART and T5 achieve state-of-the-art results in graph-to-text benchmarks without explicitly encoding the graph structure. We also demonstrate that task-adaptive pretraining strategies are beneficial to the target task, improving even further the state of the art in two benchmarks for graph-to-text generation. In a final analysis, we investigate possible reasons for the PLMs' success on graph-to-text tasks. We find evidence that their knowledge about the world gives them a big advantage, especially when generating texts from KGs.}
+}
+
+@inproceedings{Ribeiro2022FactGraphEvaluatingFactuality,
+  title = {{{FactGraph}}: {{Evaluating Factuality}} in {{Summarization}} with {{Semantic Graph Representations}}},
+  shorttitle = {{{FactGraph}}},
+  booktitle = {Proceedings of the 2022 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}},
+  author = {Ribeiro, Leonardo F. R. and Liu, Mengwen and Gurevych, Iryna and Dreyer, Markus and Bansal, Mohit},
+  editor = {Carpuat, Marine and family=Marneffe, given=Marie-Catherine, prefix=de, useprefix=true and Meza Ruiz, Ivan Vladimir},
+  date = {2022-07},
+  pages = {3238--3253},
+  publisher = {Association for Computational Linguistics},
+  location = {Seattle, United States},
+  doi = {10.18653/v1/2022.naacl-main.236},
+  url = {https://aclanthology.org/2022.naacl-main.236},
+  urldate = {2024-10-31},
+  abstract = {Despite recent improvements in abstractive summarization, most current approaches generate summaries that are not factually consistent with the source document, severely restricting their trust and usage in real-world applications. Recent works have shown promising improvements in factuality error identification using text or dependency arc entailments; however, they do not consider the entire semantic graph simultaneously. To this end, we propose FactGraph, a method that decomposes the document and the summary into structured meaning representations (MR), which are more suitable for factuality evaluation. MRs describe core semantic concepts and their relations, aggregating the main content in both document and summary in a canonical form, and reducing data sparsity. FactGraph encodes such graphs using a graph encoder augmented with structure-aware adapters to capture interactions among the concepts based on the graph connectivity, along with text representations using an adapter-based text encoder. Experiments on different benchmarks for evaluating factuality show that FactGraph outperforms previous approaches by up to 15\%. Furthermore, FactGraph improves performance on identifying content verifiability errors and better captures subsentence-level factual inconsistencies.},
+  eventtitle = {{{NAACL-HLT}} 2022}
 }
 
 @book{Richter2013CaseBasedReasoningTextbook,
@@ -6814,6 +7515,19 @@
   langid = {english}
 }
 
+@online{Schulhoff2024PromptReportSystematic,
+  title = {The {{Prompt Report}}: {{A Systematic Survey}} of {{Prompting Techniques}}},
+  shorttitle = {The {{Prompt Report}}},
+  author = {Schulhoff, Sander and Ilie, Michael and Balepur, Nishant and Kahadze, Konstantine and Liu, Amanda and Si, Chenglei and Li, Yinheng and Gupta, Aayush and Han, HyoJung and Schulhoff, Sevien and Dulepet, Pranav Sandeep and Vidyadhara, Saurav and Ki, Dayeon and Agrawal, Sweta and Pham, Chau and Kroiz, Gerson and Li, Feileen and Tao, Hudson and Srivastava, Ashay and Costa, Hevander Da and Gupta, Saloni and Rogers, Megan L. and Goncearenco, Inna and Sarli, Giuseppe and Galynker, Igor and Peskoff, Denis and Carpuat, Marine and White, Jules and Anadkat, Shyamal and Hoyle, Alexander and Resnik, Philip},
+  date = {2024-07-15},
+  eprint = {2406.06608},
+  eprinttype = {arXiv},
+  url = {http://arxiv.org/abs/2406.06608},
+  urldate = {2024-11-06},
+  abstract = {Generative Artificial Intelligence (GenAI) systems are being increasingly deployed across all parts of industry and research settings. Developers and end users interact with these systems through the use of prompting or prompt engineering. While prompting is a widespread and highly researched concept, there exists conflicting terminology and a poor ontological understanding of what constitutes a prompt due to the area's nascency. This paper establishes a structured understanding of prompts, by assembling a taxonomy of prompting techniques and analyzing their use. We present a comprehensive vocabulary of 33 vocabulary terms, a taxonomy of 58 text-only prompting techniques, and 40 techniques for other modalities. We further present a meta-analysis of the entire literature on natural language prefix-prompting.},
+  pubstate = {prepublished}
+}
+
 @online{Schuller2022ComposingComplexHybrid,
   title = {Composing {{Complex}} and {{Hybrid AI Solutions}}},
   author = {Schüller, Peter and Costeira, João Paolo and Crowley, James and Grosinger, Jasmin and Ingrand, Félix and Köckemann, Uwe and Saffiotti, Alessandro and Welss, Martin},
@@ -7120,6 +7834,23 @@
   eventtitle = {{{ACL}} 2020}
 }
 
+@inproceedings{Sourati2023CaseBasedReasoningLanguage,
+  title = {Case-{{Based Reasoning}} with {{Language Models}} for {{Classification}} of {{Logical Fallacies}}},
+  booktitle = {Proceedings of the {{Thirty-Second International Joint Conference}} on {{Artificial Intelligence}}},
+  author = {Sourati, Zhivar and Ilievski, Filip and Sandlin, Hông-Ân and Mermoud, Alain},
+  date = {2023-08},
+  pages = {5188--5196},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  location = {Macau, SAR China},
+  doi = {10.24963/ijcai.2023/576},
+  url = {https://www.ijcai.org/proceedings/2023/576},
+  urldate = {2024-09-16},
+  abstract = {The ease and speed of spreading misinformation and propaganda on the Web motivate the need to develop trustworthy technology for detecting fallacies in natural language arguments. However, state-of-the-art language modeling methods exhibit a lack of robustness on tasks like logical fallacy classification that require complex reasoning. In this paper, we propose a Case-Based Reasoning method that classifies new cases of logical fallacy by language-modeling-driven retrieval and adaptation of historical cases. We design four complementary strategies to enrich input representation for our model, based on external information about goals, explanations, counterarguments, and argument structure. Our experiments in in-domain and out-of-domain settings indicate that Case-Based Reasoning improves the accuracy and generalizability of language models. Our ablation studies suggest that representations of similar cases have a strong impact on the model performance, that models perform well with fewer retrieved cases, and that the size of the case database has a negligible effect on the performance. Finally, we dive deeper into the relationship between the properties of the retrieved cases and the model performance.},
+  eventtitle = {Thirty-{{Second International Joint Conference}} on {{Artificial Intelligence}} \{\vphantom\}{{IJCAI-23}}\vphantom\{\}},
+  isbn = {978-1-956792-03-4},
+  langid = {english}
+}
+
 @inproceedings{Spagnola2011EdgeDependentPathway,
   title = {Edge Dependent Pathway Scoring for Calculating Semantic Similarity in {{ConceptNet}}},
   booktitle = {Proceedings of the {{Ninth International Conference}} on {{Computational Semantics}} ({{IWCS}} 2011)},
@@ -7172,6 +7903,13 @@
   urldate = {2023-10-18},
   abstract = {Argumentation Mining addresses the challenging tasks of identifying boundaries of argumentative text fragments and extracting their relationships. Fully automated solutions do not reach satisfactory accuracy due to their insufficient incorporation of semantics and domain knowledge. Therefore, experts currently rely on time-consuming manual annotations. In this paper, we present a visual analytics system that augments the manual annotation process by automatically suggesting which text fragments to annotate next. The accuracy of those suggestions is improved over time by incorporating linguistic knowledge and language modeling to learn a measure of argument similarity from user interactions. Based on a long-term collaboration with domain experts, we identify and model five high-level analysis tasks. We enable close reading and note-taking, annotation of arguments, argument reconstruction, extraction of argument relations, and exploration of argument graphs. To avoid context switches, we transition between all views through seamless morphing, visually anchoring all text- and graph-based layers. We evaluate our system with a two-stage expert user study based on a corpus of presidential debates. The results show that experts prefer our system over existing solutions due to the speedup provided by the automatic suggestions and the tight integration between text and graph views.},
   pubstate = {prepublished}
+}
+
+@misc{SPICEAPIsSpecificationDeployment,
+  title = {{{APIs Specification}} and {{Deployment}}},
+  author = {{SPICE}},
+  url = {https://spice-h2020.eu/document/deliverable/D6.8.pdf},
+  urldate = {2025-02-05}
 }
 
 @incollection{Sriram1997AnalogicalCaseBasedReasoning,
@@ -7667,7 +8405,7 @@
   journaltitle = {Law, Probability and Risk},
   shortjournal = {Law, Probability and Risk},
   volume = {6},
-  number = {1-4},
+  number = {1--4},
   pages = {23--42},
   issn = {1470-8396},
   doi = {10.1093/lpr/mgm032},
@@ -7686,6 +8424,17 @@
   url = {https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
   urldate = {2024-04-25},
   abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+}
+
+@thesis{VelardeJara2024KnowledgeBasedFactVerification,
+  type = {mathesis},
+  title = {Knowledge-{{Based Fact Verification}}},
+  author = {Velarde Jara, Juan Rodrigo},
+  date = {2024-06-07},
+  institution = {Trier University},
+  location = {Trier, Germany},
+  langid = {english},
+  pagetotal = {74}
 }
 
 @online{Verga2024ReplacingJudgesJuries,
@@ -7996,6 +8745,54 @@
   pubstate = {prepublished}
 }
 
+@inproceedings{Wang2024DAPRBenchmarkDocumentAware,
+  title = {{{DAPR}}: {{A Benchmark}} on {{Document-Aware Passage Retrieval}}},
+  shorttitle = {{{DAPR}}},
+  author = {Wang, Kexin and Reimers, Nils and Gurevych, Iryna},
+  editor = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  date = {2024-08},
+  pages = {4313--4330},
+  publisher = {Association for Computational Linguistics},
+  location = {Bangkok, Thailand},
+  doi = {10.18653/v1/2024.acl-long.236},
+  url = {https://aclanthology.org/2024.acl-long.236},
+  urldate = {2024-09-30},
+  abstract = {The work of neural retrieval so far focuses on ranking short texts and is challenged with long documents. There are many cases where the users want to find a relevant passage within a long document from a huge corpus, e.g. Wikipedia articles, research papers, etc. We propose and name this task Document-Aware Passage Retrieval (DAPR). While analyzing the errors of the State-of-The-Art (SoTA) passage retrievers, we find the major errors (53.5\%) are due to missing document context. This drives us to build a benchmark for this task including multiple datasets from heterogeneous domains. In the experiments, we extend the SoTA passage retrievers with document context via (1) hybrid retrieval with BM25 and (2) contextualized passage representations, which inform the passage representation with document context. We find despite that hybrid retrieval performs the strongest on the mixture of the easy and the hard queries, it completely fails on the hard queries that require document-context understanding. On the other hand, contextualized passage representations (e.g. prepending document titles) achieve good improvement on these hard queries, but overall they also perform rather poorly. Our created benchmark enables future research on developing and comparing retrieval systems for the new task. The code and the data are available.},
+  eventtitle = {{{ACL}} 2024}
+}
+
+@article{Wang2024SurveyLargeLanguage,
+  title = {A Survey on Large Language Model Based Autonomous Agents},
+  author = {Wang, Lei and Ma, Chen and Feng, Xueyang and Zhang, Zeyu and Yang, Hao and Zhang, Jingsen and Chen, Zhiyuan and Tang, Jiakai and Chen, Xu and Lin, Yankai and Zhao, Wayne Xin and Wei, Zhewei and Wen, Jirong},
+  date = {2024-03-22},
+  journaltitle = {Frontiers of Computer Science},
+  shortjournal = {Front. Comput. Sci.},
+  volume = {18},
+  number = {6},
+  pages = {186345},
+  issn = {2095-2236},
+  doi = {10.1007/s11704-024-40231-1},
+  url = {https://doi.org/10.1007/s11704-024-40231-1},
+  urldate = {2024-09-17},
+  abstract = {Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in research on LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of LLM-based autonomous agents from a holistic perspective. We first discuss the construction of LLM-based autonomous agents, proposing a unified framework that encompasses much of previous work. Then, we present a overview of the diverse applications of LLM-based autonomous agents in social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field.},
+  langid = {english}
+}
+
+@online{Warner2024SmarterBetterFaster,
+  title = {Smarter, {{Better}}, {{Faster}}, {{Longer}}: {{A Modern Bidirectional Encoder}} for {{Fast}}, {{Memory Efficient}}, and {{Long Context Finetuning}} and {{Inference}}},
+  shorttitle = {Smarter, {{Better}}, {{Faster}}, {{Longer}}},
+  author = {Warner, Benjamin and Chaffin, Antoine and Clavié, Benjamin and Weller, Orion and Hallström, Oskar and Taghadouini, Said and Gallagher, Alexis and Biswas, Raja and Ladhak, Faisal and Aarsen, Tom and Cooper, Nathan and Adams, Griffin and Howard, Jeremy and Poli, Iacopo},
+  date = {2024-12-18},
+  eprint = {2412.13663},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2412.13663},
+  url = {http://arxiv.org/abs/2412.13663},
+  urldate = {2024-12-19},
+  abstract = {Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only models and representing a major Pareto improvement over older encoders. Trained on 2 trillion tokens with a native 8192 sequence length, ModernBERT models exhibit state-of-the-art results on a large pool of evaluations encompassing diverse classification tasks and both single and multi-vector retrieval on different domains (including code). In addition to strong downstream performance, ModernBERT is also the most speed and memory efficient encoder and is designed for inference on common GPUs.},
+  pubstate = {prepublished}
+}
+
 @online{Watson2023CaseBasedPersistentMemory,
   title = {A {{Case-Based Persistent Memory}} for a {{Large Language Model}}},
   author = {Watson, Ian},
@@ -8222,6 +9019,20 @@
   abstract = {Due to its great power in modeling non-Euclidean data like graphs or manifolds, deep learning on graph techniques (i.e., Graph Neural Networks (GNNs)) have opened a new door to solving challenging graph-related NLP problems. There has seen a surge of interests in applying deep learning on graph techniques to NLP, and has achieved considerable success in many NLP tasks, ranging from classification tasks like sentence classification, semantic role labeling and relation extraction, to generation tasks like machine translation, question generation and summarization. Despite these successes, deep learning on graphs for NLP still face many challenges, including automatically transforming original text sequence data into highly graph-structured data, and effectively modeling complex data that involves mapping between graph-based inputs and other highly structured output data such as sequences, trees, and graph data with multi-types in both nodes and edges. This tutorial will cover relevant and interesting topics on applying deep learning on graph techniques to NLP, including automatic graph construction for NLP, graph representation learning for NLP, advanced GNN based models (e.g., graph2seq, graph2tree, and graph2graph) for NLP, and the applications of GNNs in various NLP tasks (e.g., machine translation, natural language generation, information extraction and semantic parsing). In addition, hands-on demonstration sessions will be included to help the audience gain practical experience on applying GNNs to solve challenging NLP problems using our recently developed open source library – Graph4NLP, the first library for researchers and practitioners for easy use of GNNs for various NLP tasks.}
 }
 
+@online{Xiao2025FoundationsLargeLanguage,
+  title = {Foundations of {{Large Language Models}}},
+  author = {Xiao, Tong and Zhu, Jingbo},
+  date = {2025-01-16},
+  eprint = {2501.09223},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2501.09223},
+  url = {http://arxiv.org/abs/2501.09223},
+  urldate = {2025-01-23},
+  abstract = {This is a book about large language models. As indicated by the title, it primarily focuses on foundational concepts rather than comprehensive coverage of all cutting-edge technologies. The book is structured into four main chapters, each exploring a key area: pre-training, generative models, prompting techniques, and alignment methods. It is intended for college students, professionals, and practitioners in natural language processing and related fields, and can serve as a reference for anyone interested in large language models.},
+  pubstate = {prepublished}
+}
+
 @online{Xu2024LargeLanguageModels,
   title = {Large {{Language Models}} for {{Generative Information Extraction}}: {{A Survey}}},
   shorttitle = {Large {{Language Models}} for {{Generative Information Extraction}}},
@@ -8338,7 +9149,7 @@
   langid = {english}
 }
 
-@inproceedings{Zeyen2020BasedSimilarityAssessment,
+@inproceedings{Zeyen2020ABasedSimilarityAssessment,
   title = {A*-{{Based Similarity Assessment}} of {{Semantic Graphs}}},
   booktitle = {Case-{{Based Reasoning Research}} and {{Development}}},
   author = {Zeyen, Christian and Bergmann, Ralph},
@@ -8414,6 +9225,23 @@
   url = {https://doi.org/10.1186/s42400-021-00084-8},
   urldate = {2023-10-05},
   abstract = {In recent years, the widespread applications of open-source software (OSS) have brought great convenience for software developers. However, it is always facing unavoidable security risks, such as open-source code defects and security vulnerabilities. To find out the OSS risks in time, we carry out an empirical study to identify the indicators for evaluating the OSS. To achieve a comprehensive understanding of the OSS assessment, we collect 56 papers from prestigious academic venues (such as IEEE Xplore, ACM Digital Library, DBLP, and Google Scholar) in the past 21 years. During the process of the investigation, we first identify the main concerns for selecting OSS and distill five types of commonly used indicators to assess OSS. We then conduct a comparative analysis to discuss how these indicators are used in each surveyed study and their differences. Moreover, we further undertake a correlation analysis between these indicators and uncover 13 confirmed conclusions and four cases with controversy occurring in these studies. Finally, we discuss several possible applications of these conclusions, which are insightful for the research on OSS and software supply chain.}
+}
+
+@inproceedings{Zhao2023RetrievingMultimodalInformation,
+  title = {Retrieving {{Multimodal Information}} for {{Augmented Generation}}: {{A Survey}}},
+  shorttitle = {Retrieving {{Multimodal Information}} for {{Augmented Generation}}},
+  booktitle = {Findings of the {{Association}} for {{Computational Linguistics}}: {{EMNLP}} 2023},
+  author = {Zhao, Ruochen and Chen, Hailin and Wang, Weishi and Jiao, Fangkai and Do, Xuan Long and Qin, Chengwei and Ding, Bosheng and Guo, Xiaobao and Li, Minzhi and Li, Xingxuan and Joty, Shafiq},
+  editor = {Bouamor, Houda and Pino, Juan and Bali, Kalika},
+  date = {2023-12},
+  pages = {4736--4756},
+  publisher = {Association for Computational Linguistics},
+  location = {Singapore},
+  doi = {10.18653/v1/2023.findings-emnlp.314},
+  url = {https://aclanthology.org/2023.findings-emnlp.314},
+  urldate = {2024-09-30},
+  abstract = {As Large Language Models (LLMs) become popular, there emerged an important trend of using multimodality to augment the LLMs' generation ability, which enables LLMs to better interact with the world. However, there lacks a unified perception of at which stage and how to incorporate different modalities. In this survey, we review methods that assist and augment generative models by retrieving multimodal knowledge, whose formats range from images, codes, tables, graphs, to audio. Such methods offer a promising solution to important concerns such as factuality, reasoning, interpretability, and robustness. By providing an in-depth review, this survey is expected to provide scholars with a deeper understanding of the methods' applications and encourage them to adapt existing techniques to the fast-growing field of LLMs.},
+  eventtitle = {Findings 2023}
 }
 
 @unpublished{Zhelezniak2019DonSettleAverage,
