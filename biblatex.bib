@@ -18,11 +18,15 @@
   abstract = {Decision-making usually takes five steps: identifying the problem, collecting data, extracting evidence, identifying pro and con arguments, and making decisions. Focusing on extracting evidence, this paper presents a hybrid model that combines latent Dirichlet allocation and word embeddings to obtain external knowledge from structured and unstructured data. We study the task of sentence-level argument mining, as arguments mostly require some degree of world knowledge to be identified and understood. Given a topic and a sentence, the goal is to classify whether a sentence represents an argument in regard to the topic. We use a topic model to extract topic- and sentence-specific evidence from the structured knowledge base Wikidata, building a graph based on the cosine similarity between the entity word vectors of Wikidata and the vector of the given sentence. Also, we build a second graph based on topic-specific articles found via Google to tackle the general incompleteness of structured knowledge bases. Combining these graphs, we obtain a graph-based model which, as our evaluation shows, successfully capitalizes on both structured and unstructured data.}
 }
 
-@inproceedings{Abu-Aisheh2025ExactGraphEdit,
+@inproceedings{Abu-Aisheh2015ExactGraphEdit,
   title = {An {{Exact Graph Edit Distance Algorithm}} for {{Solving Pattern Recognition Problems}}},
+  booktitle = {Proceedings of the {{International Conference}} on {{Pattern Recognition Applications}} and {{Methods}}},
   author = {Abu-Aisheh, Zeina and Raveaux, Romain and Ramel, Jean-Yves and Martineau, Patrick},
-  date = {2025-06-01},
+  date = {2015},
   pages = {271--278},
+  publisher = {SciTePress},
+  location = {Lisbon, Portugal},
+  doi = {10.5220/0005209202710278},
   url = {https://www.scitepress.org/Link.aspx?doi=10.5220/0005209202710278},
   urldate = {2025-06-01},
   abstract = {Digital Library},
@@ -1046,8 +1050,10 @@
   editor = {Bichindaritz, Isabelle and Lopez, Beatriz},
   date = {2025},
   series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15662},
   publisher = {Springer Nature Switzerland},
   location = {Cham},
+  doi = {10.1007/978-3-031-96559-3_ 1},
   abstract = {Current AI reasoning often relies on static pipelines (like the 4R cycle from Case-Based Reasoning (CBR) or standard RetrievalAugmented Generation (RAG)) that limit adaptability. We argue it is time for a shift towards dynamic, experience-grounded agentic reasoning. This paper proposes EXAR, a new unified, experience-grounded architecture, conceptualizing reasoning not as a fixed sequence, but as a collaborative process orchestrated among specialized agents. EXAR integrates data and knowledge sources into a persistent Long-Term Memory utilized by diverse reasoning agents, which coordinate themselves via a Short-Term Memory. Governed by an Orchestrator and Meta Learner, EXAR enables flexible, context-aware reasoning strategies that adapt and improve over time, offering a blueprint for next-generation AI.},
   eventtitle = {{{ICCBR}} 2025},
   langid = {english}
@@ -1620,22 +1626,6 @@
 }
 
 @book{Bramer2025ArtificialIntelligenceXLI,
-  title = {Artificial {{Intelligence XLI}}: 44th {{SGAI International Conference}} on {{Artificial Intelligence}}, {{AI}} 2024, {{Cambridge}}, {{UK}}, {{December}} 17–19, 2024, {{Proceedings}}, {{Part I}}},
-  shorttitle = {Artificial {{Intelligence XLI}}},
-  editor = {Bramer, Max and Stahl, Frederic},
-  date = {2025},
-  series = {Lecture {{Notes}} in {{Computer Science}}},
-  volume = {15446},
-  publisher = {Springer Nature Switzerland},
-  location = {Cham},
-  doi = {10.1007/978-3-031-77915-2},
-  url = {https://link.springer.com/10.1007/978-3-031-77915-2},
-  urldate = {2024-12-03},
-  isbn = {978-3-031-77914-5 978-3-031-77915-2},
-  langid = {english}
-}
-
-@book{Bramer2025ArtificialIntelligenceXLIa,
   title = {Artificial {{Intelligence XLI}}: 44th {{SGAI International Conference}} on {{Artificial Intelligence}}, {{AI}} 2024, {{Cambridge}}, {{UK}}, {{December}} 17–19, 2024, {{Proceedings}}, {{Part II}}},
   shorttitle = {Artificial {{Intelligence XLI}}},
   editor = {Bramer, Max and Stahl, Frederic},
@@ -1646,8 +1636,24 @@
   location = {Cham},
   doi = {10.1007/978-3-031-77918-3},
   url = {https://link.springer.com/10.1007/978-3-031-77918-3},
-  urldate = {2024-12-18},
+  urldate = {2025-06-08},
   isbn = {978-3-031-77917-6 978-3-031-77918-3},
+  langid = {english}
+}
+
+@book{Bramer2025ArtificialIntelligenceXLIa,
+  title = {Artificial {{Intelligence XLI}}: 44th {{SGAI International Conference}} on {{Artificial Intelligence}}, {{AI}} 2024, {{Cambridge}}, {{UK}}, {{December}} 17–19, 2024, {{Proceedings}}, {{Part I}}},
+  shorttitle = {Artificial {{Intelligence XLI}}},
+  editor = {Bramer, Max and Stahl, Frederic},
+  date = {2025},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15446},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-77915-2},
+  url = {https://link.springer.com/10.1007/978-3-031-77915-2},
+  urldate = {2025-06-08},
+  isbn = {978-3-031-77914-5 978-3-031-77915-2},
   langid = {english}
 }
 
@@ -2330,7 +2336,7 @@
   author = {Chesñevar, Carlos Iván and McGinnis, Jarred and Modgil, Sanjay and Rahwan, Iyad and Reed, Chris and Simari, Guillermo Ricardo and South, Matthew and Vreeswijk, Gerard and Willmott, Steven},
   date = {2006-01-01},
   journaltitle = {The Knowledge Enigneering Review},
-  shortjournal = {The Knowledge Enigneering Review},
+  shortjournal = {The Knowledge Engineering Review},
   volume = {21},
   number = {04},
   pages = {293},
@@ -2552,6 +2558,21 @@
   urldate = {2020-10-20},
   abstract = {Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.},
   eventtitle = {{{EMNLP}} 2017}
+}
+
+@article{Cordella2004SubgraphIsomorphismAlgorithm,
+  title = {A (Sub)Graph Isomorphism Algorithm for Matching Large Graphs},
+  author = {Cordella, L.P. and Foggia, P. and Sansone, C. and Vento, M.},
+  date = {2004-10},
+  journaltitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume = {26},
+  number = {10},
+  pages = {1367--1372},
+  issn = {1939-3539},
+  doi = {10.1109/TPAMI.2004.75},
+  url = {https://ieeexplore.ieee.org/document/1323804},
+  urldate = {2025-06-11},
+  abstract = {We present an algorithm for graph isomorphism and subgraph isomorphism suited for dealing with large graphs. A first version of the algorithm has been presented in a previous paper, where we examined its performance for the isomorphism of small and medium size graphs. The algorithm is improved here to reduce its spatial complexity and to achieve a better performance on large graphs; its features are analyzed in detail with special reference to time and memory requirements. The results of a testing performed on a publicly available database of synthetically generated graphs and on graphs relative to a real application dealing with technical drawings are presented, confirming the effectiveness of the approach, especially when working with large graphs.}
 }
 
 @inproceedings{Cortes2016RelevanceLocalNeighbourhoods,
@@ -3485,6 +3506,23 @@
   eventtitle = {{{ACL-IJCNLP}} 2021}
 }
 
+@inproceedings{Fan2024SurveyRAGMeeting,
+  title = {A {{Survey}} on {{RAG Meeting LLMs}}: {{Towards Retrieval-Augmented Large Language Models}}},
+  shorttitle = {A {{Survey}} on {{RAG Meeting LLMs}}},
+  booktitle = {Proceedings of the 30th {{ACM SIGKDD Conference}} on {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Fan, Wenqi and Ding, Yujuan and Ning, Liangbo and Wang, Shijie and Li, Hengyun and Yin, Dawei and Chua, Tat-Seng and Li, Qing},
+  date = {2024-08-24},
+  series = {{{KDD}} '24},
+  pages = {6491--6501},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/3637528.3671470},
+  url = {https://dl.acm.org/doi/10.1145/3637528.3671470},
+  urldate = {2025-06-06},
+  abstract = {As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the quality of the generated content of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: Furthermore, to deliver deeper insights, we discuss current limitations and several promising directions for future research. Updated information about this survey can be found at: https://advanced-recommender-systems.github.io/RAG-Meets-LLMs/},
+  isbn = {979-8-4007-0490-1}
+}
+
 @article{Farquhar2024DetectingHallucinationsLarge,
   title = {Detecting Hallucinations in Large Language Models Using Semantic Entropy},
   author = {Farquhar, Sebastian and Kossen, Jannik and Kuhn, Lorenz and Gal, Yarin},
@@ -3788,6 +3826,21 @@
   url = {https://dl.acm.org/doi/10.1145/6462.6502},
   urldate = {2025-06-02},
   abstract = {This paper surveys the techniques used for designing the most efficient algorithms for finding a maximum cardinality or weighted matching in (general or bipartite) graphs. It also lists some open problems concerning possible improvements in existing algorithms and the existence of fast parallel algorithms for these problems.}
+}
+
+@online{Gan2025RetrievalAugmentedGeneration,
+  title = {Retrieval {{Augmented Generation Evaluation}} in the {{Era}} of {{Large Language Models}}: {{A Comprehensive Survey}}},
+  shorttitle = {Retrieval {{Augmented Generation Evaluation}} in the {{Era}} of {{Large Language Models}}},
+  author = {Gan, Aoran and Yu, Hao and Zhang, Kai and Liu, Qi and Yan, Wenyu and Huang, Zhenya and Tong, Shiwei and Hu, Guoping},
+  date = {2025-04-21},
+  eprint = {2504.14891},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2504.14891},
+  url = {http://arxiv.org/abs/2504.14891},
+  urldate = {2025-06-06},
+  abstract = {Recent advancements in Retrieval-Augmented Generation (RAG) have revolutionized natural language processing by integrating Large Language Models (LLMs) with external information retrieval, enabling accurate, up-to-date, and verifiable text generation across diverse applications. However, evaluating RAG systems presents unique challenges due to their hybrid architecture that combines retrieval and generation components, as well as their dependence on dynamic knowledge sources in the LLM era. In response, this paper provides a comprehensive survey of RAG evaluation methods and frameworks, systematically reviewing traditional and emerging evaluation approaches, for system performance, factual accuracy, safety, and computational efficiency in the LLM era. We also compile and categorize the RAG-specific datasets and evaluation frameworks, conducting a meta-analysis of evaluation practices in high-impact RAG research. To the best of our knowledge, this work represents the most comprehensive survey for RAG evaluation, bridging traditional and LLM-driven methods, and serves as a critical resource for advancing RAG development.},
+  pubstate = {prepublished}
 }
 
 @book{Ganter1999FormalConceptAnalysis,
@@ -4596,6 +4649,25 @@
   urldate = {2021-03-13}
 }
 
+@article{Houbraken2014IndexBasedSubgraphMatching,
+  title = {The {{Index-Based Subgraph Matching Algorithm}} with {{General Symmetries}} ({{ISMAGS}}): {{Exploiting Symmetry}} for {{Faster Subgraph Enumeration}}},
+  shorttitle = {The {{Index-Based Subgraph Matching Algorithm}} with {{General Symmetries}} ({{ISMAGS}})},
+  author = {Houbraken, Maarten and Demeyer, Sofie and Michoel, Tom and Audenaert, Pieter and Colle, Didier and Pickavet, Mario},
+  date = {2014-05-30},
+  journaltitle = {PLOS ONE},
+  shortjournal = {PLOS ONE},
+  volume = {9},
+  number = {5},
+  pages = {e97896},
+  publisher = {Public Library of Science},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0097896},
+  url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0097896},
+  urldate = {2025-06-10},
+  abstract = {Subgraph matching algorithms are used to find and enumerate specific interconnection structures in networks. By enumerating these specific structures/subgraphs, the fundamental properties of the network can be derived. More specifically in biological networks, subgraph matching algorithms are used to discover network motifs, specific patterns occurring more often than expected by chance. Finding these network motifs yields information on the underlying biological relations modelled by the network. In this work, we present the Index-based Subgraph Matching Algorithm with General Symmetries (ISMAGS), an improved version of the Index-based Subgraph Matching Algorithm (ISMA). ISMA quickly finds all instances of a predefined motif in a network by intelligently exploring the search space and taking into account easily identifiable symmetric structures. However, more complex symmetries (possibly involving switching multiple nodes) are not taken into account, resulting in superfluous output. ISMAGS overcomes this problem by using a customised symmetry analysis phase to detect all symmetric structures in the network motif subgraphs. These structures are then converted to symmetry-breaking constraints used to prune the search space and speed up calculations. The performance of the algorithm was tested on several types of networks (biological, social and computer networks) for various subgraphs with a varying degree of symmetry. For subgraphs with complex (multi-node) symmetric structures, high speed-up factors are obtained as the search space is pruned by the symmetry-breaking constraints. For subgraphs with no or simple symmetric structures, ISMAGS still reduces computation times by optimising set operations. Moreover, the calculated list of subgraph instances is minimal as it contains no instances that differ by only a subgraph symmetry. An implementation of the algorithm is freely available at https://github.com/mhoubraken/ISMAGS.},
+  langid = {english}
+}
+
 @article{Hsu2003InterraterAgreementMeasures,
   title = {Interrater {{Agreement Measures}}: {{Comments}} on {{Kappan}}, {{Cohen}}'s {{Kappa}}, {{Scott}}'s {{Pi}}, and {{Aickin}}'s {{Alpha}}},
   shorttitle = {Interrater {{Agreement Measures}}},
@@ -4850,6 +4922,7 @@
   editor = {Bichindaritz, Isabelle and Lopez, Beatriz},
   date = {2025},
   series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15662},
   publisher = {Springer Nature Switzerland},
   location = {Cham},
   abstract = {Iterative design is a well-known methodology that involves prototyping, testing, analyzing, and refining products or processes. Rapid prototyping and evaluation are crucial, enabling designers to quickly identify and resolve issues and iteratively improve the design. However, effective iterative design relies on tools that accelerate both prototype creation and visual evaluation. This paper aims to address this challenge by presenting a framework specifically designed to enhance the iterative design process for CBR applications. In this context, we emphasize the manual and knowledge-intensive task of defining similarity measures. Furthermore, we introduce a proof-of-concept implementation of this framework based on the CBRkit toolkit and the SimViz visualization tool. We studied the capabilities to support the iterative design of CBR applications through a case study in the prototypical cars domain.*},
@@ -4978,7 +5051,22 @@
   abstract = {Lemmatisation is the process of finding the normalised forms of words appearing in text. It is a useful preprocessing step for a number of language engineering and text mining tasks, and especially important for languages with rich inflectional morphology. This paper presents a new lemmatisation system, LemmaGen, which was trained to generate accurate and efficient lemmatisers for twelve different languages. Its evaluation on the corresponding lexicons shows that LemmaGen outperforms the lemmatisers generated by two alternative approaches, RDR and CST, both in terms of accuracy and efficiency. To our knowledge, LemmaGen is the most efficient publicly available lemmatiser trained on large lexicons of multiple languages, whose learning engine can be retrained to effectively generate lemmatisers of other languages.}
 }
 
-@article{Juttner2018VF2++AnImprovedSubgraph,
+@article{Justice2006BinaryLinearProgramming,
+  title = {A Binary Linear Programming Formulation of the Graph Edit Distance},
+  author = {Justice, D. and Hero, A.},
+  date = {2006-08},
+  journaltitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume = {28},
+  number = {8},
+  pages = {1200--1214},
+  issn = {1939-3539},
+  doi = {10.1109/TPAMI.2006.152},
+  url = {https://ieeexplore.ieee.org/document/1642656},
+  urldate = {2025-06-24},
+  abstract = {A binary linear programming formulation of the graph edit distance for unweighted, undirected graphs with vertex attributes is derived and applied to a graph recognition problem. A general formulation for editing graphs is used to derive a graph edit distance that is proven to be a metric, provided the cost function for individual edit operations is a metric. Then, a binary linear program is developed for computing this graph edit distance, and polynomial time methods for determining upper and lower bounds on the solution of the binary program are derived by applying solution methods for standard linear programming and the assignment problem. A recognition problem of comparing a sample input graph to a database of known prototype graphs in the context of a chemical information system is presented as an application of the new method. The costs associated with various edit operations are chosen by using a minimum normalized variance criterion applied to pairwise distances between nearest neighbors in the database of prototypes. The new metric is shown to perform quite well in comparison to existing metrics when applied to a database of chemical graphs.}
+}
+
+@article{Juttner2018VF2ppImprovedSubgraph,
   title = {{{VF2}}++—{{An}} Improved Subgraph Isomorphism Algorithm},
   author = {Jüttner, Alpár and Madarasi, Péter},
   date = {2018-06-19},
@@ -5393,6 +5481,24 @@
   eventtitle = {{{NAACL-HLT}} 2019}
 }
 
+@article{Koopmans1957AssignmentProblemsLocation,
+  title = {Assignment {{Problems}} and the {{Location}} of {{Economic Activities}}},
+  author = {Koopmans, Tjalling C. and Beckmann, Martin},
+  date = {1957},
+  journaltitle = {Econometrica},
+  volume = {25},
+  number = {1},
+  eprint = {1907742},
+  eprinttype = {jstor},
+  pages = {53--76},
+  publisher = {[Wiley, Econometric Society]},
+  issn = {0012-9682},
+  doi = {10.2307/1907742},
+  url = {https://www.jstor.org/stable/1907742},
+  urldate = {2025-06-24},
+  abstract = {Two problems in the allocation of indivisible resources are discussed. Both can be interpreted as problems of assigning plants to locations. The first problem, in which cost of transportation between plants is ignored, is found to be a linear programming problem, with which is associated a system of rents that sustains an optimal assignment. The recognition of cost of interplant transportation in the second problem introduces complications which call for more laborious and largely unexplored computations and which also appear to defeat the price system as a means of sustaining an optimal assignment.}
+}
+
 @article{Korman2018DefiningTextualEntailment,
   title = {Defining Textual Entailment},
   author = {Korman, Daniel Z. and Mack, Eric and Jett, Jacob and Renear, Allen H.},
@@ -5523,6 +5629,22 @@
   doi = {10.1007/s13218-013-0289-5},
   url = {https://doi.org/10.1007/s13218-013-0289-5},
   urldate = {2020-09-29},
+  langid = {english}
+}
+
+@article{Kuhn1955HungarianMethodAssignment,
+  title = {The {{Hungarian}} Method for the Assignment Problem},
+  author = {Kuhn, H. W.},
+  date = {1955},
+  journaltitle = {Naval Research Logistics Quarterly},
+  volume = {2},
+  number = {1--2},
+  pages = {83--97},
+  issn = {1931-9193},
+  doi = {10.1002/nav.3800020109},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nav.3800020109},
+  urldate = {2025-06-24},
+  abstract = {Assuming that numerical scores are available for the performance of each of n persons on each of n jobs, the “assignment problem” is the quest for an assignment of persons to jobs so that the sum of the n scores so obtained is as large as possible. It is shown that ideas latent in the work of two Hungarian mathematicians may be exploited to yield a new method of solving this problem.},
   langid = {english}
 }
 
@@ -5984,7 +6106,6 @@
   author = {Lenz, Mirko and Bergmann, Ralph},
   editor = {Bramer, Max and Stahl, Frederic},
   date = {2025},
-  series = {Lecture {{Notes}} in {{Computer Science}}},
   volume = {15446},
   pages = {189--203},
   publisher = {Springer Nature Switzerland},
@@ -6004,8 +6125,11 @@
   editor = {Bichindaritz, Isabelle and Lopez, Beatriz},
   date = {2025},
   series = {Lecture {{Notes}} in {{Computer Science}}},
+  volume = {15662},
+  pages = {126--141},
   publisher = {Springer Nature Switzerland},
   location = {Cham},
+  doi = {10.1007/978-3-031-96559-3_9},
   abstract = {In Case-Based Reasoning (CBR), past experience is used to solve new problems. Determining the most relevant cases is a crucial aspect of this process and is typically based on one or multiple manuallydefined similarity measures, requiring deep domain knowledge. To overcome the knowledge-acquisition bottleneck, we propose the use of Large Language Models (LLMs) to automatically assess similarities between cases. We present three distinct approaches where the model is used for different tasks: (i) to predict similarity scores, (ii) to assess pairwise preferences, and (iii) to automatically configure similarity measures. Our conceptual work is accompanied by an open-source Python implementation that we use to evaluate the approaches on three different domains by comparing them to manually crafted similarity measures. Our results show that directly using LLM-based scores does not align well with the baseline rankings, but letting the LLM automatically configure the measures yields rankings that closely resemble the expert-defined ones.},
   eventtitle = {{{ICCBR}} 2025},
   langid = {english}
@@ -6852,6 +6976,22 @@
   issn = {2250-3153},
   url = {https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.414.7936&rep=rep1&type=pdf},
   abstract = {Interest in Web services is rapidly increased from their start of use. To exchange information among the application in standard way is the main goal of web services. This communication between the applications is based on SOAP and REST principle. SOAP communications causes network traffic, higher latency and processing delays. To overcome this limitations the REST'ful architecture is used. REST is a lightweight, easy and better alternative for the SOAP. In this paper comparison on performance of SOAP based and REST'ful web services based on different metric for mobile environment and multimedia conference is taken into consideration.}
+}
+
+@article{Munkres1957AlgorithmsAssignmentTransportation,
+  title = {Algorithms for the {{Assignment}} and {{Transportation Problems}}},
+  author = {Munkres, James},
+  date = {1957},
+  journaltitle = {Journal of the Society for Industrial and Applied Mathematics},
+  volume = {5},
+  number = {1},
+  eprint = {2098689},
+  eprinttype = {jstor},
+  pages = {32--38},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  issn = {0368-4245},
+  url = {https://www.jstor.org/stable/2098689},
+  urldate = {2025-06-24}
 }
 
 @incollection{Nesetril2012BoundedHeightTrees,
@@ -8067,26 +8207,9 @@
   issn = {0262-8856},
   doi = {10.1016/j.imavis.2008.04.004},
   url = {https://www.sciencedirect.com/science/article/pii/S026288560800084X},
-  urldate = {2022-05-05},
+  urldate = {2025-05-30},
   abstract = {In recent years, the use of graph based object representation has gained popularity. Simultaneously, graph edit distance emerged as a powerful and flexible graph matching paradigm that can be used to address different tasks in pattern recognition, machine learning, and data mining. The key advantages of graph edit distance are its high degree of flexibility, which makes it applicable to any type of graph, and the fact that one can integrate domain specific knowledge about object similarity by means of specific edit cost functions. Its computational complexity, however, is exponential in the number of nodes of the involved graphs. Consequently, exact graph edit distance is feasible for graphs of rather small size only. In the present paper we introduce a novel algorithm which allows us to approximately, or suboptimally, compute edit distance in a substantially faster way. The proposed algorithm considers only local, rather than global, edge structure during the optimization process. In experiments on different datasets we demonstrate a substantial speed-up of our proposed method over two reference systems. Moreover, it is emprically verified that the accuracy of the suboptimal distance remains sufficiently accurate for various pattern recognition applications.},
   langid = {english}
-}
-
-@article{Riesen2009ApproximateGraphEdita,
-  title = {Approximate Graph Edit Distance Computation by Means of Bipartite Graph Matching},
-  author = {Riesen, Kaspar and Bunke, Horst},
-  date = {2009-06-04},
-  journaltitle = {Image and Vision Computing},
-  shortjournal = {Image and Vision Computing},
-  series = {7th {{IAPR-TC15 Workshop}} on {{Graph-based Representations}} ({{GbR}} 2007)},
-  volume = {27},
-  number = {7},
-  pages = {950--959},
-  issn = {0262-8856},
-  doi = {10.1016/j.imavis.2008.04.004},
-  url = {https://www.sciencedirect.com/science/article/pii/S026288560800084X},
-  urldate = {2025-05-30},
-  abstract = {In recent years, the use of graph based object representation has gained popularity. Simultaneously, graph edit distance emerged as a powerful and flexible graph matching paradigm that can be used to address different tasks in pattern recognition, machine learning, and data mining. The key advantages of graph edit distance are its high degree of flexibility, which makes it applicable to any type of graph, and the fact that one can integrate domain specific knowledge about object similarity by means of specific edit cost functions. Its computational complexity, however, is exponential in the number of nodes of the involved graphs. Consequently, exact graph edit distance is feasible for graphs of rather small size only. In the present paper we introduce a novel algorithm which allows us to approximately, or suboptimally, compute edit distance in a substantially faster way. The proposed algorithm considers only local, rather than global, edge structure during the optimization process. In experiments on different datasets we demonstrate a substantial speed-up of our proposed method over two reference systems. Moreover, it is emprically verified that the accuracy of the suboptimal distance remains sufficiently accurate for various pattern recognition applications.}
 }
 
 @inproceedings{Riesen2014CombiningBipartiteGraph,
@@ -9477,6 +9600,21 @@
   langid = {english}
 }
 
+@article{Ullmann1976AlgorithmSubgraphIsomorphism,
+  title = {An {{Algorithm}} for {{Subgraph Isomorphism}}},
+  author = {Ullmann, J. R.},
+  date = {1976-01-01},
+  journaltitle = {J. ACM},
+  volume = {23},
+  number = {1},
+  pages = {31--42},
+  issn = {0004-5411},
+  doi = {10.1145/321921.321925},
+  url = {https://dl.acm.org/doi/10.1145/321921.321925},
+  urldate = {2025-06-11},
+  abstract = {Subgraph isomorphism can be determined by means of a brute-force tree-search enumeration procedure. In this paper a new algorithm is introduced that attains efficiency by inferentially eliminating successor nodes in the tree search. To assess the time actually taken by the new algorithm, subgraph isomorphism, clique detection, graph isomorphism, and directed graph isomorphism experiments have been carried out with random and with various nonrandom graphs.A parallel asynchronous logic-in-memory implementation of a vital part of the algorithm is also described, although this hardware has not actually been built. The hardware implementation would allow very rapid determination of isomorphism.}
+}
+
 @book{VanEemeren1996FundamentalsArgumentationTheory,
   title = {Fundamentals of {{Argumentation Theory}}},
   shorttitle = {Fundamentals of {{Argumentation Theory}}},
@@ -10609,6 +10747,20 @@
   abstract = {Exploration and information identification constitute challenging research problems, with important applications in sensemaking over structured argumentative dialogues. In this paper, we present the implementation ArgQL, a high-level declarative query language, designed for querying dialogical data, structured in the principles of argumentation. We implement the language using an AIF-based representation and a translation of ArgQL into (complex) SPARQL queries. ArgQL provides a simple and intuitive way to query a structured dialogue using pure argumentative terminology.},
   eventtitle = {Computational {{Models}} of {{Argument}}},
   langid = {english}
+}
+
+@online{Zweiger2025SelfAdaptingLanguageModels,
+  title = {Self-{{Adapting Language Models}}},
+  author = {Zweiger, Adam and Pari, Jyothish and Guo, Han and Akyürek, Ekin and Kim, Yoon and Agrawal, Pulkit},
+  date = {2025-06-12},
+  eprint = {2506.10943},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2506.10943},
+  url = {http://arxiv.org/abs/2506.10943},
+  urldate = {2025-06-16},
+  abstract = {Large language models (LLMs) are powerful but static; they lack mechanisms to adapt their weights in response to new tasks, knowledge, or examples. We introduce Self-Adapting LLMs (SEAL), a framework that enables LLMs to self-adapt by generating their own finetuning data and update directives. Given a new input, the model produces a self-edit-a generation that may restructure the information in different ways, specify optimization hyperparameters, or invoke tools for data augmentation and gradient-based updates. Through supervised finetuning (SFT), these self-edits result in persistent weight updates, enabling lasting adaptation. To train the model to produce effective self-edits, we use a reinforcement learning loop with the downstream performance of the updated model as the reward signal. Unlike prior approaches that rely on separate adaptation modules or auxiliary networks, SEAL directly uses the model's own generation to control its adaptation process. Experiments on knowledge incorporation and few-shot generalization show that SEAL is a promising step toward language models capable of self-directed adaptation. Our website and code is available at https://jyopari.github.io/posts/seal.},
+  pubstate = {prepublished}
 }
 
 @article{Zwick1988AnotherLookInterrater,
