@@ -1201,6 +1201,20 @@
   abstract = {The extent of consistency between information from two methods of communication, the interview and the limited-response question, was investigated. Thirty questions showed consistencies greater than could be expected on the basis of chance. The questions were classified into four general categories, and the mean coefficients of consistency for these categories ranged from 0.46 to 1.00.}
 }
 
+@article{Bengio2003NeuralProbabilisticLanguage,
+  title = {A Neural Probabilistic Language Model},
+  author = {Bengio, Yoshua and {View Profile} and Ducharme, Réjean and {View Profile} and Vincent, Pascal and {View Profile} and Janvin, Christian and {View Profile}},
+  date = {2003-03},
+  journaltitle = {The Journal of Machine Learning Research},
+  volume = {3},
+  pages = {1137--1155},
+  publisher = {JMLR.org},
+  doi = {10.5555/944919.944966},
+  url = {https://dl.acm.org/doi/10.5555/944919.944966},
+  urldate = {2025-09-10},
+  abstract = {A goal of statistical language modeling is to learn the joint probability function of sequences of words in a language. This is intrinsically difficult because of the curse of dimensionality: a word sequence on which the model will be tested is likely to be different from all the word sequences seen during training. Traditional but very successful approaches based on n-grams obtain generalization by concatenating very short overlapping sequences seen in the training set. We propose to fight the curse of dimensionality by learning a distributed representation for words which allows each training sentence to inform the model about an exponential number of semantically neighboring sentences. The model learns simultaneously (1) a distributed representation for each word along with (2) the probability function for word sequences, expressed in terms of these representations. Generalization is obtained because a sequence of words that has never been seen before gets high probability if it is made of words that are similar (in the sense of having a nearby representation) to words forming an already seen sentence. Training such large models (with millions of parameters) within a reasonable time is itself a significant challenge. We report on experiments using neural networks for the probability function, showing on two text corpora that the proposed approach significantly improves on state-of-the-art n-gram models, and that the proposed approach allows to take advantage of longer contexts.}
+}
+
 @article{Bentahar2010TaxonomyArgumentationModels,
   title = {A Taxonomy of Argumentation Models Used for Knowledge Representation},
   author = {Bentahar, Jamal and Moulin, Bernard and Bélanger, Micheline},
@@ -1739,6 +1753,14 @@
   abstract = {Research on argumentation in Artificial Intelligence recently investigates new methods that contribute to the vision of developing robust argumentation machines. One line of research explores ways of reasoning with natural language arguments coming from information sources on the web as a foundation for the deliberation and synthesis of arguments in specific domains. This paper builds upon arguments represented as argument graphs in the standardized Argument Interchange Format. While previous work was focused on the development of semantic similarity measures used for the case-based retrieval of argument graphs, this paper addresses the problem of clustering argument graphs to explore structures that facilitate argumentation interpretation. We propose a k-medoid and an agglomerative clustering approach based on semantic similarity measures. We compare the clustering results based on a graph-based semantic measure that takes the structure of the argument into account with a semantic word2vec measure on the pure textual argument representation. Experiments based on the Microtext corpus show that the graph-based similarity is best on internal evaluation measures, while the pure textual measure performs very well for identifying topic-specific clusters.},
   isbn = {978-3-030-30178-1 978-3-030-30179-8},
   langid = {english}
+}
+
+@online{Bloem2019TransformersScratch,
+  title = {Transformers {{From Scratch}}},
+  author = {Bloem, Peter},
+  date = {2019-08-18},
+  url = {https://peterbloem.nl/blog/transformers},
+  urldate = {2025-09-11}
 }
 
 @inproceedings{Blumenthal2017CorrectingSpeedingUpBounds,
@@ -2910,6 +2932,21 @@
   abstract = {We improve automatic correction of grammatical, orthographic, and collocation errors in text using a multilayer convolutional encoder-decoder neural network. The network is initialized with embeddings that make use of character N-gram information to better suit this task. When evaluated on common benchmark test data sets (CoNLL-2014 and JFLEG), our model substantially outperforms all prior neural approaches on this task as well as strong statistical machine translation-based systems with neural and task-specific features trained on the same data. Our analysis shows the superiority of convolutional neural networks over recurrent neural networks such as long short-term memory (LSTM) networks in capturing the local context via attention, and thereby improving the coverage in correcting grammatical errors. By ensembling multiple models, and incorporating an N-gram language model and edit features via rescoring, our novel method becomes the first neural approach to outperform the current state-of-the-art statistical machine translation-based approach, both in terms of grammaticality and fluency.}
 }
 
+@article{Chomsky1956ThreeModelsDescription,
+  title = {Three Models for the Description of Language},
+  author = {Chomsky, N.},
+  date = {1956-09},
+  journaltitle = {IRE Transactions on Information Theory},
+  volume = {2},
+  number = {3},
+  pages = {113--124},
+  issn = {2168-2712},
+  doi = {10.1109/TIT.1956.1056813},
+  url = {https://ieeexplore.ieee.org/document/1056813},
+  urldate = {2025-09-10},
+  abstract = {We investigate several conceptions of linguistic structure to determine whether or not they can provide simple and "revealing" grammars that generate all of the sentences of English and only these. We find that no finite-state Markov process that produces symbols with transition from state to state can serve as an English grammar. Furthermore, the particular subclass of such processes that producen-order statistical approximations to English do not come closer, with increasingn, to matching the output of an English grammar. We formalize-the notions of "phrase structure" and show that this gives us a method for describing language which is essentially more powerful, though still representable as a rather elementary type of finite-state process. Nevertheless, it is successful only when limited to a small subset of simple sentences. We study the formal properties of a set of grammatical transformations that carry sentences with phrase structure into new sentences with derived phrase structure, showing that transformational grammars are processes of the same elementary type as phrase-structure grammars; that the grammar of English is materially simplified if phrase structure description is limited to a kernel of simple sentences from which all other sentences are constructed by repeated transformations; and that this view of linguistic structure gives a certain insight into the use and understanding of language.}
+}
+
 @book{Choudhary1993ElementsComplexAnalysis,
   title = {The {{Elements}} of {{Complex Analysis}}},
   author = {Choudhary, B.},
@@ -2921,6 +2958,19 @@
   isbn = {978-81-224-0399-2},
   langid = {english},
   pagetotal = {352}
+}
+
+@inproceedings{Christiano2017DeepReinforcementLearning,
+  title = {Deep Reinforcement Learning from Human Preferences},
+  booktitle = {Proceedings of the 31st {{International Conference}} on {{Neural Information Processing Systems}}},
+  author = {Christiano, Paul F. and Leike, Jan and Brown, Tom B. and Martic, Miljan and Legg, Shane and Amodei, Dario},
+  date = {2017-12-04},
+  series = {{{NIPS}}'17},
+  pages = {4302--4310},
+  publisher = {Curran Associates Inc.},
+  location = {Red Hook, NY, USA},
+  abstract = {For sophisticated reinforcement learning (RL) systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than 1\% of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any which have been previously learned from human feedback.},
+  isbn = {978-1-5108-6096-4}
 }
 
 @book{Cimiano2024RobustArgumentationMachines,
@@ -4385,6 +4435,17 @@
   isbn = {978-1-58113-702-6}
 }
 
+@book{Firth1957SynopsisLinguisticTheory,
+  title = {A {{Synopsis}} of {{Linguistic Theory}}, 1930-1955},
+  author = {Firth, John Rupert},
+  date = {1957},
+  series = {Studies in {{Linguistic Analysis}}},
+  eprint = {T8LDtgAACAAJ},
+  eprinttype = {googlebooks},
+  langid = {english},
+  pagetotal = {book}
+}
+
 @article{Fleiss1973EquivalenceWeightedKappa,
   title = {The {{Equivalence}} of {{Weighted Kappa}} and the {{Intraclass Correlation Coefficient}} as {{Measures}} of {{Reliability}}},
   author = {Fleiss, Joseph L. and Cohen, Jacob},
@@ -5239,6 +5300,20 @@
   date = {2016}
 }
 
+@inproceedings{Guthrie2006CloserLookSkipgram,
+  title = {A {{Closer Look}} at {{Skip-gram Modelling}}},
+  booktitle = {Proceedings of the {{Fifth International Conference}} on {{Language Resources}} and {{Evaluation}} ({{LREC}}'06)},
+  author = {Guthrie, David and Allison, Ben and Liu, Wei and Guthrie, Louise and Wilks, Yorick},
+  editor = {Calzolari, Nicoletta and Choukri, Khalid and Gangemi, Aldo and Maegaard, Bente and Mariani, Joseph and Odijk, Jan and Tapias, Daniel},
+  date = {2006-05},
+  publisher = {European Language Resources Association (ELRA)},
+  location = {Genoa, Italy},
+  url = {https://aclanthology.org/L06-1210/},
+  urldate = {2025-09-10},
+  abstract = {Data sparsity is a large problem in natural language processing that refers to the fact that language is a system of rare events, so varied and complex, that even using an extremely large corpus, we can never accurately model all possible strings of words. This paper examines the use of skip-grams (a technique where by n-grams are still stored to model language, but they allow for tokens to be skipped) to overcome the data sparsity problem. We analyze this by computing all possible skip-grams in a training corpus and measure how many adjacent (standard) n-grams these cover in test documents. We examine skip-gram modelling using one to four skips with various amount of training data and test against similar documents as well as documents generated from a machine translation system. In this paper we also determine the amount of extra training data required to achieve skip-gram coverage using standard adjacent tri-grams.},
+  eventtitle = {{{LREC}} 2006}
+}
+
 @inproceedings{Guu2015TraversingKnowledgeGraphs,
   title = {Traversing {{Knowledge Graphs}} in {{Vector Space}}},
   booktitle = {Proceedings of the 2015 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
@@ -5650,16 +5725,12 @@
   journaltitle = {Science},
   volume = {349},
   number = {6245},
-  eprint = {26185244},
-  eprinttype = {pubmed},
   pages = {261--266},
   publisher = {American Association for the Advancement of Science},
-  issn = {0036-8075, 1095-9203},
   doi = {10.1126/science.aaa8685},
-  url = {https://science.sciencemag.org/content/349/6245/261},
-  urldate = {2021-02-06},
-  abstract = {Natural language processing employs computational techniques for the purpose of learning, understanding, and producing human language content. Early computational approaches to language research focused on automating the analysis of the linguistic structure of language and developing basic technologies such as machine translation, speech recognition, and speech synthesis. Today’s researchers refine and make use of such tools in real-world applications, creating spoken dialogue systems and speech-to-speech translation engines, mining social media for information about health or finance, and identifying sentiment and emotion toward products and services. We describe successes and challenges in this rapidly advancing area.},
-  langid = {english}
+  url = {https://www.science.org/doi/10.1126/science.aaa8685},
+  urldate = {2025-09-10},
+  abstract = {Natural language processing employs computational techniques for the purpose of learning, understanding, and producing human language content. Early computational approaches to language research focused on automating the analysis of the linguistic structure of language and developing basic technologies such as machine translation, speech recognition, and speech synthesis. Today’s researchers refine and make use of such tools in real-world applications, creating spoken dialogue systems and speech-to-speech translation engines, mining social media for information about health or finance, and identifying sentiment and emotion toward products and services. We describe successes and challenges in this rapidly advancing area.}
 }
 
 @inproceedings{Hlaoui2002NewAlgorithmInexact,
@@ -10732,6 +10803,21 @@
   isbn = {978-1-959429-19-7}
 }
 
+@article{Salton1975VectorSpaceModel,
+  title = {A Vector Space Model for Automatic Indexing},
+  author = {Salton, G. and Wong, A. and Yang, C. S.},
+  date = {1975-11-01},
+  journaltitle = {Commun. ACM},
+  volume = {18},
+  number = {11},
+  pages = {613--620},
+  issn = {0001-0782},
+  doi = {10.1145/361219.361220},
+  url = {https://dl.acm.org/doi/10.1145/361219.361220},
+  urldate = {2025-09-10},
+  abstract = {In a document retrieval, or other pattern matching environment where stored entities (documents) are compared with each other or with incoming patterns (search requests), it appears that the best indexing (property) space is one where each entity lies as far away from the others as possible; in these circumstances the value of an indexing system may be expressible as a function of the density of the object space; in particular, retrieval performance may correlate inversely with space density. An approach based on space density computations is used to choose an optimum indexing vocabulary for a collection of documents. Typical evaluation results are shown, demonstating the usefulness of the model.}
+}
+
 @article{Salton1988TermweightingApproachesAutomatic,
   title = {Term-Weighting Approaches in Automatic Text Retrieval},
   author = {Salton, Gerard and Buckley, Christopher},
@@ -11849,6 +11935,13 @@
   langid = {english}
 }
 
+@online{todo,
+  title = {{{ToDo}}},
+  author = {Doe, John},
+  date = {1970-01-01},
+  pubstate = {prepublished}
+}
+
 @book{Toulmin2003UsesArgument,
   title = {The {{Uses}} of {{Argument}}},
   author = {Toulmin, Stephen E.},
@@ -12723,6 +12816,17 @@
   langid = {english}
 }
 
+@inproceedings{Wei2021FinetunedLanguageModels,
+  title = {Finetuned {{Language Models}} Are {{Zero-Shot Learners}}},
+  author = {Wei, Jason and Bosma, Maarten and Zhao, Vincent and Guu, Kelvin and Yu, Adams Wei and Lester, Brian and Du, Nan and Dai, Andrew M. and Le, Quoc V.},
+  date = {2021-10-06},
+  url = {https://openreview.net/forum?id=gEZrGCozdqR},
+  urldate = {2025-09-11},
+  abstract = {This paper explores a simple method for improving the zero-shot learning abilities of language models. We show that instruction tuning—finetuning language models on a collection of datasets described via instructions—substantially improves zero-shot performance on unseen tasks. We take a 137B parameter pretrained language model and instruction tune it on over 60 NLP datasets verbalized via natural language instruction templates. We evaluate this instruction-tuned model, which we call FLAN, on unseen task types. FLAN substantially improves the performance of its unmodified counterpart and surpasses zero-shot 175B GPT-3 on 20 of 25 datasets that we evaluate. FLAN even outperforms few-shot GPT-3 by a large margin on ANLI, RTE, BoolQ, AI2-ARC, OpenbookQA, and StoryCloze. Ablation studies reveal that number of finetuning datasets, model scale, and natural language instructions are key to the success of instruction tuning.},
+  eventtitle = {International {{Conference}} on {{Learning Representations}}},
+  langid = {english}
+}
+
 @inproceedings{Weich2025IntegrationTimeSeries,
   title = {Integration of~{{Time Series Embedding}} for~{{Efficient Retrieval}} in~{{Case-Based Reasoning}}},
   booktitle = {Case-{{Based Reasoning Research}} and {{Development}}},
@@ -12999,6 +13103,20 @@
   urldate = {2025-03-24},
   eventtitle = {{{CLEF}} 2022 {{Working Notes}}},
   langid = {english}
+}
+
+@online{Wynter2025ThinLineComprehension,
+  title = {The {{Thin Line Between Comprehension}} and {{Persuasion}} in {{LLMs}}},
+  author = {family=Wynter, given=Adrian, prefix=de, useprefix=false and Yuan, Tangming},
+  date = {2025-07-10},
+  eprint = {2507.01936},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2507.01936},
+  url = {http://arxiv.org/abs/2507.01936},
+  urldate = {2025-09-11},
+  abstract = {Large language models (LLMs) are excellent at maintaining high-level, convincing dialogues. They are being fast deployed as chatbots and evaluators in sensitive areas, such as peer review and mental health applications. This, along with the disparate accounts on their reasoning capabilities, calls for a closer examination of LLMs and their comprehension of dialogue. In this work we begin by evaluating LLMs' ability to maintain a debate--one of the purest yet most complex forms of human communication. Then we measure how this capability relates to their understanding of what is being talked about, namely, their comprehension of dialogical structures and the pragmatic context. We find that LLMs are capable of maintaining coherent, persuasive debates, often swaying the beliefs of participants and audiences alike. We also note that awareness or suspicion of AI involvement encourage people to be more critical of the arguments made. When polling LLMs on their comprehension of deeper structures of dialogue, however, they cannot demonstrate said understanding. Our findings tie the shortcomings of LLMs-as-evaluators to their (in)ability to understand the context. More broadly, for the field of argumentation theory we posit that, if an agent can convincingly maintain a dialogue, it is not necessary for it to know what it is talking about. Hence, the modelling of pragmatic context and coherence are secondary to effectiveness.},
+  pubstate = {prepublished}
 }
 
 @online{Xiao2025FoundationsLargeLanguage,
